@@ -116,3 +116,9 @@ dmypy.json
 
 # idea
 .idea/
+
+# npm
+_book/
+node_modules/
+package-lock.json
+
