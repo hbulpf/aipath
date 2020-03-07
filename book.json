@@ -4,6 +4,11 @@
     "description": "AI学习之路",
     "language": "zh-hans",
     "gitbook": "3.2.3",
+    "links": {
+        "sidebar": {
+            "Home": "http://hecloud.hnbdata.cn/"
+        }
+    },
     "styles": {
         "website": "./styles/website.css"
     },
