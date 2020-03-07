@@ -22,7 +22,7 @@
         "github-buttons",
         "donate",
         "sharing-plus",
-        "mathjax@^1.0.1",
+        "katex",
         "anchor-navigation-ex",
         "favicon",
         "toggle-chapters", 
@@ -35,8 +35,8 @@
         },
         "github-buttons": {
             "buttons": [{
-                "user": "RunAtWorld",
-                "repo": "runatworld.github.io",
+                "user": "hbulpf",
+                "repo": "aipath",
                 "type": "star",
                 "size": "small",
                 "count": true
