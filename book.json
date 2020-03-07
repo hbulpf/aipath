@@ -16,7 +16,7 @@
         "showLevel": true
     },
     "plugins": [
-        "mathjax@^1.0.1",
+        "katex",
         "splitter",
         "github",
         "copy-code-button",
@@ -49,29 +49,6 @@
             "title": "",
             "button": "赞赏",
             "alipayText": "支付宝"
-        },
-        "sharing": {
-            "douban": false,
-            "facebook": false,
-            "google": false,
-            "hatenaBookmark": false,
-            "instapaper": false,
-            "line": false,
-            "linkedin": false,
-            "messenger": false,
-            "pocket": false,
-            "qq": false,
-            "qzone": false,
-            "stumbleupon": false,
-            "twitter": false,
-            "viber": false,
-            "vk": false,
-            "weibo": false,
-            "whatsapp": false,
-            "all": [
-                "google", "facebook", "weibo", "twitter",
-                "qq", "qzone", "linkedin", "pocket"
-            ]
         },
         "anchor-navigation-ex": {
             "showLevel": false
