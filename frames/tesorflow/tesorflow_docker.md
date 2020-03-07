@@ -1,4 +1,5 @@
-**使用docker方式启动 tensorflow:1.13.1**
+# 使用docker方式启动 tensorflow:1.13.1
+
 >使用docker方式启动 tensorflow:1.13.1,每个容器是一个环境隔离，大家互不影响。如需其他版本的 tensorflow , 请联系 @lijiawei
  
 # 1. 建立自己的tensorflow:1.13.1 

@@ -3,14 +3,27 @@
 # 机器学习
 
 - [机器学习](ml/README.md)
-- [autokeras](ml/autokeras/autokeras.md)
-- [keras](ml/keras/keras.md)
-- [nvidia_cuda](ml/nvidia_cuda/README.md)
-- [在python3.6下使用 pytorch](ml/pytorch/pytorch.md)
-- [pytorch_docker.md](ml/pytorch/pytorch_docker.md)
-- [音乐推荐系统环境搭建](ml/recommendation_sys/music_recommendation/environments.md)
-- [在 python3.6 下使用 Tensorflow](ml/tesorflow/tesorflow.md)
-- [建立自己的tensorflow:1.13.1](ml/tesorflow/tesorflow_docker.md)
+  - [线性回归基本定义](linear_base.md)
+  - [一元线性回归](linear_regression.md)
+
+
+# 深度学习
+
+- [机器学习](dl/README.md)
+
+
+
+# AI框架
+
+- [AI框架](frames/README.md)
+- [Tensorflow](frames/tesorflow/tesorflow.md)
+  - [docker方式启动tensorflow](frames/tesorflow/tesorflow_docker.md)
+- [Pytorch](frames/pytorch/pytorch.md)
+  - [docker方式启动pytorch](frames/pytorch/pytorch_docker.md)
+- [autokeras](frames/autokeras/autokeras.md)
+- [keras](frames/keras/keras.md)
+- [nvidia_cuda](frames/nvidia_cuda/README.md)
+
 
 # 热门课题
 - [热门课题](hot/README.md)
@@ -22,6 +35,7 @@
 
 # project
 
+- [音乐推荐系统环境搭建](ml/recommendation_sys/music_recommendation/environments.md)
 - [八斗学院项目](project/八斗学院.md)
 
 # 机器人
