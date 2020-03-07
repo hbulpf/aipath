@@ -3,8 +3,8 @@
 # 机器学习
 
 - [机器学习](ml/README.md)
-  - [线性回归基本定义](linear_base.md)
-  - [一元线性回归](linear_regression.md)
+  - [线性回归基本定义](ml/linear_base.md)
+  - [一元线性回归](ml/linear_regression.md)
 
 
 # 深度学习
