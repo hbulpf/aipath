@@ -16,7 +16,7 @@
         "showLevel": true
     },
     "plugins": [
-        "katex",
+        "mathjax@^1.0.1",
         "splitter",
         "github",
         "copy-code-button",
