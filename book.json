@@ -9,9 +9,6 @@
             "首页": "http://hecloud.hnbdata.cn/"
         }
     },
-    "styles": {
-        "website": "./styles/website.css"
-    },
     "structure": {
         "readme": "README.md"
     },
@@ -19,20 +16,20 @@
         "showLevel": true
     },
     "plugins": [
-        "-sharing",
+        "mathjax@^1.0.1",
+        "-sharing","sharing-plus",
+        "-search", "search-plus",
         "splitter",
         "expandable-chapters-small",
         "anchors",
         "github",
         "github-buttons",
         "donate",
-        "sharing-plus",
-        "mathjax@^1.0.1",
         "anchor-navigation-ex",
         "favicon",
         "toggle-chapters", 
         "theme-comscore",
-        "-lunr", "-search", "search-plus"
+        "-lunr"
     ],
     "pluginsConfig": {
         "github": {
