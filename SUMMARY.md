@@ -9,7 +9,7 @@
 
 # 深度学习
 
-- [机器学习](dl/README.md)
+- [深度学习](dl/README.md)
 
 
 
