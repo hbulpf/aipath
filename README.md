@@ -12,3 +12,16 @@
 ## 项目
 
 1. [八斗学院项目](./project/八斗学院.md)
+
+
+
+----------------------------------------
+
+**项目规范**
+
+本文使用 [`Markdown`](https://www.markdownguide.org/basic-syntax) 编写, 排版符合[`中文技术文档写作规范`](https://github.com/hbulpf/document-style-guide)。Find Me On [**Github**](https://github.com/hbulpf/aipath) , [**Gitee**](https://gitee.com/hecloudAi/aipath)
+
+**友情贡献**
+
+@[**RunAtWorld**](http://www.github.com/RunAtWorld)  &nbsp;  
+
