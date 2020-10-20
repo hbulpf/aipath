@@ -12,8 +12,8 @@
 ## 资源
 
 1. [AI学习资源](./ai_source.md)
-1. [热门课题](./hot/README.md)
-2. [数据集](./datasets/README.md)
+2. [热门课题](./hot/README.md)
+3. [数据集](./datasets/README.md)
 
 
 ## 项目

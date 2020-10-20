@@ -32,8 +32,11 @@
 - [2020 年最流行的 AI 技术](hot/hot_2020.md)
 
 
+# 数据集
+- [数据集](datasets/README.md)
+  - [机器学习数据集大全](datasets/机器学习数据集大全.md)
 
-# project
+# 项目
 
 - [音乐推荐系统环境搭建](ml/recommendation_sys/music_recommendation/environments.md)
 - [八斗学院项目](project/八斗学院.md)
