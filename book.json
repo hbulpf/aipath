@@ -1,0 +1,66 @@
+{
+    "title": "AI学习之路",
+    "author": "RunAtWorld",
+    "description": "AI学习之路",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "links": {
+        "sidebar": {
+            "首页": "http://hecloud.hnbdata.cn/"
+        }
+    },
+    "structure": {
+        "readme": "README.md"
+    },
+    "theme-default": {
+        "showLevel": true
+    },
+    "plugins": [
+        "mathjax@^1.0.1",
+        "splitter",
+        "github",
+        "copy-code-button",
+        "-lunr",
+        "-search","search-plus",
+        "expandable-chapters-small",
+        "anchor-navigation-ex",
+        "donate",
+        "github",
+        "github-buttons",
+        "favicon",
+        "-lunr"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/hbulpf/aipath"
+        },
+        "github-buttons": {
+            "buttons": [{
+                "user": "hbulpf",
+                "repo": "aipath",
+                "type": "star",
+                "size": "small",
+                "count": true
+                }
+            ]
+        },
+        "donate": {
+            "alipay": "./source/images/donate.png",
+            "title": "",
+            "button": "赞赏",
+            "alipayText": "支付宝"
+        },
+        "anchor-navigation-ex": {
+            "showLevel": false
+        },
+        "favicon":{
+            "shortcut": "./source/images/favicon.jpg",
+            "bookmark": "./source/images/favicon.jpg",
+            "appleTouch": "./source/images/apple-touch-icon.jpg",
+            "appleTouchMore": {
+                "120x120": "./source/images/apple-touch-icon.jpg",
+                "180x180": "./source/images/apple-touch-icon.jpg"
+            }
+        }
+    }
+}
