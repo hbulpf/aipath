@@ -12,6 +12,9 @@
 - [深度学习](dl/README.md)
 - [深度学习四大名著](深度学习四大名著.md)
 
+# 计算机视觉
+
+- [计算机视觉](cv/README.md)
 
 # AI框架
 
@@ -23,7 +26,6 @@
 - [autokeras](frames/autokeras/autokeras.md)
 - [keras](frames/keras/keras.md)
 - [nvidia_cuda](frames/nvidia_cuda/README.md)
-
 
 # 热门课题
 - [热门课题](hot/README.md)
