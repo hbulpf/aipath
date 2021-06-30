@@ -18,16 +18,20 @@
   - [自动光学检测](cv/aoi.md)
   - [机器视觉应用场景](cv/机器视觉应用场景.md)
 
-# AI框架
+# 框架与平台
 
 - [AI框架](frames/README.md)
-- [Tensorflow](frames/tesorflow/tesorflow.md)
-  - [docker方式启动tensorflow](frames/tesorflow/tesorflow_docker.md)
-- [Pytorch](frames/pytorch/pytorch.md)
-  - [docker方式启动pytorch](frames/pytorch/pytorch_docker.md)
-- [autokeras](frames/autokeras/autokeras.md)
-- [keras](frames/keras/keras.md)
-- [nvidia_cuda](frames/nvidia_cuda/README.md)
+  - [Tensorflow](frames/tesorflow/README.md)
+    - [docker方式启动tensorflow](frames/tesorflow/tesorflow_docker.md)
+  - [Pytorch](frames/pytorch/README.md)
+    - [docker方式启动pytorch](frames/pytorch/pytorch_docker.md)
+  - [autokeras](frames/autokeras/README.md)
+  - [keras](frames/keras/README.md)
+  - [nvidia_cuda](frames/nvidia_cuda/README.md)
+
+- [AI平台](plateform/README.md)
+  - [百度飞桨](plateform/paddlepaddle.md)
+  - [华为昇腾](plateform/ascend.md)
 
 # 热门课题
 - [热门课题](hot/README.md)
