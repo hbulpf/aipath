@@ -205,7 +205,8 @@ TensorFlow的分布式培训框架
 ## 5. 博客推荐
 
 1. [Sebastian Ruder](https://ruder.io/)
-
+2. [AI初学者-数据科学的笔记以及资料搜集](https://github.com/fengdu78/Data-Science-Notes)
+    1. [公众号:机器学习初学者](https://mp.weixin.qq.com/s/qpIuLYpYwcAxcIlAUWqXTA)
 
 # 参考
 1. 9个机器学习开源项目 . https://blog.csdn.net/tMb8Z9Vdm66wH68VX1/article/details/79765391
