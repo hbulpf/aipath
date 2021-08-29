@@ -19,6 +19,14 @@
   - [自动光学检测](cv/aoi.md)
   - [机器视觉应用场景](cv/机器视觉应用场景.md)
   - [图像标注](cv/图像标注.md)
+  - [Paper](cv/paper/README.md)
+    - [CNN](cv/paper/cnn.md)
+    - [Yolo系列](cv/paper/yolox.md)
+    - [SSD](cv/paper/ssd.md)
+    - [VGG](cv/paper/vgg.md)
+    - [Resnet](cv/paper/resnet.md)
+    - [U-Net](cv/paper/unet.md)
+    - [GAN](cv/paper/gan.md)
 
 # 框架与平台
 

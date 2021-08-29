@@ -1,4 +1,4 @@
-# YoloX
+# Yolo系列
 
 > You Only Look Once!
 
