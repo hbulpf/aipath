@@ -2,7 +2,7 @@
 
 ## 应用分类
 
-计算机视觉应用可以分为：**图像分类(Image Classification)、目标检测(Object Detection)、语义分割(Semantic Segmentation) 、视频理解(Video Understanding)和图片生成(Image Generation)** 等。下面对其进行详细介绍。
+计算机视觉应用可以分为：**图像分类(Image Classification)、目标检测(Object Detection)、语义分割(Semantic Segmentation) 、视频理解(Video Understanding)和图片生成(Image Generation)** 等。
 
 **图像分类(Image Classification)** 是常见的分类问题。神经网络的输入为图片数据，输出值为当前样本属于每个类别的概率，通常选取概率值最大的类别作为样本的预测类别。图片识别是最早成功应用深度学习的任务之一，经典的网络模型有 VGG 系列、Inception 系列、ResNet 系列等。
 
@@ -16,22 +16,22 @@
 
 ## 学习路线
 
-在开始学习计算机视觉之前，先来了解有关机器学习和python基础知识。
+在开始学习计算机视觉之前，要先了解有关机器学习和python基础知识。
 
 ### 深度学习框架
 
-框架主要为：**pytorch**或**keras**（TensorFlow）。Pytorch可能需要编写更多代码，但在返回方面具有很大的灵活性，因此我们可以先学习如何使用pytorch。此外，大多数深度学习研究人员也普遍使用pytorch。
+深度学习框架主要有：**pytorch**或**keras**（TensorFlow）。Pytorch可能需要编写更多代码，但在返回方面具有很大的灵活性，因此我们可以先学习如何使用pytorch。此外，大多数深度学习研究人员也普遍使用pytorch。
 
 **Albumentation**(图像增强库)和 **catalyst** (框架，pytorch顶部的高级API)在我们学习计算机视觉的过长中也是很常用的工具，我们也可以先学习和使用它们，尤其是第一个。
 
 #### 框架汇总
 
 - [TensorFlow](https://tensorflow.google.cn/)
+- [keras](https://keras.io/)
 - [Pytorch](https://pytorch.org/)
   - [PyTorch中文教程](https://www.pytorch123.com/)
 - [Mindspore](https://www.mindspore.cn/)
 - [PaddlePaddle](https://www.paddlepaddle.org.cn/)
-
 
 ### 硬件
 
@@ -72,7 +72,7 @@ kaggle是各种机器学习竞赛的著名在线平台，其中很多是关于�
 
 ### 论文
 
-看论文方法可能很难，但是这种方法可以让你获得计算机视觉不同领域的知识，大家可以针对自己的研究方向选择具体的计算机视觉领域进行学习。视觉各个领域经典代表性项目列表如下: 
+看论文可能很难，但是这种方法可以让你获得计算机视觉不同领域的知识，大家可以针对自己的研究方向选择具体的计算机视觉领域进行学习。
 
 ##### 网络架构
 
