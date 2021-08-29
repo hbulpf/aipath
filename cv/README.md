@@ -2,13 +2,13 @@
 
 ## 应用分类
 
-计算机视觉应用可以分为：**图片识别(Image Classification)、目标检测(Object Detection)、语义分割(Semantic Segmentation) 、视频理解(Video Understanding)和图片生成(Image Generation)** 等。下面对其进行详细介绍。
+计算机视觉应用可以分为：**图像分类(Image Classification)、目标检测(Object Detection)、语义分割(Semantic Segmentation) 、视频理解(Video Understanding)和图片生成(Image Generation)** 等。下面对其进行详细介绍。
 
-**图片识别(Image Classification)** 是常见的分类问题。神经网络的输入为图片数据，输出值为当前样本属于每个类别的概率，通常选取概率值最大的类别作为样本的预测类别。图片识别是最早成功应用深度学习的任务之一，经典的网络模型有 VGG 系列、Inception 系列、ResNet 系列等。
+**图像分类(Image Classification)** 是常见的分类问题。神经网络的输入为图片数据，输出值为当前样本属于每个类别的概率，通常选取概率值最大的类别作为样本的预测类别。图片识别是最早成功应用深度学习的任务之一，经典的网络模型有 VGG 系列、Inception 系列、ResNet 系列等。
 
 ![img](pics/cv1.png)
 
-**目标 检测(Object Detection)**是指通过算法自动检测出图片中常见物体的大致位置，通常用边界框(Bounding box)表示，并分类出边界框中物体的类别信息。常见的目标检测算法有CNN，Fast RCNN，Faster RCNN，Mask RCNN，SSD,YOLO 系列等。
+**目标检测(Object Detection)**是指通过算法自动检测出图片中常见物体的大致位置，通常用边界框(Bounding box)表示，并分类出边界框中物体的类别信息。常见的目标检测算法有CNN，Fast RCNN，Faster RCNN，Mask RCNN，SSD,YOLO 系列等。
 
 ![img](pics/cv2.png)
 
@@ -46,6 +46,12 @@
 
 - CS231n是非常好的在线教学课程，涵盖了计算机视觉的所有必要基础，是YouTube的在线视频。这门课程还包含了课后练习，对于新手来说，可以先不用完成练习。（免费） http://cs231n.stanford.edu/
 - Fast.ai是我们应该学习的另一门课程。fast.ai是pytorch之上的高级框架，但是它们过于频繁地更改其API，并且缺乏文档使其使用不方便。但是，花些时间看这门课程的理论和有用的技巧是不错的选择。（免费） https://course.fast.ai/
+- 跟李沐学AI
+  - 课程主页: https://courses.d2l.ai/zh-v2/
+  - 教材: https://zh-v2.d2l.ai/
+  - b站: https://space.bilibili.com/1567748478/
+- 唐宇迪博士的课程
+  - [b站](https://search.bilibili.com/all?keyword=%E5%94%90%E5%AE%87%E8%BF%AA&from_source=webtop_search&spm_id_from=333.851)
 
 #### 文章和代码
 
