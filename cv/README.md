@@ -18,13 +18,20 @@
 
 在开始学习计算机视觉之前，先来了解有关机器学习和python基础知识。
 
-### 框架（Frameworks）
+### 深度学习框架
 
-虽然不必从一开始就去考虑选择何种框架，但是实践应用新的知识是必要的。
-
-对应框架并没有太多选择，主要为：**pytorch**或**keras**（TensorFlow）。Pytorch可能需要编写更多代码，但在返回方面具有很大的灵活性，因此我们可以先学习如何使用pytorch。此外，大多数深度学习研究人员也普遍使用pytoch。
+框架主要为：**pytorch**或**keras**（TensorFlow）。Pytorch可能需要编写更多代码，但在返回方面具有很大的灵活性，因此我们可以先学习如何使用pytorch。此外，大多数深度学习研究人员也普遍使用pytorch。
 
 **Albumentation**(图像增强库)和 **catalyst** (框架，pytorch顶部的高级API)在我们学习计算机视觉的过长中也是很常用的工具，我们也可以先学习和使用它们，尤其是第一个。
+
+#### 框架汇总
+
+- [TensorFlow](https://tensorflow.google.cn/)
+- [Pytorch](https://pytorch.org/)
+  - [PyTorch中文教程](https://www.pytorch123.com/)
+- [Mindspore](https://www.mindspore.cn/)
+- [PaddlePaddle](https://www.paddlepaddle.org.cn/)
+
 
 ### 硬件
 
