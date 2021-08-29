@@ -1,4 +1,5 @@
 # 深度学习
+> 深度学习: 用更深的网络模型去学习。
 
 ## 学习
 1. [TensorFlow](https://tensorflow.google.cn/)

@@ -1,11 +1,8 @@
-
-
 # 机器学习
 
 - [机器学习](ml/README.md)
   - [线性回归基本定义](ml/linear_base.md)
   - [一元线性回归](ml/linear_regression.md)
-
 
 # 深度学习
 
@@ -19,16 +16,16 @@
   - [自动光学检测](cv/aoi.md)
   - [机器视觉应用场景](cv/机器视觉应用场景.md)
   - [图像标注](cv/图像标注.md)
-  - [Paper](cv/paper/README.md)
-    - [CNN](cv/paper/cnn.md)
-    - [Yolo系列](cv/paper/yolox.md)
-    - [SSD](cv/paper/ssd.md)
-    - [VGG](cv/paper/vgg.md)
-    - [Resnet](cv/paper/resnet.md)
-    - [U-Net](cv/paper/unet.md)
-    - [GAN](cv/paper/gan.md)
+- [Paper](cv/paper/README.md)
+  - [CNN](cv/paper/cnn.md)
+  - [Yolo系列](cv/paper/yolox.md)
+  - [SSD](cv/paper/ssd.md)
+  - [VGG](cv/paper/vgg.md)
+  - [Resnet](cv/paper/resnet.md)
+  - [U-Net](cv/paper/unet.md)
+  - [GAN](cv/paper/gan.md)
 
-# 框架与平台
+# 平台与安装
 
 - [AI框架](frames/README.md)
   - [Tensorflow](frames/tesorflow/README.md)
@@ -39,7 +36,9 @@
   - [keras](frames/keras/README.md)
   - [nvidia_cuda](frames/nvidia_cuda/README.md)
 
-- [AI平台](plateform/README.md)
+- [平台与工具](plateform/README.md)
+  - [GPU](plateform/gpu_selection.md)
+  - [NPU](plateform/npu_selection.md)
   - [百度飞桨](plateform/paddlepaddle.md)
   - [华为昇腾](plateform/ascend.md)
 
