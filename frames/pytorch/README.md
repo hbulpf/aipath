@@ -1,4 +1,4 @@
-**使用 pytorch**
+# 安装 pytorch
 
 ### 1. 在 python3.6 下使用 pytorch
 贴入以下代码即可

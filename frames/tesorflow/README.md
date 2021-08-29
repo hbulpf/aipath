@@ -1,12 +1,12 @@
-# python 3.6 下的 Tensorflow
+# 使用Tensorflow
 
-# 1. 在 python3.6 下使用 Tensorflow
+## 1. 在 python3.6 下使用 Tensorflow
 ```
 export PATH="/opt/anaconda3/bin:$PATH"
 source activate py36 
 ```
 
-# 2. 安装 Tensorflow过程
+## 2. 安装 Tensorflow
 ### 1. 获得python3.6
 ```
 export PATH="/opt/anaconda3/bin:$PATH"

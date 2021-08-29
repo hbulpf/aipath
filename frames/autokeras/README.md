@@ -1,13 +1,14 @@
-**python 3.6 下 的 autokeras** 
+# AutoKeras
 > autokeras 依赖于 pytorch
 
-# 1. 使用 autokeras
-贴入以下代码即可
+## 使用autokeras 0.4.0
+
+导入环境变量
 ```
 export PATH="/opt/anaconda3/bin:$PATH"
 source activate py36 
 ```
-# 2. 安装 autokeras 0.4.0
+
 1. 激活 py36 环境
     ```
     export PATH="/opt/anaconda3/bin:$PATH"

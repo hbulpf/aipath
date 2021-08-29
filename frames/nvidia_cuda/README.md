@@ -1,5 +1,7 @@
-# 安装
+# CentOS7 安装CUDA
+
 >以下说明适用于 CentOS 7，仅在 CentOS 7.5 上测试
+
 ## 一、安装 Nvidia 显卡驱动
 1. 装前准备工作：运行脚本 [0_nvidia_pre.sh](./0_nvidia_pre.sh) 即可   `sh ./0_nvidia_pre.sh`
 2. 安装 Nvidia 显卡驱动，运行脚本 [1_nvidia_install.sh](./1_nvidia_install.sh) 即可 `sh ./1_nvidia_install.sh`
@@ -110,8 +112,3 @@ sh NVIDIA-Linux-x86_64-396.44_forK20.run --uninstall  # NVIDIA-Linux-x86_64-396.
 1. GPU版Tensorflow安装 centos7 64位 . https://blog.csdn.net/wang2008start/article/details/71319970
 1. 下载 cudnn . https://developer.nvidia.com/cudnn
 1. Tensorflow GPU支持 . https://www.tensorflow.org/install/source#tested_source_configurations
-
-
-------------
-@504实验室<br>
-友情贡献： @[`鹏飞`](https://github.com/RunAtWorld)   @[`加伟`](https://github.com/1846263444)   
