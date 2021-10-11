@@ -15,6 +15,7 @@
   - [图像处理100问](cv/图像处理100问.md)
   - [自动光学检测](cv/aoi.md)
   - [机器视觉应用场景](cv/机器视觉应用场景.md)
+  - [机器视觉产业链](cv/机器视觉产业链.md)
   - [图像标注](cv/图像标注.md)
 - [Paper](cv/paper/README.md)
   - [CNN](cv/paper/cnn.md)
