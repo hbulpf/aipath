@@ -17,6 +17,7 @@
   - [机器视觉应用场景](cv/机器视觉应用场景.md)
   - [机器视觉产业链](cv/机器视觉产业链.md)
   - [图像标注](cv/图像标注.md)
+  - [计算偏移旋转矩阵](cv/计算偏移旋转矩阵.md)
 - [Paper](cv/paper/README.md)
   - [CNN](cv/paper/cnn.md)
   - [Yolo系列](cv/paper/yolox.md)
