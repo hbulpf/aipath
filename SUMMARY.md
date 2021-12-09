@@ -13,7 +13,7 @@
 # OpenCv
 
 - [OpenCV学习](cv/opencv/README.md)
-  - 简介
+## 简介
      - [OpenCV-Python 教程简介](cv/opencv/opencv4.0.0_py/4.0.0/1.1-tutorial_py_intro.md)
      - [在 Ubuntu 系统中安装 OpenCV—Python](cv/opencv/opencv4.0.0_py/4.0.0/1.2-tutorial_py_setup_in_ubuntu.md)
   - GUI 功能
@@ -26,7 +26,7 @@
      - [图像基本操作](cv/opencv/opencv4.0.0_py/4.0.0/3.1-tutorial_py_basic_ops.md)
      - [图像的算术运算](cv/opencv/opencv4.0.0_py/4.0.0/3.2-tutorial_py_image_arithmetics.md)
      - [性能测量和改进技术](cv/opencv/opencv4.0.0_py/4.0.0/3.3-tutorial_py_optimization.md)
-  - 4. 图像处理
+  - 图像处理
      - [更改颜色空间](cv/opencv/opencv4.0.0_py/4.0.0/4.1-tutorial_py_colorspaces.md)
      - [图像的几何变换](cv/opencv/opencv4.0.0_py/4.0.0/4.2-tutorial_py_geometric_transformations.md)
      - [图像阈值](cv/opencv/opencv4.0.0_py/4.0.0/4.3-tutorial_py_thresholding.md)
@@ -43,7 +43,7 @@
      - [霍夫圆变换](cv/opencv/opencv4.0.0_py/4.0.0/4.14-tutorial_py_hough_circle.md)
      - [基于分水岭算法的图像分割](cv/opencv/opencv4.0.0_py/4.0.0/4.15-tutorial_py_watershed_segmentation.md)
      - [基于GrabCut算法的交互式前景提取](cv/opencv/opencv4.0.0_py/4.0.0/4.16-tutorial_py_grabcut.md)
-  - 5. 特征检测和描述
+  - 特征检测和描述
      - [理解特征](cv/opencv/opencv4.0.0_py/4.0.0/5.1-tutorial_py_features_meaning.md)
      - [哈里斯角点检测](cv/opencv/opencv4.0.0_py/4.0.0/5.2-tutorial_py_harris.md)
      - [Shi-Tomasi角落探测器＆amp;跟踪的好功能](cv/opencv/opencv4.0.0_py/4.0.0/5.3-tutorial_py_shi_tomasi.md)
@@ -54,16 +54,16 @@
      - [ORB（定向快速和轮换简介）](cv/opencv/opencv4.0.0_py/4.0.0/5.8-tutorial_py_orb.md)
      - [特征匹配](cv/opencv/opencv4.0.0_py/4.0.0/5.9-tutorial_py_matcher.md)
      - [特征匹配- Homography查找对象](cv/opencv/opencv4.0.0_py/4.0.0/5.10-tutorial_py_feature_homography.md)
-  - 6. 视频分析
+  - 视频分析
      - [Meanshift 和 Camshift](cv/opencv/opencv4.0.0_py/4.0.0/6.1-tutorial_py_meanshift.md)
      - [光流](cv/opencv/opencv4.0.0_py/4.0.0/6.2-tutorial_py_lucas_kanade.md)
      - [背景减法](cv/opencv/opencv4.0.0_py/4.0.0/6.3-tutorial_py_bg_subtraction.md)
-  - 7. 相机校准和 3D 重建
+  - 相机校准和 3D 重建
      - [相机校准](cv/opencv/opencv4.0.0_py/4.0.0/7.1-tutorial_py_calibration.md)
      - [姿势估计](cv/opencv/opencv4.0.0_py/4.0.0/7.2-tutorial_py_pose.md)
      - [线性几何](cv/opencv/opencv4.0.0_py/4.0.0/7.3-tutorial_py_epipolar_geometry.md)
      - [立体图像的深度图](cv/opencv/opencv4.0.0_py/4.0.0/7.4-tutorial_py_depthmap.md)
-  - 8. 机器学习
+  - 机器学习
      - [K-最近邻算法](cv/opencv/opencv4.0.0_py/4.0.0/8.1-tutorial_py_knn_index.md)
      - [理解 K-最近邻算法](cv/opencv/opencv4.0.0_py/4.0.0/8.1.1-tutorial_py_knn_understanding.md)
      - [使用 kNN 进行手写识别](cv/opencv/opencv4.0.0_py/4.0.0/8.1.2-tutorial_py_knn_opencv.md)
@@ -73,14 +73,12 @@
      - [K-Means 聚类](cv/opencv/opencv4.0.0_py/4.0.0/8.3-tutorial_py_kmeans_index.md)
      - [理解 K-Means 聚类](cv/opencv/opencv4.0.0_py/4.0.0/8.3.1-tutorial_py_kmeans_understanding.md)
      - [OpenCV 中的 K-Means 聚类](cv/opencv/opencv4.0.0_py/4.0.0/8.3.2-tutorial_py_kmeans_opencv.md)
-  - 9. 计算摄影
+  - 计算摄影
      - [图像去噪](cv/opencv/opencv4.0.0_py/4.0.0/9.1-tutorial_py_non_local_means.md)
      - [图像修复](cv/opencv/opencv4.0.0_py/4.0.0/9.2-tutorial_py_inpainting.md)
      - [高动态范围（HDR）](cv/opencv/opencv4.0.0_py/4.0.0/9.3-tutorial_py_hdr.md)
-  - 10. 目标检测
-     - [使用 Haar Cascades 进行人脸检测](cv/opencv/opencv4.0.0_py/4.0.0/10.1-tutorial_py_face_detection.md)
-  - 11. OpenCV-Python 绑定
-     - [如何生成 OpenCV-Python 绑定？](cv/opencv/opencv4.0.0_py/4.0.0/11.1-tutorial_py_OpenCV-Python.md)
+  - [人脸目标检测](cv/opencv/opencv4.0.0_py/4.0.0/10.1-tutorial_py_face_detection.md)
+  - [OpenCV-Python 绑定](cv/opencv/opencv4.0.0_py/4.0.0/11.1-tutorial_py_OpenCV-Python.md)
 
 
 # 计算机视觉
