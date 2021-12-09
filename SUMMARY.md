@@ -13,16 +13,16 @@
 # OpenCv
 
 - [OpenCV学习](cv/opencv/README.md)
-  - 1. 简介
+  - 简介
      - [OpenCV-Python 教程简介](cv/opencv/opencv4.0.0_py/4.0.0/1.1-tutorial_py_intro.md)
      - [在 Ubuntu 系统中安装 OpenCV—Python](cv/opencv/opencv4.0.0_py/4.0.0/1.2-tutorial_py_setup_in_ubuntu.md)
-  - 2. GUI 功能
+  - GUI 功能
      - [图像入门](cv/opencv/opencv4.0.0_py/4.0.0/2.1-tutorial_py_image_display.md)
      - [视频入门](cv/opencv/opencv4.0.0_py/4.0.0/2.2-tutorial_py_video_display.md)
      - [绘图功能](cv/opencv/opencv4.0.0_py/4.0.0/2.3-tutorial_py_drawing_functions.md)
      - [鼠标作为画笔](cv/opencv/opencv4.0.0_py/4.0.0/2.4-tutorial_py_mouse_handling.md)
      - [作为调色板的跟踪栏](cv/opencv/opencv4.0.0_py/4.0.0/2.5-tutorial_py_trackbar.md)
-  - 3. 核心操作
+  - 核心操作
      - [图像基本操作](cv/opencv/opencv4.0.0_py/4.0.0/3.1-tutorial_py_basic_ops.md)
      - [图像的算术运算](cv/opencv/opencv4.0.0_py/4.0.0/3.2-tutorial_py_image_arithmetics.md)
      - [性能测量和改进技术](cv/opencv/opencv4.0.0_py/4.0.0/3.3-tutorial_py_optimization.md)
