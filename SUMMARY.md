@@ -14,8 +14,8 @@
 
 - [OpenCV学习](cv/opencv/README.md)
 ## 简介
-     - [OpenCV-Python 教程简介](cv/opencv/opencv4.0.0_py/4.0.0/1.1-tutorial_py_intro.md)
-     - [在 Ubuntu 系统中安装 OpenCV—Python](cv/opencv/opencv4.0.0_py/4.0.0/1.2-tutorial_py_setup_in_ubuntu.md)
+  - [OpenCV-Python 教程简介](cv/opencv/opencv4.0.0_py/4.0.0/1.1-tutorial_py_intro.md)
+  - [在 Ubuntu 系统中安装 OpenCV—Python](cv/opencv/opencv4.0.0_py/4.0.0/1.2-tutorial_py_setup_in_ubuntu.md)
   - GUI 功能
      - [图像入门](cv/opencv/opencv4.0.0_py/4.0.0/2.1-tutorial_py_image_display.md)
      - [视频入门](cv/opencv/opencv4.0.0_py/4.0.0/2.2-tutorial_py_video_display.md)
@@ -84,6 +84,7 @@
 # 计算机视觉
 
 - [计算机视觉](cv/README.md)
+  - [Halcon](cv/mv/halcon.md)
   - [图像处理100问](cv/图像处理100问.md)
   - [自动光学检测](cv/aoi.md)
   - [机器视觉应用场景](cv/机器视觉应用场景.md)
