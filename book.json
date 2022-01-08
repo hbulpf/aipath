@@ -13,7 +13,7 @@
         "readme": "README.md"
     },
     "theme-default": {
-        "showLevel": true
+        "showLevel": false
     },
     "plugins": [
         "mathjax@^1.0.1",
