@@ -16,7 +16,6 @@
         "showLevel": false
     },
     "plugins": [
-        "mathjax",
         "splitter",
         "github",
         "copy-code-button",
