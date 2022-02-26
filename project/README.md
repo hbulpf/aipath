@@ -21,3 +21,9 @@
 8. 财政收入影响因素分析与预测模型
 9. 基于基站定位数据的商圈分析
 10. 电商商品评论情感分析
+
+
+## 开源社区项目
+
+1. [百度飞桨](https://www.paddlepaddle.org.cn/documentation/docs/zh/guides/index_cn.html)
+2. [昇腾AI应用案例](https://www.hiascend.com/zh/developer/case-studies)
