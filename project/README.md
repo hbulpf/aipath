@@ -2,9 +2,37 @@
 
 ## AI项目
 
+### CV
+
+#### 检测
+
+1. 口罩识别
+2. 安全帽识别
+3. 高速公路车辆火灾识别
+4. 无人机遥感旋转目标检测
+5. 车道线检测
+6. 行人属性识别
+7. 3D目标检测
+8. 行人重识别
+
+#### 分类
 1. [人脸识别](face_detection/README.md)
-2. [推荐系统](recommendation_sys/README.md)
-   1. [音乐推荐](recommendation_sys/music_recommendation/environments.md)
+2. [垃圾分类](garbage_classification/README.md)
+
+
+#### 分割
+
+#### OCR
+
+
+#### 综合
+
+1. 考勤打开一体机开发
+
+### 推荐
+[推荐系统](recommendation_sys/README.md)
+
+1. [音乐推荐](recommendation_sys/music_recommendation/environments.md)
 
 ## 数据挖掘实战项目
 
