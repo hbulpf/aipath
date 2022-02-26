@@ -1,19 +1,26 @@
-# 机器学习
+# ML与DL
 
 - [机器学习](ml/README.md)
   - [线性回归基本定义](ml/linear_base.md)
   - [一元线性回归](ml/linear_regression.md)
-
-# 深度学习
-
 - [深度学习](dl/README.md)
-- [深度学习四大名著](dl/深度学习四大名著.md)
+  - [深度学习四大名著](dl/深度学习四大名著.md)
 - [卡尔曼滤波](dl/KalmanFilter.md)
 
-# OpenCv
+# 计算机视觉
+
+- [计算机视觉介绍](cv/README.md)
+  - [图像处理100问](cv/图像处理100问.md)
+  - [图像标注](cv/图像标注.md)
+
+- [机器视觉](cv/README.md)
+  - [Halcon](cv/mv/halcon.md)
+  - [自动光学检测](cv/mv/aoi.md)
+  - [机器视觉应用场景](cv/mv/机器视觉应用场景.md)
+  - [机器视觉产业链](cv/mv/机器视觉产业链.md)
+  - [计算偏移旋转矩阵](cv/mv/计算偏移旋转矩阵.md)
 
 - [OpenCV学习](cv/opencv/README.md)
-## 简介
   - [OpenCV-Python 教程简介](cv/opencv/opencv4.0.0_py/4.0.0/1.1-tutorial_py_intro.md)
   - [在 Ubuntu 系统中安装 OpenCV—Python](cv/opencv/opencv4.0.0_py/4.0.0/1.2-tutorial_py_setup_in_ubuntu.md)
   - GUI 功能
@@ -80,17 +87,6 @@
   - [人脸目标检测](cv/opencv/opencv4.0.0_py/4.0.0/10.1-tutorial_py_face_detection.md)
   - [OpenCV-Python 绑定](cv/opencv/opencv4.0.0_py/4.0.0/11.1-tutorial_py_OpenCV-Python.md)
 
-
-# 计算机视觉
-
-- [计算机视觉](cv/README.md)
-  - [Halcon](cv/mv/halcon.md)
-  - [图像处理100问](cv/图像处理100问.md)
-  - [自动光学检测](cv/aoi.md)
-  - [机器视觉应用场景](cv/机器视觉应用场景.md)
-  - [机器视觉产业链](cv/机器视觉产业链.md)
-  - [图像标注](cv/图像标注.md)
-  - [计算偏移旋转矩阵](cv/计算偏移旋转矩阵.md)
 - [Paper](cv/paper/README.md)
   - [CNN](cv/paper/cnn.md)
   - [Yolo系列](cv/paper/yolox.md)
