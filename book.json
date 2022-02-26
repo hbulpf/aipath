@@ -16,7 +16,7 @@
         "showLevel": false
     },
     "plugins": [
-        "mathjax@^1.0.1",
+        "mathjax",
         "splitter",
         "github",
         "copy-code-button",
