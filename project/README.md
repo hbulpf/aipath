@@ -1,4 +1,12 @@
-# 数据挖掘实战项目
+# AI与数据项目
+
+## AI项目
+
+1. [人脸识别](face_detection/README.md)
+2. [推荐系统](recommendation_sys/README.md)
+   1. [音乐推荐](recommendation_sys/music_recommendation/environments.md)
+
+## 数据挖掘实战项目
 
 > 本文项目来源于 《Python数据分析与挖掘实战》 · 张良钧
 > 项目来源于[泰迪科技](http://www.tipdm.com/dldsjyy/index.jhtml) ，[泰迪云课堂数据集下载](https://edu.tipdm.org/course/explore/python?filter%5Btype%5D=all&filter%5Bprice%5D=all&filter%5BcurrentLevelId%5D=all&orderBy=recommendedSeq)

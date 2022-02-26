@@ -130,7 +130,10 @@
 
 # 项目
 
-- [音乐推荐系统环境搭建](ml/recommendation_sys/music_recommendation/environments.md)
+- [AI与数据项目](project/README.md)
+  - [推荐系统](project/recommendation_sys/README.md)
+    - [音乐推荐](project/recommendation_sys/music_recommendation/environments.md)
+  - [人脸识别](project/face_detection/README.md)
 - [八斗学院项目](project/八斗学院.md)
 
 # 机器人
