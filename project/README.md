@@ -53,5 +53,5 @@
 
 ## 开源社区项目
 
-1. [百度飞桨](https://www.paddlepaddle.org.cn/documentation/docs/zh/guides/index_cn.html)
+1. [百度飞桨应用案例](https://www.paddlepaddle.org.cn/customercase) | [应用实践](https://www.paddlepaddle.org.cn/documentation/docs/zh/practices/index_cn.html)
 2. [昇腾AI应用案例](https://www.hiascend.com/zh/developer/case-studies)
