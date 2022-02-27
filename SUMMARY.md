@@ -114,14 +114,11 @@
   - [百度飞桨](plateform/paddlepaddle.md)
   - [华为昇腾](plateform/ascend.md)
 
-# 热门课题
+# 课题与数据集
 - [热门课题](hot/README.md)
   - [2018 年最流行的 AI 技术](hot/hot_2018.md)
   - [2019 年最流行的 AI 技术](hot/hot_2019.md)
   - [2020 年最流行的 AI 技术](hot/hot_2020.md)
-
-
-# 数据集
 - [数据集](datasets/README.md)
   - [机器学习数据集大全](datasets/机器学习数据集大全.md)
 
@@ -135,3 +132,11 @@
 
 # 机器人
 - [机器人](robot/README.md)
+
+# 其他
+
+- [成长路线](others/ai_path.md)
+- [基础问题](others/basic_questions.md)
+- [资源](others/ai_resource.md)
+- [书籍](others/ai_books.md)
+

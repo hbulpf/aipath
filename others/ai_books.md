@@ -16,8 +16,6 @@
 
 推荐语：这本书比较基础，清晰简洁地解释了机器学习概念，在本科生和研究生中广受欢迎。而且这本书对数学的要求不高。
 
-
-
 **2. 《The Elements of Statistical Learning》**
 
 书籍地址：https://web.stanford.edu/~hastie/ElemStatLearn/printings/ESLII_print12.pdf
@@ -27,8 +25,6 @@
 推荐人：MentorCruise 数据科学讲师
 
 推荐语：对于想要深入了解理论的同学，我推荐这本书。这本书的作者和《An Introduction to Statistical Learning》相同，但这本书更加深入，可以说是该领域的「圣经」了，而且可以免费获取。
-
-
 
 **3. 《Pattern Recognition and Machine Learning》**
 
