@@ -68,13 +68,11 @@ def funtion():
 
 从**技术层面**来看（如下图），现在所说的人工智能技术基本上就是**机器学习**方面的（也就是，机器学习技术是我们入门AI的核心技术）。
 
-> AI除了机器学习，其他方面的如知识库、专家系统等技术较为没落。关于人工智能的发展历程，可以看看我之前一篇文章**[人工智能简史](https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/miTIbd9PlgdV5cw3SrrH_A)**。
+> AI除了机器学习，其他方面的如知识库、专家系统等技术较为没落。关于人工智能的发展历程，可以看看我之前一篇文章**[人工智能简史](https://mp.weixin.qq.com/s/miTIbd9PlgdV5cw3SrrH_A)**。
 > 机器学习是指非显式的计算机程序可以从数据中学习，以此提高处理任务的水平。机器学习常见的任务有分类任务（如通过逻辑回归模型判断邮件是否为垃圾邮件类）、回归预测任务（线性回归模型预测房价）等等。
 > 深度学习是机器学习的一个子方向，是当下的热门，它通过搭建深层的神经网络模型以处理任务。
 
-![img](pics/v2-32c18d79f58fc9e9a7dba2b2acf04855_720w.jpg)
-
-
+![img](ai_path/v2-32c18d79f58fc9e9a7dba2b2acf04855_720w.jpg)
 
 从**应用领域**上看，人工智能在众多的应用领域上面都有一定的发展，有语言识别、自然语言处理、图像识别、数据挖掘、推荐系统、智能风控、机器人等方面。值得注意的的是，不同应用领域上，从技术层面是比较一致，但结合到实际应用场景，所需要的业务知识、算法、工程上面的要求，差别还是相当大的。回到应用领域的选择，可以结合技术现在的发展情况、自己的兴趣领域再做判断。
 
@@ -106,21 +104,21 @@ def funtion():
 
 以下资源只是一些个人的偏好推荐，挑一两种适合自己的资源学习就可以，不用全部都学浪费精力。如果都觉得不合适，按照自己的学习方式即可。
 
-1、【Python入门书】首推Python经典书**[《Python编程从入门到实践.pdf(https://github.com/aialgorithm/AiPy/》](https://link.zhihu.com/?target=https%3A//github.com/aialgorithm/AiPy/tree/master/Python)**，知识点通俗易懂，而且结合了项目实践，很适合初学者。注：Python在爬虫、web开发、游戏开发等方向也有应用，推荐本书主要学习下Python语法，而书后面的项目实战像有游戏开发\web开发，和机器学习关系不大，可以略过\自行了解下就好。
+1、【Python入门书】首推Python经典书**[《Python编程从入门到实践.pdf(https://github.com/aialgorithm/AiPy/》](https://github.com/aialgorithm/AiPy/tree/master/Python)**，知识点通俗易懂，而且结合了项目实践，很适合初学者。注：Python在爬虫、web开发、游戏开发等方向也有应用，推荐本书主要学习下Python语法，而书后面的项目实战像有游戏开发\web开发，和机器学习关系不大，可以略过\自行了解下就好。
 
-2、【Python入门教程】**[廖雪峰的Python在线学习教程](https://link.zhihu.com/?target=https%3A//www.liaoxuefeng.com/wiki/1016959663602400)**，一个很大的特色是可以直接在线运行Python代码。
+2、【Python入门教程】**[廖雪峰的Python在线学习教程](https://www.liaoxuefeng.com/wiki/1016959663602400)**，一个很大的特色是可以直接在线运行Python代码。
 
-3、【Python入门视频】如果看书过于枯燥，可以结合视频学习，Python入门学习报培训班学习有点浪费，可以直接网易云课堂、Bilibili搜索相关的Python学习视频。我之前是看**[小甲鱼](https://link.zhihu.com/?target=https%3A//study.163.com/course/introduction/378003.htm)**零基础入门学习Python课程，边看边敲敲代码，觉得还不错。
+3、【Python入门视频】如果看书过于枯燥，可以结合视频学习，Python入门学习报培训班学习有点浪费，可以直接网易云课堂、Bilibili搜索相关的Python学习视频。我之前是看**[小甲鱼](https://study.163.com/course/introduction/378003.htm)**零基础入门学习Python课程，边看边敲敲代码，觉得还不错。
 
 4、【Python机器学习库】学习完Python语法，再学习了解下Python上现成的机器学习库（模块包），了解基本功能学会调用它们（熟练掌握它们，主要还是要结合后面项目边学边实践才比较有效的。），一个初级的算法工程师（调包侠）基本就练成了。
 
-重要的机器学习库有： pandas 数据分析、numpy 数值计算库、matplotlib可视化工具，推荐**[《利用pandas数据分析》](https://link.zhihu.com/?target=https%3A//github.com/aialgorithm/AiPy/tree/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90)**有涵盖了这几部分内容。
+重要的机器学习库有： pandas 数据分析、numpy 数值计算库、matplotlib可视化工具，推荐**[《利用pandas数据分析》](https://github.com/aialgorithm/AiPy/tree/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90)**有涵盖了这几部分内容。
 
-scikit-learn 包含机器学习建模工具及算法，可以了解下官方文档[https://scikit-learn.org.cn](https://link.zhihu.com/?target=https%3A//scikit-learn.org.cn)。
+scikit-learn 包含机器学习建模工具及算法，可以了解下官方文档[https://scikit-learn.org.cn](https://scikit-learn.org.cn)。
 
-用于搭建深度学习的神经网络模型的库有：keras、tensorflow、Pytorch等，其中keras更为简单易用，可以参考Keras官方文档[https://keras.io/zh](https://link.zhihu.com/?target=https%3A//keras.io/zh)，以及Keras之父写的**[《Python深度学习》](https://link.zhihu.com/?target=https%3A//github.com/aialgorithm/AiPy/tree/master/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0)**
+用于搭建深度学习的神经网络模型的库有：keras、tensorflow、Pytorch等，其中keras更为简单易用，可以参考Keras官方文档[https://keras.io/zh](https://keras.io/zh)，以及Keras之父写的**[《Python深度学习》](https://github.com/aialgorithm/AiPy/tree/master/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0)**
 
-5、【Python进阶书】**[《Python Cookbook》、《流畅的Python》](https://link.zhihu.com/?target=https%3A//github.com/aialgorithm/AiPy/tree/master/Python)** 这两本内容难度有提升，适合Python语法的进阶。
+5、【Python进阶书】**[《Python Cookbook》、《流畅的Python》](https://github.com/aialgorithm/AiPy/tree/master/Python)** 这两本内容难度有提升，适合Python语法的进阶。
 
 ### 2.2.2 数学方面
 
@@ -132,7 +130,7 @@ scikit-learn 包含机器学习建模工具及算法，可以了解下官方文�
 
 【数学基础知识】推荐黄博翻译整理的机器学习相关的数学基础知识，内容简要，还是挺不错的。
 
-**[高等数学](https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s%3F__biz%3DMzIwODI2NDkxNQ%3D%3D%26mid%3D2247485707%26idx%3D3%26sn%3D7d785108792eb64126812de876245387%26chksm%3D970482b7a0730ba1099dcc3e2b05342907c0057d3d61eb125aa99c8649f186a49cad9e8a4660%26scene%3D21%23wechat_redirect)** **[线性代数](https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s%3F__biz%3DMzIwODI2NDkxNQ%3D%3D%26mid%3D2247485221%26idx%3D2%26sn%3D105073d243e1d39e10c7ad3dd22043c8%26chksm%3D97048c99a073058fd51d33990ed476ff34acbe22aa7f52cdcd396f2283b22312feafbffb0e5b%26scene%3D21%23wechat_redirect)** **[概率与数理统计](https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s%3F__biz%3DMzIwODI2NDkxNQ%3D%3D%26mid%3D2247485293%26idx%3D2%26sn%3D2650e61d6268f667333e86cb52ab1df1%26chksm%3D97048cd1a07305c73229a0b3daf887ac4960fcbd3f378bbc0b40b9b38203fca387b29218fcbd%26scene%3D21%23wechat_redirect)**
+**[高等数学](https://mp.weixin.qq.com/s%3F__biz%3DMzIwODI2NDkxNQ%3D%3D%26mid%3D2247485707%26idx%3D3%26sn%3D7d785108792eb64126812de876245387%26chksm%3D970482b7a0730ba1099dcc3e2b05342907c0057d3d61eb125aa99c8649f186a49cad9e8a4660%26scene%3D21%23wechat_redirect)** **[线性代数](https://mp.weixin.qq.com/s%3F__biz%3DMzIwODI2NDkxNQ%3D%3D%26mid%3D2247485221%26idx%3D2%26sn%3D105073d243e1d39e10c7ad3dd22043c8%26chksm%3D97048c99a073058fd51d33990ed476ff34acbe22aa7f52cdcd396f2283b22312feafbffb0e5b%26scene%3D21%23wechat_redirect)** **[概率与数理统计](https://mp.weixin.qq.com/s%3F__biz%3DMzIwODI2NDkxNQ%3D%3D%26mid%3D2247485293%26idx%3D2%26sn%3D2650e61d6268f667333e86cb52ab1df1%26chksm%3D97048cd1a07305c73229a0b3daf887ac4960fcbd3f378bbc0b40b9b38203fca387b29218fcbd%26scene%3D21%23wechat_redirect)**
 
 ### 2.2.3 工具准备
 
@@ -142,13 +140,13 @@ scikit-learn 包含机器学习建模工具及算法，可以了解下官方文�
 
 2、翻译：AI领域最新的研究成果、论文基本都是英文的，而如果英文阅读比较一般，可以备个有道词典、wps文档翻译。
 
-3、Python编辑器（Python环境）：首推JupyterLab，JupyterLab很方便数据分析操作，可以单元格中逐步运行代码验证结果。建议直接下载安装个[anaconda](https://link.zhihu.com/?target=https%3A//www.anaconda.com/products/individual)，里面都有。
+3、Python编辑器（Python环境）：首推JupyterLab，JupyterLab很方便数据分析操作，可以单元格中逐步运行代码验证结果。建议直接下载安装个[anaconda](https://www.anaconda.com/products/individual)，里面都有。
 
 ## 2.3 机器学习\深度学习入门
 
 深度学习是机器学习的子分支，整体的内容是比较一致的，与传统机器学习有些差异的地方（如特征生成、模型定义方面）， 因此两者可以分开学习。都学习的话，建议可以先学机器学习再学深度学习。
 
-机器学习\深度学习的内容可以分为两部分，**一部分是算法原理的理解**，如神经网络模型正向反向传播原理、SVM原理、GBDT原理等等，这部分内容的理解相对较难，学习周期较长。**另一部分是算法工程实现的知识**，如现实问题的理解、如何清洗数据、生成特征、选择模型及评估，具体可以看我之前的文章**[《一文全览机器学习建模流程（Python代码）》](https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/_YTpJ9hCWBfwfuDVPQKPnw)**与**[《一文搞定深度学习全流程》](https://zhuanlan.zhihu.com/p/432825733)**，这部分是比较通用的一套操作流程，学习周期比较短且容易看到实际成果。
+机器学习\深度学习的内容可以分为两部分，**一部分是算法原理的理解**，如神经网络模型正向反向传播原理、SVM原理、GBDT原理等等，这部分内容的理解相对较难，学习周期较长。**另一部分是算法工程实现的知识**，如现实问题的理解、如何清洗数据、生成特征、选择模型及评估，具体可以看我之前的文章**[《一文全览机器学习建模流程（Python代码）》](https://mp.weixin.qq.com/s/_YTpJ9hCWBfwfuDVPQKPnw)**与**[《一文搞定深度学习全流程》](https://zhuanlan.zhihu.com/p/432825733)**，这部分是比较通用的一套操作流程，学习周期比较短且容易看到实际成果。
 
 对于初学者的建议，**可以“先知其然，再知其所以然”，跟着课程\书学习，明白大致的算法原理及工程上是如何做的。再用简单的算法整个流程走一遍，结合实践过程中不断的比较和尝试各种算法，更容易搞透算法原理，而且这样可以避免云里雾里地学习各种算法原理。**
 
@@ -156,29 +154,29 @@ scikit-learn 包含机器学习建模工具及算法，可以了解下官方文�
 
 - **建议资源**
 
-1、【机器学习视频】**[《吴恩达的机器学习课程》github.com/aialgorithm/AiPy/](https://link.zhihu.com/?target=https%3A//github.com/aialgorithm/AiPy/)**，很经典的入门课程，附笔记解析及代码。
+1、【机器学习视频】**[《吴恩达的机器学习课程》github.com/aialgorithm/AiPy/](https://github.com/aialgorithm/AiPy/)**，很经典的入门课程，附笔记解析及代码。
 
-2、【机器学习书】**[《machine learning yearning_吴恩达》 ](https://link.zhihu.com/?target=https%3A//github.com/aialgorithm/AiPy/tree/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0)**是吴恩达历时两年，根据自己多年实践经验整理出来的一本机器学习、深度学习实践经验宝典。
+2、【机器学习书】**[《machine learning yearning_吴恩达》 ](https://github.com/aialgorithm/AiPy/tree/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0)**是吴恩达历时两年，根据自己多年实践经验整理出来的一本机器学习、深度学习实践经验宝典。
 
-3、【机器学习书】**[《统计学习方法》](https://link.zhihu.com/?target=https%3A//github.com/aialgorithm/AiPy/tree/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0)** 李航老师经典的机器学习书，书中的算法原理讲解还是比较细的。链接的资源有附上书中算法的代码实现、课件及第一版的书。（现在已经有第二版的书，可以买一本慢慢看）
+3、【机器学习书】**[《统计学习方法》](https://github.com/aialgorithm/AiPy/tree/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0)** 李航老师经典的机器学习书，书中的算法原理讲解还是比较细的。链接的资源有附上书中算法的代码实现、课件及第一版的书。（现在已经有第二版的书，可以买一本慢慢看）
 
-4、【机器学习书】**[《机器学习(西瓜书)_周志华》](https://link.zhihu.com/?target=https%3A//github.com/aialgorithm/AiPy/tree/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0)** 机器学习经典教材，难度适合进阶，里面的一些概念公式还是要有一定基础的，不太适合入门自学。（可搭配datawhale的南瓜书本理解难点公式）
+4、【机器学习书】**[《机器学习(西瓜书)_周志华》](https://github.com/aialgorithm/AiPy/tree/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0)** 机器学习经典教材，难度适合进阶，里面的一些概念公式还是要有一定基础的，不太适合入门自学。（可搭配datawhale的南瓜书本理解难点公式）
 
-5、【深度学习视频】**[《吴恩达的深度学习课程》github.com/aialgorithm/AiPy/](https://link.zhihu.com/?target=https%3A//github.com/aialgorithm/AiPy/)**应该是国内大多数人的入门课程，附笔记解析及代码。
+5、【深度学习视频】**[《吴恩达的深度学习课程》github.com/aialgorithm/AiPy/](https://github.com/aialgorithm/AiPy/)**应该是国内大多数人的入门课程，附笔记解析及代码。
 
-6、【深度学习书】**[《深度学习(花书)》](https://link.zhihu.com/?target=https%3A//github.com/aialgorithm/AiPy/tree/master/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0)** AI大佬Ian Goodfellow的深度学习领域经典著作，知识点很系统全面，但还是需要一定基础才好看懂，初学者可以结合视频、花书笔记辅助理解。
+6、【深度学习书】**[《深度学习(花书)》](https://github.com/aialgorithm/AiPy/tree/master/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0)** AI大佬Ian Goodfellow的深度学习领域经典著作，知识点很系统全面，但还是需要一定基础才好看懂，初学者可以结合视频、花书笔记辅助理解。
 
-7、【深度学习书】**[《python深度学习》](https://link.zhihu.com/?target=https%3A//github.com/aialgorithm/AiPy/tree/master/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0)**keras之父的经典著作，通俗易懂适合入门。
+7、【深度学习书】**[《python深度学习》](https://github.com/aialgorithm/AiPy/tree/master/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0)**keras之父的经典著作，通俗易懂适合入门。
 
-8、【深度学习书】**[《深度学习实战》](https://link.zhihu.com/?target=https%3A//github.com/aialgorithm/AiPy/tree/master/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0)** 这本书的结果和《花书》有些相似之处，原理讲解比较通俗，还有详细的代码实践。不足的地方是代码是用Python2写的有些过时。
+8、【深度学习书】**[《深度学习实战》](https://github.com/aialgorithm/AiPy/tree/master/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0)** 这本书的结果和《花书》有些相似之处，原理讲解比较通俗，还有详细的代码实践。不足的地方是代码是用Python2写的有些过时。
 
-9、【深度学习书】**[《动手学深度学习》](https://link.zhihu.com/?target=https%3A//github.com/aialgorithm/AiPy/tree/master/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0)** 李沐大佬合著的深度学习入门教程及代码实践。
+9、【深度学习书】**[《动手学深度学习》](https://github.com/aialgorithm/AiPy/tree/master/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0)** 李沐大佬合著的深度学习入门教程及代码实践。
 
-10、【深度学习论文】**[深度学习综述](https://link.zhihu.com/?target=https%3A//www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf)** ：2015年Nature上的论文，由深度学习界的三巨头所写，读这一篇论文就可以概览深度学习了。这篇论文有同名的**[中文翻译](https://link.zhihu.com/?target=https%3A//xueshu.blogchina.com/901611070.html)**。
+10、【深度学习论文】**[深度学习综述](https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf)** ：2015年Nature上的论文，由深度学习界的三巨头所写，读这一篇论文就可以概览深度学习了。这篇论文有同名的**[中文翻译](https://xueshu.blogchina.com/901611070.html)**。
 
 注：要全面了解一个技术领域，找找这个领域的综述论文是一个超实用的技巧。
 
-11、【实战项目】 推荐实战下国外的**[Kaggle](https://link.zhihu.com/?target=https%3A//www.kaggle.com/competitions)**、国内天池等竞赛项目。从头到尾地参加一两个机器学习项目，并取得不错的分数，基本上就差不多了。安利个Datawhale小队整理的国内外经典竞赛的项目方案及代码实现 [https://github.com/datawhalechina/competition-baseline](https://link.zhihu.com/?target=https%3A//github.com/datawhalechina/competition-baseline)
+11、【实战项目】 推荐实战下国外的**[Kaggle](https://www.kaggle.com/competitions)**、国内天池等竞赛项目。从头到尾地参加一两个机器学习项目，并取得不错的分数，基本上就差不多了。安利个Datawhale小队整理的国内外经典竞赛的项目方案及代码实现 [https://github.com/datawhalechina/competition-baseline](https://github.com/datawhalechina/competition-baseline)
 
 ## 2.4 工作面试准备
 
@@ -192,17 +190,17 @@ scikit-learn 包含机器学习建模工具及算法，可以了解下官方文�
 
 - **推荐些经典的面试题库**
 
-1、 基础数据结构与算法，LeetCode算法题库：[https://github.com/apachecn/Interview/tree/master/docs/Algorithm](https://link.zhihu.com/?target=https%3A//github.com/apachecn/Interview/tree/master/docs/Algorithm)；
+1、 基础数据结构与算法，LeetCode算法题库：[https://github.com/apachecn/Interview/tree/master/docs/Algorithm](https://github.com/apachecn/Interview/tree/master/docs/Algorithm)；
 
-2、Python基础算法实现： [https://github.com/TheAlgorithms/Python](https://link.zhihu.com/?target=https%3A//github.com/TheAlgorithms/Python)；
+2、Python基础算法实现： [https://github.com/TheAlgorithms/Python](https://github.com/TheAlgorithms/Python)；
 
-3、Python面试题 [https://github.com/taizilongxu/interview_python](https://link.zhihu.com/?target=https%3A//github.com/taizilongxu/interview_python)
+3、Python面试题 [https://github.com/taizilongxu/interview_python](https://github.com/taizilongxu/interview_python)
 
-4、Datawhale小队整理的面试宝典，内容包括基础算法数据结构、机器学习，CV，NLP，推荐，开发等。[https://github.com/datawhalechina/daily-interview](https://link.zhihu.com/?target=https%3A//github.com/datawhalechina/daily-interview)
+4、Datawhale小队整理的面试宝典，内容包括基础算法数据结构、机器学习，CV，NLP，推荐，开发等。[https://github.com/datawhalechina/daily-interview](https://github.com/datawhalechina/daily-interview)
 
-5、机器学习面试题，这仓库后面就没有更新了，有些内容可能有点过时[https://github.com/DarLiner/Algorithm_Interview_Notes-Chinese](https://link.zhihu.com/?target=https%3A//github.com/DarLiner/Algorithm_Interview_Notes-Chinese)
+5、机器学习面试题，这仓库后面就没有更新了，有些内容可能有点过时[https://github.com/DarLiner/Algorithm_Interview_Notes-Chinese](https://github.com/DarLiner/Algorithm_Interview_Notes-Chinese)
 
-6、面试技巧：推荐阅读**[程序员面试完全指南](https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/QzfPAq1DBfCi941UaRsQqw)**
+6、面试技巧：推荐阅读**[程序员面试完全指南](https://mp.weixin.qq.com/s/QzfPAq1DBfCi941UaRsQqw)**
 
 ## 总结
 
@@ -244,13 +242,13 @@ https://zhuanlan.zhihu.com/p/36584335
 
 下载链接:
 
-[https://pan.baidu.com/s/1LaUlrJzy98CG1Wma9FgBtg](https://link.zhihu.com/?target=https%3A//pan.baidu.com/s/1LaUlrJzy98CG1Wma9FgBtg) 提取码: hktx
+[https://pan.baidu.com/s/1LaUlrJzy98CG1Wma9FgBtg](https://pan.baidu.com/s/1LaUlrJzy98CG1Wma9FgBtg) 提取码: hktx
 
 国外经典数学教材：
 
 相比国内浙大版和同济版的数学教材更加通俗易懂，深入浅出，便于初学者更好地奠定数学基础。下载链接：
 
-[https://blog.csdn.net/Datawhale/article/details/81744961](https://link.zhihu.com/?target=https%3A//blog.csdn.net/Datawhale/article/details/81744961)
+[https://blog.csdn.net/Datawhale/article/details/81744961](https://blog.csdn.net/Datawhale/article/details/81744961)
 
 2
 
@@ -262,7 +260,7 @@ https://zhuanlan.zhihu.com/p/36584335
 
 推荐视频：可汗学院统计学
 
-[http://open.163.com/special/Khan/khstatistics.html](https://link.zhihu.com/?target=http%3A//open.163.com/special/Khan/khstatistics.html)
+[http://open.163.com/special/Khan/khstatistics.html](http://open.163.com/special/Khan/khstatistics.html)
 
 3
 
@@ -276,13 +274,13 @@ Python安装包，我推荐下载Anaconda，Anaconda是一个用于科学计算�
 
 下载地址：
 
-[https://www.anaconda.com/download/](https://link.zhihu.com/?target=https%3A//www.anaconda.com/download/)
+[https://www.anaconda.com/download/](https://www.anaconda.com/download/)
 
 推荐选Anaconda （python 3.7版本）
 
 IDE：推荐使用pycharm，社区版免费
 
-下载地址：[https://www.jetbrains.com/](https://link.zhihu.com/?target=https%3A//www.jetbrains.com/)
+下载地址：[https://www.jetbrains.com/](https://www.jetbrains.com/)
 
 **安装教程：**
 
@@ -298,13 +296,13 @@ https://zhuanlan.zhihu.com/p/50302396
 
 a.廖雪峰python学习笔记
 
-[https://blog.csdn.net/datawhale/article/category/7779959](https://link.zhihu.com/?target=https%3A//blog.csdn.net/datawhale/article/category/7779959)
+[https://blog.csdn.net/datawhale/article/category/7779959](https://blog.csdn.net/datawhale/article/category/7779959)
 
 b.python入门笔记
 
 作者李金，这个是jupyter notebook文件，把python的主要语法演示了一次，值得推荐。下载链接:
 
-[https://pan.baidu.com/s/1IPZI5rygbIh5R5OuTHajzA](https://link.zhihu.com/?target=https%3A//pan.baidu.com/s/1IPZI5rygbIh5R5OuTHajzA) 提取码: 2bzh
+[https://pan.baidu.com/s/1IPZI5rygbIh5R5OuTHajzA](https://pan.baidu.com/s/1IPZI5rygbIh5R5OuTHajzA) 提取码: 2bzh
 
 c.南京大学python视频教程
 
@@ -312,7 +310,7 @@ c.南京大学python视频教程
 
 查看地址：
 
-[https://www.icourse163.org/course/0809NJU004-1001571005?from=study](https://link.zhihu.com/?target=https%3A//www.icourse163.org/course/0809NJU004-1001571005%3Ffrom%3Dstudy)
+[https://www.icourse163.org/course/0809NJU004-1001571005?from=study](https://www.icourse163.org/course/0809NJU004-1001571005%3Ffrom%3Dstudy)
 
 看完这三个资料后python基本达到入门水平，可以使用scikit-learn等机器学习库来解决机器学习的问题了。
 
@@ -346,13 +344,13 @@ https://zhuanlan.zhihu.com/p/56644669
 
 特征工程
 
-[https://blog.csdn.net/Datawhale/article/details/83033869](https://link.zhihu.com/?target=https%3A//blog.csdn.net/Datawhale/article/details/83033869)
+[https://blog.csdn.net/Datawhale/article/details/83033869](https://blog.csdn.net/Datawhale/article/details/83033869)
 
 3
 
 数据挖掘项目
 
-[https://blog.csdn.net/datawhale/article/details/80847662](https://link.zhihu.com/?target=https%3A//blog.csdn.net/datawhale/article/details/80847662)
+[https://blog.csdn.net/datawhale/article/details/80847662](https://blog.csdn.net/datawhale/article/details/80847662)
 
 **机器学习**
 
@@ -366,7 +364,7 @@ https://zhuanlan.zhihu.com/p/56644669
 
 **课程主页：**
 
-[https://www.coursera.org/learn/machine-learning](https://link.zhihu.com/?target=https%3A//www.coursera.org/learn/machine-learning)
+[https://www.coursera.org/learn/machine-learning](https://www.coursera.org/learn/machine-learning)
 
 **中文视频：**
 
@@ -374,7 +372,7 @@ https://zhuanlan.zhihu.com/p/56644669
 
 **中文笔记及作业代码：**
 
-[https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes](https://link.zhihu.com/?target=https%3A//github.com/fengdu78/Coursera-ML-AndrewNg-Notes)
+[https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes)
 
 公开课
 
@@ -384,15 +382,15 @@ https://zhuanlan.zhihu.com/p/56644669
 
 **课程主页：**
 
-[http://cs229.stanford.edu/](https://link.zhihu.com/?target=http%3A//cs229.stanford.edu/)
+[http://cs229.stanford.edu/](http://cs229.stanford.edu/)
 
 **中文视频：**
 
-[http://open.163.com/special/opencourse/machinelearning.html](https://link.zhihu.com/?target=http%3A//open.163.com/special/opencourse/machinelearning.html)
+[http://open.163.com/special/opencourse/machinelearning.html](http://open.163.com/special/opencourse/machinelearning.html)
 
 **中文笔记：**
 
-[https://kivy-cn.github.io/Stanford-CS-229-CN/#/](https://link.zhihu.com/?target=https%3A//kivy-cn.github.io/Stanford-CS-229-CN/%23/)
+[https://kivy-cn.github.io/Stanford-CS-229-CN/#/](https://kivy-cn.github.io/Stanford-CS-229-CN/%23/)
 
 **速查表：**
 
@@ -402,7 +400,7 @@ https://zhuanlan.zhihu.com/p/56534902
 
 **作业代码：**
 
-[https://github.com/Sierkinhane/CS229-ML-Implements](https://link.zhihu.com/?target=https%3A//github.com/Sierkinhane/CS229-ML-Implements)
+[https://github.com/Sierkinhane/CS229-ML-Implements](https://github.com/Sierkinhane/CS229-ML-Implements)
 
 公开课
 
@@ -412,15 +410,15 @@ https://zhuanlan.zhihu.com/p/56534902
 
 **中文视频：**
 
-[https://www.bilibili.com/video/av36731342](https://link.zhihu.com/?target=https%3A//www.bilibili.com/video/av36731342)
+[https://www.bilibili.com/video/av36731342](https://www.bilibili.com/video/av36731342)
 
 **中文笔记：**
 
-[https://redstonewill.com/category/ai-notes/lin-ml-foundations/](https://link.zhihu.com/?target=https%3A//redstonewill.com/category/ai-notes/lin-ml-foundations/)
+[https://redstonewill.com/category/ai-notes/lin-ml-foundations/](https://redstonewill.com/category/ai-notes/lin-ml-foundations/)
 
 **配套教材**
 
-配套书籍为《Learning From Data》，在线书籍主页：[http://amlbook.com/](https://link.zhihu.com/?target=http%3A//amlbook.com/)
+配套书籍为《Learning From Data》，在线书籍主页：[http://amlbook.com/](http://amlbook.com/)
 
 公开课
 
@@ -430,11 +428,11 @@ https://zhuanlan.zhihu.com/p/56534902
 
 **中文视频：**
 
-[https://www.bilibili.com/video/av36760800](https://link.zhihu.com/?target=https%3A//www.bilibili.com/video/av36760800)
+[https://www.bilibili.com/video/av36760800](https://www.bilibili.com/video/av36760800)
 
 **中文笔记：**
 
-[https://redstonewill.com/category/ai-notes/lin-ml-techniques/](https://link.zhihu.com/?target=https%3A//redstonewill.com/category/ai-notes/lin-ml-techniques/)
+[https://redstonewill.com/category/ai-notes/lin-ml-techniques/](https://redstonewill.com/category/ai-notes/lin-ml-techniques/)
 
 书籍
 
@@ -448,11 +446,11 @@ https://zhuanlan.zhihu.com/p/56534902
 
 **读书笔记：**
 
-[https://www.cnblogs.com/limitlessun/p/8505647.html#_label0](https://link.zhihu.com/?target=https%3A//www.cnblogs.com/limitlessun/p/8505647.html%23_label0)
+[https://www.cnblogs.com/limitlessun/p/8505647.html#_label0](https://www.cnblogs.com/limitlessun/p/8505647.html%23_label0)
 
 **公式推导：**
 
-[https://datawhalechina.github.io/pumpkin-book/#/](https://link.zhihu.com/?target=https%3A//datawhalechina.github.io/pumpkin-book/%23/)
+[https://datawhalechina.github.io/pumpkin-book/#/](https://datawhalechina.github.io/pumpkin-book/%23/)
 
 **课后习题：**
 
@@ -468,13 +466,13 @@ https://zhuanlan.zhihu.com/c_1013850291887845376
 
 **讲课 PPT：**
 
-[https://github.com/fengdu78/lihang-code/tree/master/ppt](https://link.zhihu.com/?target=https%3A//github.com/fengdu78/lihang-code/tree/master/ppt)
+[https://github.com/fengdu78/lihang-code/tree/master/ppt](https://github.com/fengdu78/lihang-code/tree/master/ppt)
 
 **读书笔记：**
 
-[http://www.cnblogs.com/limitlessun/p/8611103.html](https://link.zhihu.com/?target=http%3A//www.cnblogs.com/limitlessun/p/8611103.html)
+[http://www.cnblogs.com/limitlessun/p/8611103.html](http://www.cnblogs.com/limitlessun/p/8611103.html)
 
-[https://github.com/SmirkCao/Lihang](https://link.zhihu.com/?target=https%3A//github.com/SmirkCao/Lihang)
+[https://github.com/SmirkCao/Lihang](https://github.com/SmirkCao/Lihang)
 
 **参考笔记：**
 
@@ -482,7 +480,7 @@ https://zhuanlan.zhihu.com/p/36378498
 
 **代码实现：**
 
-[https://github.com/fengdu78/lihang-code/tree/master/code](https://link.zhihu.com/?target=https%3A//github.com/fengdu78/lihang-code/tree/master/code)
+[https://github.com/fengdu78/lihang-code/tree/master/code](https://github.com/fengdu78/lihang-code/tree/master/code)
 
 书籍
 
@@ -496,7 +494,7 @@ https://zhuanlan.zhihu.com/p/36378498
 
 全书代码：
 
-[https://github.com/ageron/handson-ml](https://link.zhihu.com/?target=https%3A//github.com/ageron/handson-ml)
+[https://github.com/ageron/handson-ml](https://github.com/ageron/handson-ml)
 
 实战
 
@@ -506,11 +504,11 @@ Kaggle 比赛
 
 **Kaggle 主页:**
 
-[https://www.kaggle.com/](https://link.zhihu.com/?target=https%3A//www.kaggle.com/)
+[https://www.kaggle.com/](https://www.kaggle.com/)
 
 **Kaggle 路线:**
 
-[https://github.com/apachecn/kaggle](https://link.zhihu.com/?target=https%3A//github.com/apachecn/kaggle)
+[https://github.com/apachecn/kaggle](https://github.com/apachecn/kaggle)
 
 工具
 
@@ -520,11 +518,11 @@ Scikit-Learn 作为机器学习一个非常全面的库，是一份不可多得�
 
 **官方文档：**
 
-[https://scikit-learn.org/stable/index.html](https://link.zhihu.com/?target=https%3A//scikit-learn.org/stable/index.html)
+[https://scikit-learn.org/stable/index.html](https://scikit-learn.org/stable/index.html)
 
 **中文文档（0.19）：**
 
-[http://sklearn.apachecn.org/#/](https://link.zhihu.com/?target=http%3A//sklearn.apachecn.org/%23/)
+[http://sklearn.apachecn.org/#/](http://sklearn.apachecn.org/%23/)
 
 **深度学习**
 
@@ -542,29 +540,29 @@ Scikit-Learn 作为机器学习一个非常全面的库，是一份不可多得�
 
 网易云课堂：
 
-[https://mooc.study.163.com/university/deeplearning_ai#/c](https://link.zhihu.com/?target=https%3A//mooc.study.163.com/university/deeplearning_ai%23/c)
+[https://mooc.study.163.com/university/deeplearning_ai#/c](https://mooc.study.163.com/university/deeplearning_ai%23/c)
 
 Coursera:
 
-[https://www.coursera.org/specializations/deep-learning](https://link.zhihu.com/?target=https%3A//www.coursera.org/specializations/deep-learning)
+[https://www.coursera.org/specializations/deep-learning](https://www.coursera.org/specializations/deep-learning)
 
 **课程笔记**
 
 之前编写过吴恩达老师机器学习个人笔记黄海广博士带领团队整理了中文笔记：
 
-[https://github.com/fengdu78/deeplearning_ai_books](https://link.zhihu.com/?target=https%3A//github.com/fengdu78/deeplearning_ai_books)
+[https://github.com/fengdu78/deeplearning_ai_books](https://github.com/fengdu78/deeplearning_ai_books)
 
 **参考论文**
 
 吴恩达老师在课程中提到了很多优秀论文，黄海广博士整理如下：
 
-[https://github.com/fengdu78/deeplearning_ai_books/tree/master/%E5%8F%82%E8%80%83%E8%AE%BA%E6%96%87](https://link.zhihu.com/?target=https%3A//github.com/fengdu78/deeplearning_ai_books/tree/master/%E5%8F%82%E8%80%83%E8%AE%BA%E6%96%87)
+[https://github.com/fengdu78/deeplearning_ai_books/tree/master/%E5%8F%82%E8%80%83%E8%AE%BA%E6%96%87](https://github.com/fengdu78/deeplearning_ai_books/tree/master/%E5%8F%82%E8%80%83%E8%AE%BA%E6%96%87)
 
 **课程PPT及课后作业**
 
 吴恩达深度学习课程，包含课程的课件、课后作业和一些其他资料：
 
-[https://github.com/stormstone/deeplearning.ai](https://link.zhihu.com/?target=https%3A//github.com/stormstone/deeplearning.ai)
+[https://github.com/stormstone/deeplearning.ai](https://github.com/stormstone/deeplearning.ai)
 
 公开课
 
@@ -576,21 +574,21 @@ Fast.ai《程序员深度学习实战》
 
 B站地址(英文字幕)：
 
-[https://www.bilibili.com/video/av18904696?from=search&seid=10813837536595120136](https://link.zhihu.com/?target=https%3A//www.bilibili.com/video/av18904696%3Ffrom%3Dsearch%26seid%3D10813837536595120136)
+[https://www.bilibili.com/video/av18904696?from=search&seid=10813837536595120136](https://www.bilibili.com/video/av18904696%3Ffrom%3Dsearch%26seid%3D10813837536595120136)
 
 CSDN地址(2017版中文字幕):
 
-[https://edu.csdn.net/course/detail/5192](https://link.zhihu.com/?target=https%3A//edu.csdn.net/course/detail/5192)
+[https://edu.csdn.net/course/detail/5192](https://edu.csdn.net/course/detail/5192)
 
 **课程笔记**
 
 英文笔记原文：
 
-[https://medium.com/@hiromi_suenaga/deep-learning-2-part-1-lesson-1-602f73869197](https://link.zhihu.com/?target=https%3A//medium.com/%40hiromi_suenaga/deep-learning-2-part-1-lesson-1-602f73869197)
+[https://medium.com/@hiromi_suenaga/deep-learning-2-part-1-lesson-1-602f73869197](https://medium.com/%40hiromi_suenaga/deep-learning-2-part-1-lesson-1-602f73869197)
 
 由ApacheCN组织的中文翻译：
 
-[https://github.com/apachecn/fastai-ml-dl-notes-zh](https://link.zhihu.com/?target=https%3A//github.com/apachecn/fastai-ml-dl-notes-zh)
+[https://github.com/apachecn/fastai-ml-dl-notes-zh](https://github.com/apachecn/fastai-ml-dl-notes-zh)
 
 公开课
 
@@ -600,7 +598,7 @@ CS230 Deep Learning
 
 Datawhale整理了该门课程的详细介绍及参考资料:
 
-[吴恩达CS230深度学习开课了！视频配套PPT应有尽有](https://link.zhihu.com/?target=http%3A//mp.weixin.qq.com/s%3F__biz%3DMzIyNjM2MzQyNg%3D%3D%26mid%3D2247484343%26idx%3D1%26sn%3Dc2dbdafe4b5c2542b8b7058357776e93%26chksm%3De870d2fadf075bec6fe0252e9f1a44fde4ad4126d3c71004decd15b3f73ad33fb232219bf90b%26scene%3D21%23wechat_redirect)
+[吴恩达CS230深度学习开课了！视频配套PPT应有尽有](http://mp.weixin.qq.com/s%3F__biz%3DMzIyNjM2MzQyNg%3D%3D%26mid%3D2247484343%26idx%3D1%26sn%3Dc2dbdafe4b5c2542b8b7058357776e93%26chksm%3De870d2fadf075bec6fe0252e9f1a44fde4ad4126d3c71004decd15b3f73ad33fb232219bf90b%26scene%3D21%23wechat_redirect)
 
 书籍
 
@@ -608,7 +606,7 @@ Datawhale整理了该门课程的详细介绍及参考资料:
 
 本书是入门深度学习领域的极佳教材，主要介绍了神经网络与深度学习中的基础知识、主要模型（前馈网络、卷积网络、循环网络等）以及在计算机视觉、自然语言处理等领域的应用。
 
-[复旦教授邱锡鹏开源发布《神经网络与深度学习》](https://link.zhihu.com/?target=http%3A//mp.weixin.qq.com/s%3F__biz%3DMzIyNjM2MzQyNg%3D%3D%26mid%3D2247484296%26idx%3D1%26sn%3Ded0cc963ad04783f9b39fe051f61a0f8%26chksm%3De870d2c5df075bd37971aded1484865686a671058285c76be28030673c7c91d45c57e3d85e2d%26scene%3D21%23wechat_redirect)
+[复旦教授邱锡鹏开源发布《神经网络与深度学习》](http://mp.weixin.qq.com/s%3F__biz%3DMzIyNjM2MzQyNg%3D%3D%26mid%3D2247484296%26idx%3D1%26sn%3Ded0cc963ad04783f9b39fe051f61a0f8%26chksm%3De870d2c5df075bd37971aded1484865686a671058285c76be28030673c7c91d45c57e3d85e2d%26scene%3D21%23wechat_redirect)
 
 书籍
 
@@ -626,7 +624,7 @@ Datawhale整理了该门课程的详细介绍及参考资料:
 
 该书由众多网友众包翻译，电子版在以下地址获得：
 
-[https://github.com/exacity/deeplearningbook-chinese](https://link.zhihu.com/?target=https%3A//github.com/exacity/deeplearningbook-chinese)
+[https://github.com/exacity/deeplearningbook-chinese](https://github.com/exacity/deeplearningbook-chinese)
 
 书籍
 
@@ -640,7 +638,7 @@ DeepLearning-500-questions，作者是川大的一名优秀毕业生谈继勇。
 
 **项目地址：**
 
-[https://github.com/scutan90/DeepLearning-500-questions](https://link.zhihu.com/?target=https%3A//github.com/scutan90/DeepLearning-500-questions)
+[https://github.com/scutan90/DeepLearning-500-questions](https://github.com/scutan90/DeepLearning-500-questions)
 
 工具
 
@@ -650,11 +648,11 @@ TensorFlow 官方文档
 
 **官方文档：**
 
-[https://www.tensorflow.org/api_docs/python/tf](https://link.zhihu.com/?target=https%3A//www.tensorflow.org/api_docs/python/tf)
+[https://www.tensorflow.org/api_docs/python/tf](https://www.tensorflow.org/api_docs/python/tf)
 
 **中文文档：**
 
-[https://github.com/jikexueyuanwiki/tensorflow-zh](https://link.zhihu.com/?target=https%3A//github.com/jikexueyuanwiki/tensorflow-zh)
+[https://github.com/jikexueyuanwiki/tensorflow-zh](https://github.com/jikexueyuanwiki/tensorflow-zh)
 
 工具
 
@@ -664,11 +662,11 @@ PyTorch是学深度学习的另一个主流框架
 
 **官方文档：**
 
-[https://pytorch.org/docs/stable/index.html](https://link.zhihu.com/?target=https%3A//pytorch.org/docs/stable/index.html)
+[https://pytorch.org/docs/stable/index.html](https://pytorch.org/docs/stable/index.html)
 
 **中文文档(版本0.3)：**
 
-[https://github.com/apachecn/pytorch-doc-zh](https://link.zhihu.com/?target=https%3A//github.com/apachecn/pytorch-doc-zh)
+[https://github.com/apachecn/pytorch-doc-zh](https://github.com/apachecn/pytorch-doc-zh)
 
 **强化学习**
 
@@ -686,17 +684,17 @@ Reinforcement Learning-David Silver
 
 B站地址(中文字幕)：
 
-[https://www.bilibili.com/video/av45357759?from=search&seid=9547815852611563503](https://link.zhihu.com/?target=https%3A//www.bilibili.com/video/av45357759%3Ffrom%3Dsearch%26seid%3D9547815852611563503)
+[https://www.bilibili.com/video/av45357759?from=search&seid=9547815852611563503](https://www.bilibili.com/video/av45357759%3Ffrom%3Dsearch%26seid%3D9547815852611563503)
 
 课程原地址：
 
-[https://www.youtube.com/watch?v=2pWv7GOvuf0](https://link.zhihu.com/?target=https%3A//www.youtube.com/watch%3Fv%3D2pWv7GOvuf0)
+[https://www.youtube.com/watch?v=2pWv7GOvuf0](https://www.youtube.com/watch%3Fv%3D2pWv7GOvuf0)
 
 **课程资料**
 
 课程PPT：
 
-[http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html](https://link.zhihu.com/?target=http%3A//www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
+[http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 
 课程笔记：
 
@@ -712,35 +710,33 @@ David Silver的课程虽然内容详尽，但前沿的很多内容都没有被�
 
 B站地址(中文字幕)：
 
-[https://www.bilibili.com/video/av24724071?from=search&seid=9547815852611563503](https://link.zhihu.com/?target=https%3A//www.bilibili.com/video/av24724071%3Ffrom%3Dsearch%26seid%3D9547815852611563503)
+[https://www.bilibili.com/video/av24724071?from=search&seid=9547815852611563503](https://www.bilibili.com/video/av24724071%3Ffrom%3Dsearch%26seid%3D9547815852611563503)
 
 课程原地址：
 
-[https://www.youtube.com/watch?v=2pWv7GOvuf0](https://link.zhihu.com/?target=https%3A//www.youtube.com/watch%3Fv%3D2pWv7GOvuf0)
+[https://www.youtube.com/watch?v=2pWv7GOvuf0](https://www.youtube.com/watch%3Fv%3D2pWv7GOvuf0)
 
 **课程资料**
 
 课程PPT：
 
-[http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLDS18.html](https://link.zhihu.com/?target=http%3A//speech.ee.ntu.edu.tw/~tlkagk/courses_MLDS18.html)
+[http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLDS18.html](http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLDS18.html)
 
 课程笔记：
 
-[https://blog.csdn.net/cindy_1102/article/details/87905272](https://link.zhihu.com/?target=https%3A//blog.csdn.net/cindy_1102/article/details/87905272)
+[https://blog.csdn.net/cindy_1102/article/details/87905272](https://blog.csdn.net/cindy_1102/article/details/87905272)
 
 **前沿Paper**
 
 ![img](ai_path/v2-60f04e0568273626826d3a1ee1a84387_720w.jpg)
 
-1
-
-Arxiv
+1 Arxiv
 
 **Arxiv Stats**
 
 Arxiv 机器学习最新论文检索主页地址：
 
-[https://arxiv.org/list/stat.ML/recent?ref=bestofml.com](https://link.zhihu.com/?target=https%3A//arxiv.org/list/stat.ML/recent%3Fref%3Dbestofml.com)
+[https://arxiv.org/list/stat.ML/recent?ref=bestofml.com](https://arxiv.org/list/stat.ML/recent%3Fref%3Dbestofml.com)
 
 **Arxiv Sanity Preserver**
 
@@ -748,11 +744,9 @@ Andrej Karpathy 开发了 Arxiv Sanity Preserver，帮助分类、搜索和过�
 
 主页地址：
 
-[http://www.arxiv-sanity.com/?ref=bestofml.com](https://link.zhihu.com/?target=http%3A//www.arxiv-sanity.com/%3Fref%3Dbestofml.com)
+[http://www.arxiv-sanity.com/?ref=bestofml.com](http://www.arxiv-sanity.com/%3Fref%3Dbestofml.com)
 
-2
-
-Papers with Code
+2 Papers with Code
 
 **Papers with Code(Browse state-of-the-art)**
 
@@ -760,17 +754,17 @@ Papers with Code
 
 主页地址：
 
-[https://paperswithcode.com/sota](https://link.zhihu.com/?target=https%3A//paperswithcode.com/sota)
+[https://paperswithcode.com/sota](https://paperswithcode.com/sota)
 
 举两个例子：
 
 CV：
 
-[https://paperswithcode.com/area/computer-vision](https://link.zhihu.com/?target=https%3A//paperswithcode.com/area/computer-vision)
+[https://paperswithcode.com/area/computer-vision](https://paperswithcode.com/area/computer-vision)
 
 NLP：
 
-[https://paperswithcode.com/area/natural-language-processing](https://link.zhihu.com/?target=https%3A//paperswithcode.com/area/natural-language-processing)
+[https://paperswithcode.com/area/natural-language-processing](https://paperswithcode.com/area/natural-language-processing)
 
 **Papers with Code(Sorted by stars)**
 
@@ -778,17 +772,15 @@ NLP：
 
 GitHub 项目地址：
 
-[https://github.com/zziz/pwc](https://link.zhihu.com/?target=https%3A//github.com/zziz/pwc)
+[https://github.com/zziz/pwc](https://github.com/zziz/pwc)
 
-3
-
-Deep Learning Papers 阅读路线
+3 Deep Learning Papers 阅读路线
 
 如果你是深度学习领域的新手，你可能会遇到的第一个问题是“我应该从哪篇论文开始阅读？”下面是一个深入学习论文的阅读路线图！
 
 GitHub 项目地址：
 
-[https://github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap](https://link.zhihu.com/?target=https%3A//github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap)
+[https://github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap](https://github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap)
 
 这份深度学习论文**阅读路线**分为三大块：
 
@@ -798,11 +790,9 @@ GitHub 项目地址：
 
 3 Applications
 
-4
+4 Deep Learning Object Detection
 
-Deep Learning Object Detection
-
-目标检测（Object Detection）是深度学习 CV 领域的一个核心研究领域和重要分支。纵观 2013 年到 2019 年，从最早的[R-CNN](https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s%3F__biz%3DMzA3MzI4MjgzMw%3D%3D%26mid%3D2650761248%26idx%3D1%26sn%3D25b306cb5e4e39730e960f109bfaf044%26chksm%3D871aac5eb06d2548a75eda9f2accf50aad8be315f71514c347fec2fc0b9b17a3ea898a4ba3eb%26token%3D654066133%26lang%3Dzh_CN)、Fast R-CNN 到后来的 YOLO v2、YOLO v3 再到今年的 M2Det，新模型层出不穷，性能也越来越好！
+目标检测（Object Detection）是深度学习 CV 领域的一个核心研究领域和重要分支。纵观 2013 年到 2019 年，从最早的[R-CNN](https://mp.weixin.qq.com/s%3F__biz%3DMzA3MzI4MjgzMw%3D%3D%26mid%3D2650761248%26idx%3D1%26sn%3D25b306cb5e4e39730e960f109bfaf044%26chksm%3D871aac5eb06d2548a75eda9f2accf50aad8be315f71514c347fec2fc0b9b17a3ea898a4ba3eb%26token%3D654066133%26lang%3Dzh_CN)、Fast R-CNN 到后来的 YOLO v2、YOLO v3 再到今年的 M2Det，新模型层出不穷，性能也越来越好！
 
 本资源对目标检测近几年的发展和相关论文做出一份系统介绍，总结一份超全的文献 paper 列表。
 
@@ -810,47 +800,45 @@ Deep Learning Object Detection
 
 GitHub 项目地址：
 
-[https://github.com/hoya012/deep_learning_object_detection](https://link.zhihu.com/?target=https%3A//github.com/hoya012/deep_learning_object_detection)
+[https://github.com/hoya012/deep_learning_object_detection](https://github.com/hoya012/deep_learning_object_detection)
 
-5
-
-知名会议
+5 知名会议
 
 **会议**
 
-NeurIPS：[https://nips.cc/](https://link.zhihu.com/?target=https%3A//nips.cc/)
+NeurIPS：[https://nips.cc/](https://nips.cc/)
 
-ICML：[https://icml.cc/](https://link.zhihu.com/?target=https%3A//icml.cc/)
+ICML：[https://icml.cc/](https://icml.cc/)
 
-ICLR：[https://iclr.cc/](https://link.zhihu.com/?target=https%3A//iclr.cc/)
+ICLR：[https://iclr.cc/](https://iclr.cc/)
 
-AAAI：[https://aaai.org/Conferences/AAAI-19/](https://link.zhihu.com/?target=https%3A//aaai.org/Conferences/AAAI-19/)
+AAAI：[https://aaai.org/Conferences/AAAI-19/](https://aaai.org/Conferences/AAAI-19/)
 
-IJCAI：[https://www.ijcai.org/](https://link.zhihu.com/?target=https%3A//www.ijcai.org/)
+IJCAI：[https://www.ijcai.org/](https://www.ijcai.org/)
 
-UAI：[http://www.auai.org/uai2019/index.php](https://link.zhihu.com/?target=http%3A//www.auai.org/uai2019/index.php)
+UAI：[http://www.auai.org/uai2019/index.php](http://www.auai.org/uai2019/index.php)
 
 **计算机视觉：**
 
-CVPR：[http://cvpr2019.thecvf.com/](https://link.zhihu.com/?target=http%3A//cvpr2019.thecvf.com/)
+CVPR：[http://cvpr2019.thecvf.com/](http://cvpr2019.thecvf.com/)
 
-ECCV：[https://eccv2018.org/program/main-conference/](https://link.zhihu.com/?target=https%3A//eccv2018.org/program/main-conference/)
+ECCV：[https://eccv2018.org/program/main-conference/](https://eccv2018.org/program/main-conference/)
 
-ICCV：[http://iccv2019.thecvf.com/](https://link.zhihu.com/?target=http%3A//iccv2019.thecvf.com/)
+ICCV：[http://iccv2019.thecvf.com/](http://iccv2019.thecvf.com/)
 
 **自然语言处理：**
 
-ACL：[http://www.aclcargo.com/](https://link.zhihu.com/?target=http%3A//www.aclcargo.com/)
+ACL：[http://www.aclcargo.com/](http://www.aclcargo.com/)
 
-EMNLP：[https://www.aclweb.org/portal/content/emnlp-2018](https://link.zhihu.com/?target=https%3A//www.aclweb.org/portal/content/emnlp-2018)
+EMNLP：[https://www.aclweb.org/portal/content/emnlp-2018](https://www.aclweb.org/portal/content/emnlp-2018)
 
-NAACL：[https://naacl2019.org/](https://link.zhihu.com/?target=https%3A//naacl2019.org/)
+NAACL：[https://naacl2019.org/](https://naacl2019.org/)
 
 **知名期刊:**
 
-JAIR：[https://www.jair.org/index.php/jair](https://link.zhihu.com/?target=https%3A//www.jair.org/index.php/jair)
+JAIR：[https://www.jair.org/index.php/jair](https://www.jair.org/index.php/jair)
 
-JMLR：[http://www.jmlr.org/](https://link.zhihu.com/?target=http%3A//www.jmlr.org/)
+JMLR：[http://www.jmlr.org/](http://www.jmlr.org/)
 
 **其它**
 
@@ -864,43 +852,37 @@ JMLR：[http://www.jmlr.org/](https://link.zhihu.com/?target=http%3A//www.jmlr.o
 
 自然语言处理
 
-1
+1 NLP是什么
 
-NLP是什么
+自然语言处理（NLP，Natural Language Processing）是研究计算机处理人类语言的一门技术，目的是弥补人类交流（自然语言）和计算机理解（机器语言）之间的差距。NLP包含句法语义分析、信息抽取、文本挖掘、[机器翻译](https://mp.weixin.qq.com/s%3F__biz%3DMzA3MzI4MjgzMw%3D%3D%26mid%3D2650761248%26idx%3D1%26sn%3D25b306cb5e4e39730e960f109bfaf044%26chksm%3D871aac5eb06d2548a75eda9f2accf50aad8be315f71514c347fec2fc0b9b17a3ea898a4ba3eb%26token%3D654066133%26lang%3Dzh_CN)、信息检索、[问答系统](https://mp.weixin.qq.com/s%3F__biz%3DMzA3MzI4MjgzMw%3D%3D%26mid%3D2650761248%26idx%3D1%26sn%3D25b306cb5e4e39730e960f109bfaf044%26chksm%3D871aac5eb06d2548a75eda9f2accf50aad8be315f71514c347fec2fc0b9b17a3ea898a4ba3eb%26token%3D654066133%26lang%3Dzh_CN)和对话系统等领域。
 
-自然语言处理（NLP，Natural Language Processing）是研究计算机处理人类语言的一门技术，目的是弥补人类交流（自然语言）和计算机理解（机器语言）之间的差距。NLP包含句法语义分析、信息抽取、文本挖掘、[机器翻译](https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s%3F__biz%3DMzA3MzI4MjgzMw%3D%3D%26mid%3D2650761248%26idx%3D1%26sn%3D25b306cb5e4e39730e960f109bfaf044%26chksm%3D871aac5eb06d2548a75eda9f2accf50aad8be315f71514c347fec2fc0b9b17a3ea898a4ba3eb%26token%3D654066133%26lang%3Dzh_CN)、信息检索、[问答系统](https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s%3F__biz%3DMzA3MzI4MjgzMw%3D%3D%26mid%3D2650761248%26idx%3D1%26sn%3D25b306cb5e4e39730e960f109bfaf044%26chksm%3D871aac5eb06d2548a75eda9f2accf50aad8be315f71514c347fec2fc0b9b17a3ea898a4ba3eb%26token%3D654066133%26lang%3Dzh_CN)和对话系统等领域。
-
-2
-
-课程推荐
+2 课程推荐
 
 **CS224n 斯坦福深度自然语言处理课**
 
 17版中文字幕：
 
-[https://www.bilibili.com/video/av41393758/?p=1](https://link.zhihu.com/?target=https%3A//www.bilibili.com/video/av41393758/%3Fp%3D1)
+[https://www.bilibili.com/video/av41393758/?p=1](https://www.bilibili.com/video/av41393758/%3Fp%3D1)
 
 课程笔记：
 
-[http://www.hankcs.com/?s=CS224n%E7%AC%94%E8%AE%B0](https://link.zhihu.com/?target=http%3A//www.hankcs.com/%3Fs%3DCS224n%E7%AC%94%E8%AE%B0)
+[http://www.hankcs.com/?s=CS224n%E7%AC%94%E8%AE%B0](http://www.hankcs.com/%3Fs%3DCS224n%E7%AC%94%E8%AE%B0)
 
 2019版课程主页：
 
-[http://web.stanford.edu/class/cs224n/](https://link.zhihu.com/?target=http%3A//web.stanford.edu/class/cs224n/)
+[http://web.stanford.edu/class/cs224n/](http://web.stanford.edu/class/cs224n/)
 
 **自然语言处理 - Dan Jurafsky 和 Chris Manning**
 
 B站英文字幕版：
 
-[https://www.bilibili.com/video/av35805262/](https://link.zhihu.com/?target=https%3A//www.bilibili.com/video/av35805262/)
+[https://www.bilibili.com/video/av35805262/](https://www.bilibili.com/video/av35805262/)
 
 学术激流网：
 
-[http://academictorrents.com/details/d2c8f8f1651740520b7dfab23438d89bc8c0c0ab](https://link.zhihu.com/?target=http%3A//academictorrents.com/details/d2c8f8f1651740520b7dfab23438d89bc8c0c0ab)
+[http://academictorrents.com/details/d2c8f8f1651740520b7dfab23438d89bc8c0c0ab](http://academictorrents.com/details/d2c8f8f1651740520b7dfab23438d89bc8c0c0ab)
 
-3
-
-书籍推荐
+3 书籍推荐
 
 Python自然语言处理
 
@@ -918,13 +900,11 @@ By Chris Manning和HinrichSchütze
 
 更高级的统计NLP方法，在统计基本部分和n元语法部分介绍得都很不错。
 
-4
-
-博客推荐
+4 博客推荐
 
 我爱自然语言处理
 
-地址：[http://www.52nlp.cn/](https://link.zhihu.com/?target=http%3A//www.52nlp.cn/)
+地址：[http://www.52nlp.cn/](http://www.52nlp.cn/)
 
 TFIDF、文档相似度等等在这个网站上都有通俗易懂的解释
 
@@ -932,69 +912,61 @@ TFIDF、文档相似度等等在这个网站上都有通俗易懂的解释
 
 地址：
 
-[http://languagelog.ldc.upenn.edu/nll/](https://link.zhihu.com/?target=http%3A//languagelog.ldc.upenn.edu/nll/)
+[http://languagelog.ldc.upenn.edu/nll/](http://languagelog.ldc.upenn.edu/nll/)
 
 natural language processing blog
 
-地址：[https://nlpers.blogspot.com/](https://link.zhihu.com/?target=https%3A//nlpers.blogspot.com/)
+地址：[https://nlpers.blogspot.com/](https://nlpers.blogspot.com/)
 
 美国Hal Daumé III维护的一个natural language processing的 博客，经常评论最新学术动态，值得关注。有关于ACL、NAACL等学术会议的参会感想和对论文的点评
 
-5
-
-项目推荐
+5 项目推荐
 
 基于LSTM的中文问答系统
 
-[https://github.com/S-H-Y-GitHub/QA](https://link.zhihu.com/?target=https%3A//github.com/S-H-Y-GitHub/QA)
+[https://github.com/S-H-Y-GitHub/QA](https://github.com/S-H-Y-GitHub/QA)
 
 基于RNN的文本生成器
 
-[https://github.com/karpathy/char-rnn](https://link.zhihu.com/?target=https%3A//github.com/karpathy/char-rnn)
+[https://github.com/karpathy/char-rnn](https://github.com/karpathy/char-rnn)
 
 基于char-rnn的汪峰歌词生成器
 
-[https://github.com/phunterlau/wangfeng-rnn](https://link.zhihu.com/?target=https%3A//github.com/phunterlau/wangfeng-rnn)
+[https://github.com/phunterlau/wangfeng-rnn](https://github.com/phunterlau/wangfeng-rnn)
 
 用RNN生成手写数字
 
-[https://github.com/skaae/lasagne-draw](https://link.zhihu.com/?target=https%3A//github.com/skaae/lasagne-draw)
+[https://github.com/skaae/lasagne-draw](https://github.com/skaae/lasagne-draw)
 
-6
+6 开源NLP工具包
 
-开源NLP工具包
-
-中文NLP相关：[https://github.com/crownpku/Awesome-Chinese-NLP](https://link.zhihu.com/?target=https%3A//github.com/crownpku/Awesome-Chinese-NLP)
+中文NLP相关：[https://github.com/crownpku/Awesome-Chinese-NLP](https://github.com/crownpku/Awesome-Chinese-NLP)
 
 英文NLP相关：
 
-NLTK: [http://www.nltk.org/](https://link.zhihu.com/?target=http%3A//www.nltk.org/)
+NLTK: [http://www.nltk.org/](http://www.nltk.org/)
 
-TextBlob: [http://textblob.readthedocs.org/en/dev/](https://link.zhihu.com/?target=http%3A//textblob.readthedocs.org/en/dev/)
+TextBlob: [http://textblob.readthedocs.org/en/dev/](http://textblob.readthedocs.org/en/dev/)
 
-Gensim: [http://radimrehurek.com/gensim/](https://link.zhihu.com/?target=http%3A//radimrehurek.com/gensim/)
+Gensim: [http://radimrehurek.com/gensim/](http://radimrehurek.com/gensim/)
 
-Pattern: [http://www.clips.ua.ac.be/pattern](https://link.zhihu.com/?target=http%3A//www.clips.ua.ac.be/pattern)
+Pattern: [http://www.clips.ua.ac.be/pattern](http://www.clips.ua.ac.be/pattern)
 
-Spacy: [http://spacy.io](https://link.zhihu.com/?target=http%3A//spacy.io)
+Spacy: [http://spacy.io](http://spacy.io)
 
-Orange: [http://orange.biolab.si/features/](https://link.zhihu.com/?target=http%3A//orange.biolab.si/features/)
+Orange: [http://orange.biolab.si/features/](http://orange.biolab.si/features/)
 
-Pineapple: [https://github.com/proycon/pynlpl](https://link.zhihu.com/?target=https%3A//github.com/proycon/pynlpl)
+Pineapple: [https://github.com/proycon/pynlpl](https://github.com/proycon/pynlpl)
 
-7
-
-相关论文
+7 相关论文
 
 100 Must-Read NLP Papers
 
-[https://github.com/mhagiwara/100-nlp-papers](https://link.zhihu.com/?target=https%3A//github.com/mhagiwara/100-nlp-papers)
+[https://github.com/mhagiwara/100-nlp-papers](https://github.com/mhagiwara/100-nlp-papers)
 
 计算机视觉
 
-1
-
-计算机视觉的应用
+1 计算机视觉的应用
 
 计算机视觉的应用
 
@@ -1018,9 +990,7 @@ VR/AR
 
 其他
 
-2
-
-课程推荐
+2 课程推荐
 
 Stanford CS223B
 
@@ -1028,11 +998,9 @@ Stanford CS223B
 
 李飞飞：CS231n课程：
 
-[https://mp.weixin.qq.com/s/-NaDpXsxvu4DpXqVNXIAvQ](https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/-NaDpXsxvu4DpXqVNXIAvQ)
+[https://mp.weixin.qq.com/s/-NaDpXsxvu4DpXqVNXIAvQ](https://mp.weixin.qq.com/s/-NaDpXsxvu4DpXqVNXIAvQ)
 
-3
-
-书籍推荐
+3 书籍推荐
 
 1.入门学习：
 
@@ -1048,15 +1016,11 @@ Stanford CS223B
 
 推荐系统
 
-1
-
-推荐系统是什么
+1 推荐系统是什么
 
 推荐系统就是自动联系用户和物品的一种工具，它能够在信息过载的环境中帮助用户发现令他们感兴趣的信息，也能将信息推送给对它们感兴趣的用户。推荐系统属于资讯过滤的一种应用。
 
-2
-
-推荐课程
+2 推荐课程
 
 推荐系统专项课程**《Recommender Systems Specialization》**
 
@@ -1064,11 +1028,9 @@ Stanford CS223B
 
 观看地址：
 
-[https://www.coursera.org/specializations/recommender-systems](https://link.zhihu.com/?target=https%3A//www.coursera.org/specializations/recommender-systems)
+[https://www.coursera.org/specializations/recommender-systems](https://www.coursera.org/specializations/recommender-systems)
 
-3
-
-书籍推荐
+3 书籍推荐
 
 《推荐系统实践》（项亮 著）
 
@@ -1078,17 +1040,15 @@ Stanford CS223B
 
 《Recommender Systems Handbook》（Paul B·Kantor等 著）
 
-4
-
-算法库
+4 算法库
 
 **LibRec**
 
 LibRec是一个Java版本的覆盖了70余个各类型推荐算法的推荐系统开源算法库，由国内的推荐系统大牛郭贵冰创办，目前已更新到2.0版本，它有效地解决了评分预测和物品推荐两大关键的推荐问题。
 
-项目地址: [https://github.com/guoguibing/librec](https://link.zhihu.com/?target=https%3A//github.com/guoguibing/librec)
+项目地址: [https://github.com/guoguibing/librec](https://github.com/guoguibing/librec)
 
-官网地址： [https://www.librec.net/](https://link.zhihu.com/?target=https%3A//www.librec.net/)
+官网地址： [https://www.librec.net/](https://www.librec.net/)
 
 **LibMF**
 
@@ -1096,13 +1056,13 @@ C++版本开源推荐系统，主要实现了基于矩阵分解的推荐系统�
 
 项目地址：
 
-[http://www.csie.ntu.edu.tw/~cjlin/libmf/](https://link.zhihu.com/?target=http%3A//www.csie.ntu.edu.tw/~cjlin/libmf/)
+[http://www.csie.ntu.edu.tw/~cjlin/libmf/](http://www.csie.ntu.edu.tw/~cjlin/libmf/)
 
 **SurPRISE**
 
 一个Python版本的开源推荐系统，有多种经典推荐算法
 
-项目地址：[http://surpriselib.com/](https://link.zhihu.com/?target=http%3A//surpriselib.com/)
+项目地址：[http://surpriselib.com/](http://surpriselib.com/)
 
 **Neural Collaborative Filtering**
 
@@ -1110,85 +1070,73 @@ C++版本开源推荐系统，主要实现了基于矩阵分解的推荐系统�
 
 项目地址：
 
-[https://github.com/hexiangnan/neural_collaborative_filtering](https://link.zhihu.com/?target=https%3A//github.com/hexiangnan/neural_collaborative_filtering)
+[https://github.com/hexiangnan/neural_collaborative_filtering](https://github.com/hexiangnan/neural_collaborative_filtering)
 
 **Crab**
 
 基于Python开发的开源推荐软件，其中实现有item和user的协同过滤
 
-项目地址：[http://muricoca.github.io/crab/](https://link.zhihu.com/?target=http%3A//muricoca.github.io/crab/)
+项目地址：[http://muricoca.github.io/crab/](http://muricoca.github.io/crab/)
 
-5
-
-常用数据集
+5 常用数据集
 
 **MovieLen**
 
-[https://grouplens.org/datasets/movielens/](https://link.zhihu.com/?target=https%3A//grouplens.org/datasets/movielens/)
+[https://grouplens.org/datasets/movielens/](https://grouplens.org/datasets/movielens/)
 
 MovieLens数据集中，用户对自己看过的电影进行评分，分值为1~5。MovieLens包括两个不同大小的库，适用于不同规模的算法。小规模的库是943个独立用户对1 682部电影作的10 000次评分的数据；大规模的库是6 040个独立用户对3 900部电影作的大约100万次评分。适用于传统的推荐任务
 
 **Douban**
 
-[https://www.cse.cuhk.edu.hk/irwin.king.new/pub/data/douban](https://link.zhihu.com/?target=https%3A//www.cse.cuhk.edu.hk/irwin.king.new/pub/data/douban)
+[https://www.cse.cuhk.edu.hk/irwin.king.new/pub/data/douban](https://www.cse.cuhk.edu.hk/irwin.king.new/pub/data/douban)
 
 Douban是豆瓣的匿名数据集，它包含了12万用户和5万条电影数据，是用户对电影的评分信息和用户间的社交信息，适用于社会化推荐任务。
 
 **BookCrossing**
 
-[http://www2.informatik.uni-freiburg.de/~cziegler/BX/](https://link.zhihu.com/?target=http%3A//www2.informatik.uni-freiburg.de/~cziegler/BX/)
+[http://www2.informatik.uni-freiburg.de/~cziegler/BX/](http://www2.informatik.uni-freiburg.de/~cziegler/BX/)
 
 这个数据集是网上的Book-Crossing图书社区的278858个用户对271379本书进行的评分，包括显式和隐式的评分。这些用户的年龄等人口统计学属性(demographic feature)都以匿名的形式保存并供分析。这个数据集是由Cai-Nicolas Ziegler使用爬虫程序在2004年从Book-Crossing图书社区上采集的。
 
-6
-
-推荐论文
+6 推荐论文
 
 经典必读论文整理，包括综述文章、传统经典推荐文章、社会化推荐文章、基于深度学习的推荐系统文章、专门用于解决冷启动的文章、POI相关的论文、利用哈希技术来加速推荐的文章以及推荐系统中经典的探索与利用问题的相关文章等。
 
 项目地址:
 
-[https://github.com/hongleizhang/RSPapers](https://link.zhihu.com/?target=https%3A//github.com/hongleizhang/RSPapers)
+[https://github.com/hongleizhang/RSPapers](https://github.com/hongleizhang/RSPapers)
 
-7
-
-推荐项目
+7 推荐项目
 
 1.今日头条推荐系统机制介绍，面向内容创作者。分享人：项亮，今日头条推荐算法架构师:
 
-[https://v.qq.com/x/page/f0800qavik7.html?](https://link.zhihu.com/?target=https%3A//v.qq.com/x/page/f0800qavik7.html%3F)
+[https://v.qq.com/x/page/f0800qavik7.html?](https://v.qq.com/x/page/f0800qavik7.html%3F)
 
-\2. 3分钟了解今日头条推荐系统原理
+2. 3分钟了解今日头条推荐系统原理
 
-[https://v.qq.com/x/page/g05349lb80j.html?](https://link.zhihu.com/?target=https%3A//v.qq.com/x/page/g05349lb80j.html%3F)
+[https://v.qq.com/x/page/g05349lb80j.html?](https://v.qq.com/x/page/g05349lb80j.html%3F)
 
 3.facebook是如何为十亿人推荐好友的
 
-[https://code.facebook.com/posts/861999383875667/recommending-items-to-more-than-a-billion-people/](https://link.zhihu.com/?target=https%3A//code.facebook.com/posts/861999383875667/recommending-items-to-more-than-a-billion-people/)
+[https://code.facebook.com/posts/861999383875667/recommending-items-to-more-than-a-billion-people/](https://code.facebook.com/posts/861999383875667/recommending-items-to-more-than-a-billion-people/)
 
 4.Netflix的个性化和推荐系统架构
 
-[http://techblog.netflix.com/2013/03/system-architectures-for.html](https://link.zhihu.com/?target=http%3A//techblog.netflix.com/2013/03/system-architectures-for.html)
+[http://techblog.netflix.com/2013/03/system-architectures-for.html](http://techblog.netflix.com/2013/03/system-architectures-for.html)
 
 **风控模型（评分卡模型）**
 
-1
-
-评分卡模型简介
+1 评分卡模型简介
 
 评分卡模型时在银行、互金等公司与借贷相关业务中最常见也是最重要的模型之一。简而言之它的作用就是对客户进行打分，来对客户是否优质进行评判。
 
 根据评分卡模型应用的业务阶段不用，评分卡模型主要分为三大类：A卡（Application score card）申请评分卡、B卡（Behavior score card）行为评分卡、C卡（Collection score card）催收评分卡。其中申请评分卡用于贷前，行为评分卡用于贷中，催收评分卡用于贷后，这三种评分卡在我们的信贷业务的整个生命周期都至关重要。
 
-2
-
-推荐书籍
+2 推荐书籍
 
 《信用风险评分卡研究——基于SAS的开发与实施》
 
-3
-
-评分卡模型建模过程
+3  评分卡模型建模过程
 
 **样本选取**
 
@@ -1220,15 +1168,11 @@ Douban是豆瓣的匿名数据集，它包含了12万用户和5万条电影数�
 
 **知识图谱**
 
-1
-
-知识图谱是什么
+1 知识图谱是什么
 
 知识图谱是一种结构化数据的处理方法，它涉及知识的提取、表示、存储、检索等一系列技术。从渊源上讲，它是知识表示与推理、数据库、信息检索、自然语言处理等多种技术发展的融合。
 
-2
-
-推荐资料
+2 推荐资料
 
 为什么需要知识图谱？什么是知识图谱？——KG的前世今生
 
@@ -1244,15 +1188,13 @@ https://zhuanlan.zhihu.com/p/35982177?from=1084395010&wm=9848_0009&weiboauthorui
 
 百度王海峰：知识图谱是 AI 的基石
 
-[http://www.infoq.com/cn/news/2017/11/Knowledge-map-cornerstone-AI#0-tsina-1-5001-397232819ff9a47a7b7e80a40613cfe1](https://link.zhihu.com/?target=http%3A//www.infoq.com/cn/news/2017/11/Knowledge-map-cornerstone-AI%230-tsina-1-5001-397232819ff9a47a7b7e80a40613cfe1)
+[http://www.infoq.com/cn/news/2017/11/Knowledge-map-cornerstone-AI#0-tsina-1-5001-397232819ff9a47a7b7e80a40613cfe1](http://www.infoq.com/cn/news/2017/11/Knowledge-map-cornerstone-AI%230-tsina-1-5001-397232819ff9a47a7b7e80a40613cfe1)
 
 译文|从知识抽取到RDF知识图谱可视化
 
-[http://rdc.hundsun.com/portal/article/907.html?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io](https://link.zhihu.com/?target=http%3A//rdc.hundsun.com/portal/article/907.html%3Fhmsr%3Dtoutiao.io%26utm_medium%3Dtoutiao.io%26utm_source%3Dtoutiao.io)
+[http://rdc.hundsun.com/portal/article/907.html?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io](http://rdc.hundsun.com/portal/article/907.html%3Fhmsr%3Dtoutiao.io%26utm_medium%3Dtoutiao.io%26utm_source%3Dtoutiao.io)
 
-3
-
-主要内容
+3 主要内容
 
 **3.1 知识提取**
 
@@ -1272,7 +1214,7 @@ regexper 可视化：例 [a-z]*(\d{4}(\D+))
 
 pythex 在线测试正则表达式：
 
-[http://pythex.org/](https://link.zhihu.com/?target=http%3A//pythex.org/)
+[http://pythex.org/](http://pythex.org/)
 
 推荐资料进阶：
 
@@ -1280,11 +1222,11 @@ re2 ：
 
 Python wrapper for Google's RE2 using Cython
 
-[https://pypi.python.org/pypi/re2/](https://link.zhihu.com/?target=https%3A//pypi.python.org/pypi/re2/)
+[https://pypi.python.org/pypi/re2/](https://pypi.python.org/pypi/re2/)
 
 Parsley ：更人性化的正则表达语法
 
-[http://parsley.readthedocs.io/en/latest/tutorial.html](https://link.zhihu.com/?target=http%3A//parsley.readthedocs.io/en/latest/tutorial.html)
+[http://parsley.readthedocs.io/en/latest/tutorial.html](http://parsley.readthedocs.io/en/latest/tutorial.html)
 
 **中文分词和词性标注**
 
@@ -1294,21 +1236,21 @@ Parsley ：更人性化的正则表达语法
 
 jieba 中文分词包
 
-[https://github.com/fxsjy/jieba](https://link.zhihu.com/?target=https%3A//github.com/fxsjy/jieba)
+[https://github.com/fxsjy/jieba](https://github.com/fxsjy/jieba)
 
 中文词性标记集
 
-[https://github.com/memect/kg-beijing/wiki/](https://link.zhihu.com/?target=https%3A//github.com/memect/kg-beijing/wiki/)
+[https://github.com/memect/kg-beijing/wiki/](https://github.com/memect/kg-beijing/wiki/)
 
 推荐资料进阶：
 
 genius 采用 CRF条件随机场算法
 
-[https://github.com/duanhongyi/genius](https://link.zhihu.com/?target=https%3A//github.com/duanhongyi/genius)
+[https://github.com/duanhongyi/genius](https://github.com/duanhongyi/genius)
 
 Stanford CoreNLP分词
 
-[https://blog.csdn.net/guolindonggld/article/details/72795022](https://link.zhihu.com/?target=https%3A//blog.csdn.net/guolindonggld/article/details/72795022)
+[https://blog.csdn.net/guolindonggld/article/details/72795022](https://blog.csdn.net/guolindonggld/article/details/72795022)
 
 **命名实体识别**
 
@@ -1318,7 +1260,7 @@ Stanford CoreNLP分词
 
 Stanford CoreNLP 进行中文命名实体识别
 
-[https://blog.csdn.net/guolindonggld/article/details/72795022](https://link.zhihu.com/?target=https%3A//blog.csdn.net/guolindonggld/article/details/72795022)
+[https://blog.csdn.net/guolindonggld/article/details/72795022](https://blog.csdn.net/guolindonggld/article/details/72795022)
 
 3.1.2 使用深度学习
 
@@ -1332,7 +1274,7 @@ Stanford CoreNLP 进行中文命名实体识别
 
 序列标注问题
 
-[https://www.cnblogs.com/jiangxinyang/p/9368482.html](https://link.zhihu.com/?target=https%3A//www.cnblogs.com/jiangxinyang/p/9368482.html)
+[https://www.cnblogs.com/jiangxinyang/p/9368482.html](https://www.cnblogs.com/jiangxinyang/p/9368482.html)
 
 **seq2seq**
 
@@ -1342,11 +1284,11 @@ Stanford CoreNLP 进行中文命名实体识别
 
 seq2seq详解
 
-[https://blog.csdn.net/irving_zhang/article/details/78889364](https://link.zhihu.com/?target=https%3A//blog.csdn.net/irving_zhang/article/details/78889364)
+[https://blog.csdn.net/irving_zhang/article/details/78889364](https://blog.csdn.net/irving_zhang/article/details/78889364)
 
 详解从Seq2Seq模型到Attention模型
 
-[https://caicai.science/2018/10/06/attention%E6%80%BB%E8%A7%88/](https://link.zhihu.com/?target=https%3A//caicai.science/2018/10/06/attention%E6%80%BB%E8%A7%88/)
+[https://caicai.science/2018/10/06/attention%E6%80%BB%E8%A7%88/](https://caicai.science/2018/10/06/attention%E6%80%BB%E8%A7%88/)
 
 **3.2 知识表示**
 
@@ -1358,19 +1300,19 @@ JSON和YAML
 
 json库：
 
-[https://docs.python.org/2/library/json.html](https://link.zhihu.com/?target=https%3A//docs.python.org/2/library/json.html)
+[https://docs.python.org/2/library/json.html](https://docs.python.org/2/library/json.html)
 
 PyYAML: 是Python里的Yaml处理库
 
-[http://pyyaml.org/wiki/PyYAML](https://link.zhihu.com/?target=http%3A//pyyaml.org/wiki/PyYAML)
+[http://pyyaml.org/wiki/PyYAML](http://pyyaml.org/wiki/PyYAML)
 
 RDF和OWL语义：
 
-[http://blog.memect.cn/?p=871](https://link.zhihu.com/?target=http%3A//blog.memect.cn/%3Fp%3D871)
+[http://blog.memect.cn/?p=871](http://blog.memect.cn/%3Fp%3D871)
 
 JSON-LD
 
-主页：[http://json-ld.org/](https://link.zhihu.com/?target=http%3A//json-ld.org/)
+主页：[http://json-ld.org/](http://json-ld.org/)
 
 **3.3 知识存储**
 
@@ -1382,17 +1324,17 @@ b.PostgreSQL及其JSON扩展
 
 Psycopg包操作PostgreSQL
 
-[http://initd.org/psycopg/docs/](https://link.zhihu.com/?target=http%3A//initd.org/psycopg/docs/)
+[http://initd.org/psycopg/docs/](http://initd.org/psycopg/docs/)
 
 c.图数据库 Neo4j和OrientDB
 
-1.Neo4j的Python接口 [https://neo4j.com/developer/python/](https://link.zhihu.com/?target=https%3A//neo4j.com/developer/python/)
+1.Neo4j的Python接口 [https://neo4j.com/developer/python/](https://neo4j.com/developer/python/)
 
-2.OrientDB：[http://orientdb.com/orientdb/](https://link.zhihu.com/?target=http%3A//orientdb.com/orientdb/)
+2.OrientDB：[http://orientdb.com/orientdb/](http://orientdb.com/orientdb/)
 
 d.RDF数据库Stardog
 
-Stardog官网：[http://stardog.com/](https://link.zhihu.com/?target=http%3A//stardog.com/)
+Stardog官网：[http://stardog.com/](http://stardog.com/)
 
 **3.4 知识检索**
 
@@ -1400,7 +1342,7 @@ Stardog官网：[http://stardog.com/](https://link.zhihu.com/?target=http%3A//st
 
 ElasticSearch教程：
 
-[http://joelabrahamsson.com/elasticsearch-101/](https://link.zhihu.com/?target=http%3A//joelabrahamsson.com/elasticsearch-101/)
+[http://joelabrahamsson.com/elasticsearch-101/](http://joelabrahamsson.com/elasticsearch-101/)
 
 4
 
@@ -1412,21 +1354,21 @@ https://www.zhihu.com/question/19558514
 
 RDF：
 
-[https://www.w3.org/RDF/](https://link.zhihu.com/?target=https%3A//www.w3.org/RDF/)
+[https://www.w3.org/RDF/](https://www.w3.org/RDF/)
 
 Apache Jena：
 
-[https://jena.apache.org/](https://link.zhihu.com/?target=https%3A//jena.apache.org/)
+[https://jena.apache.org/](https://jena.apache.org/)
 
 D2RQ：
 
-[http://d2rq.org/getting-started](https://link.zhihu.com/?target=http%3A//d2rq.org/getting-started)
+[http://d2rq.org/getting-started](http://d2rq.org/getting-started)
 
 4.1 Protege构建本体系列
 
 protege：
 
-[https://protege.stanford.edu/](https://link.zhihu.com/?target=https%3A//protege.stanford.edu/)
+[https://protege.stanford.edu/](https://protege.stanford.edu/)
 
 protege使用：
 
@@ -1438,21 +1380,21 @@ python或java
 
 4.3 图数据库技术
 
-Neo4j：[https://neo4j.com/](https://link.zhihu.com/?target=https%3A//neo4j.com/)
+Neo4j：[https://neo4j.com/](https://neo4j.com/)
 
-AllegroGraph：[https://franz.com/agraph/allegrograph/](https://link.zhihu.com/?target=https%3A//franz.com/agraph/allegrograph/)
+AllegroGraph：[https://franz.com/agraph/allegrograph/](https://franz.com/agraph/allegrograph/)
 
 4.4 可视化技术
 
-d3.js：[https://d3js.org/](https://link.zhihu.com/?target=https%3A//d3js.org/)
+d3.js：[https://d3js.org/](https://d3js.org/)
 
-Cytoscape.js：[http://js.cytoscape.org/](https://link.zhihu.com/?target=http%3A//js.cytoscape.org/)
+Cytoscape.js：[http://js.cytoscape.org/](http://js.cytoscape.org/)
 
 4.5 分词技术
 
-jieba：[https://github.com/fxsjy/jieba](https://link.zhihu.com/?target=https%3A//github.com/fxsjy/jieba)
+jieba：[https://github.com/fxsjy/jieba](https://github.com/fxsjy/jieba)
 
-hanlp：[https://github.com/hankcs/HanLP](https://link.zhihu.com/?target=https%3A//github.com/hankcs/HanLP)
+hanlp：[https://github.com/hankcs/HanLP](https://github.com/hankcs/HanLP)
 
 5
 
@@ -1460,11 +1402,11 @@ hanlp：[https://github.com/hankcs/HanLP](https://link.zhihu.com/?target=https%3
 
 基于知识图谱的问答：
 
-[https://github.com/kangzhun/KnowledgeGraph-QA-Service](https://link.zhihu.com/?target=https%3A//github.com/kangzhun/KnowledgeGraph-QA-Service)
+[https://github.com/kangzhun/KnowledgeGraph-QA-Service](https://github.com/kangzhun/KnowledgeGraph-QA-Service)
 
 Agriculture_KnowledgeGraph：
 
-[https://github.com/qq547276542/Agriculture_KnowledgeGraph](https://link.zhihu.com/?target=https%3A//github.com/qq547276542/Agriculture_KnowledgeGraph)
+[https://github.com/qq547276542/Agriculture_KnowledgeGraph](https://github.com/qq547276542/Agriculture_KnowledgeGraph)
 
 **贡献平台**
 
