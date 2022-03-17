@@ -17,7 +17,7 @@
        - [图像标注](cv/图像标注.md)
        - [Paper](cv/paper/README.md)
           - [CNN](cv/paper/cnn.md)
-          - [Yolo系列](cv/paper/yolox.md)
+          - [Yolo系列](cv/paper/yolo.md)
           - [SSD](cv/paper/ssd.md)
           - [VGG](cv/paper/vgg.md)
           - [Resnet](cv/paper/resnet.md)
