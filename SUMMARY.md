@@ -89,6 +89,7 @@
   - [OpenCV-Python 绑定](cv/opencv/opencv4.0.0_py/4.0.0/11.1-tutorial_py_OpenCV-Python.md)
 
 - [Paper](cv/paper/README.md)
+  - [感受野](cv/paper/感受野.md)
   - [CNN](cv/paper/cnn.md)
   - [Yolo系列](cv/paper/yolo.md)
   - [SSD](cv/paper/ssd.md)
