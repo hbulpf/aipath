@@ -1,15 +1,27 @@
 # CV论文研读
 
+![image-20220319010317472](cv_paper_path/image-20220319010317472.png)
+
 ## CV 综述
-
-
 
 ## CV baseline
 入门的基石性论文
 
 ![image-20220319000529327](cv_paper_path/image-20220319000529327.png)
 
+1. NIPS-2012,Alexnet:深度学习CV领域划时代论文，具有里程碑意义
+2. ICLR-2015,VGG:开启3\*3卷积堆叠时代
+3. CVPR-2015,GoogLeNet v1:Google系列论文开创论文，提出多尺度卷积模块一一Inception
+4. arXiv-2015,GoogLeNet v2:Batch Normalization提出论文，BN层对深度学习快速发展起到加速作
+5. CVPR-2016,GoogLeNet v3:提出GoogLeNeti系列应用最广模型一一InceptionV3
+6. arXiv-2016,GoogLeNet v4:Inception与ResNet结构的尝试
+7. CVPR-2016,ResNet:工业界标杆模型，最具影响力的卷积神经网络
+8. CVPR-2017,DenseNet:ResNet的改进，2016-ILSVRC冠军
+9. TPAM1-2017,SEnet:引入注意力机制的卷积神经网路，2017-ILSVRC(最后一届)冠军
+10. CVPR-2017,ResNeXt:何凯明团队对ResNet重大改进
+
 ## 细分专题
+
 ### Part1 图像分割
 1. 图像分割综述
 2. FCN -- 深度学习语义分割开山之作，经典必读第一篇
@@ -87,8 +99,19 @@
 5. Deformable DETR -- 详细分析了detr的计算瓶颈，在deformable conv基础上改良出deformable attention,速度快，性能优
 6. Sparse R-CNN -- detr后的检测器可以简洁到什么程度? 无Anchor,无IRPN,无NMS,还速度快，性能好
 
+## 深度之眼资源
 
-### 参考
+### PyTorch
+
+**1. 课程所有代码汇总github地址：**
+
+https://github.com/JansonYuan/Pytorch-Camp
+
+**4. 作业讲解代码地址：**
+
+https://github.com/greebear/pytorch-learning
+
+## 参考
 
 1. [深度之眼的课程大纲](cv_paper_path/20220318233909.jpg)
 
