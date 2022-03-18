@@ -87,8 +87,8 @@
 #### 其他
   - [人脸目标检测](cv/opencv/opencv4.0.0_py/4.0.0/10.1-tutorial_py_face_detection.md)
   - [OpenCV-Python 绑定](cv/opencv/opencv4.0.0_py/4.0.0/11.1-tutorial_py_OpenCV-Python.md)
-
 - [Paper](cv/paper/README.md)
+  - [CV论文研读](cv/paper/cv_paper_path.md)
   - [感受野](cv/paper/感受野.md)
   - [CNN](cv/paper/cnn.md)
   - [Yolo系列](cv/paper/yolo.md)
@@ -141,3 +141,6 @@
 - [资源](others/ai_resource.md)
 - [书籍](others/ai_books.md)
 
+# NLP
+- [NLP](nlp/README.md)
+  - [NLP论文研读](nlp/nlp_paper_path.md)
