@@ -6,6 +6,7 @@
 - [深度学习](dl/README.md)
   - [深度学习四大名著](dl/深度学习四大名著.md)
   - [跟李沐深度学习](dl/跟李沐深度学习/README.md)
+    - [PyTorch](dl/跟李沐深度学习/PyTorch.md)
   - [卡尔曼滤波](dl/KalmanFilter.md)
 
 # 计算机视觉
