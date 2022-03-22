@@ -112,6 +112,7 @@
   - [nvidia_cuda](frames/nvidia_cuda/README.md)
 
 - [平台与工具](plateform/README.md)
+  - [个人工作站](plateform/config_dl_workstation.md)
   - [GPU](plateform/gpu_selection.md)
   - [NPU](plateform/npu_selection.md)
   - [百度飞桨](plateform/paddlepaddle.md)
