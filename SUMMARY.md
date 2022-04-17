@@ -108,7 +108,6 @@
   - [Pytorch](frames/pytorch/README.md)
     - [安装PyTorch](frames/pytorch/install.md)
     - [常见API](frames/pytorch/apis.md)
-    - [docker方式启动pytorch](frames/pytorch/pytorch_docker.md)
   - [autokeras](frames/autokeras/README.md)
   - [keras](frames/keras/README.md)
   - [nvidia_cuda](frames/nvidia_cuda/README.md)
