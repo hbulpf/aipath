@@ -19,6 +19,7 @@
         "splitter",
         "github",
         "copy-code-button",
+        "toggle-chapters",
         "-lunr",
         "-search","search-plus",
         "expandable-chapters-small",
