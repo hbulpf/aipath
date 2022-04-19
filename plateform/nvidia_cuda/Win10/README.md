@@ -6,8 +6,6 @@
 
 ![image-20220419160201111](README.assets/image-20220419160201111.png)
 
-
-
 如需安装显卡驱动，在官方驱动下载网站找到自己的显卡型号对应的驱动下载并安装: https://www.nvidia.cn/Download/index.aspx?lang=cn
 
 ![image-20220419160425015](README.assets/image-20220419160425015.png)
@@ -184,6 +182,20 @@ PyTorch官网安装: https://pytorch.org/get-started/locally/
 这里在win10上使用最新的PyTorch
 
 ![image-20220419193216414](README.assets/image-20220419193216414.png)
+
+安装成功后使用 PyTorch 程序检查
+```
+import torch
+print(torch.__version__)
+print(torch.cuda.is_available())
+```
+如果输出的结果是False，那么说明当前的Pytorch版本无法使用显卡。
+使用就会遇到错误
+```
+AssertionError: Torch not compiled with CUDA enabled
+```
+
+检查一下当前的CUDA版本,可以在CUDA目录下查看 version.json 。
 
 # 卸载CUDA
 
