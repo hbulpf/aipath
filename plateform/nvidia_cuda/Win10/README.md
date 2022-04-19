@@ -213,7 +213,7 @@ AssertionError: Torch not compiled with CUDA enabled
 **1.留下：**NVIDIA的图形驱动程序、NVIDIA Physx系统软件，NVIDIA GeForce Experience，如果你有这3个软件，就别卸载。
 **2.卸载：** 
 
-1. 推荐排序。 点击顶部时间小三角排序，可发现一个叫NVIDIA Nsight HUD Launcher 的带眼睛图标的排列在上面，挺大的。然后从下往上卸载，跳过保留的**NVIDIA图形驱动、NVIDIA Physx系统软件、NVIDIA GeForce Experience**。软件名含cuda的，11.3的，sdk，NVIDIA Nsight HUD等，这些都可以卸载掉。
+1. 推荐排序。  点击顶部时间小三角排序，找到NVIDIA，从下往上卸载，跳过保留的NVIDIA图形驱动、NVIDIA Physx系统软件、NVIDIA GeForce Experience。软件名含cuda11.3的，sdk，NVIDIA Nsight等，这些都可以卸载掉。
 
    ![image-20220419195826687](README.assets/image-20220419195826687.png)
 
