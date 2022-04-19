@@ -8,6 +8,50 @@
   - [跟李沐深度学习](dl/跟李沐深度学习/README.md)
     - [PyTorch](dl/跟李沐深度学习/PyTorch.md)
   - [卡尔曼滤波](dl/KalmanFilter.md)
+- [Paper](cv/paper/README.md)
+  - [CV论文研读](cv/paper/cv_paper_path.md)
+  - [感受野](cv/paper/感受野.md)
+  - [CNN](cv/paper/cnn.md)
+  - [Yolo系列](cv/paper/yolo.md)
+  - [SSD](cv/paper/ssd.md)
+  - [VGG](cv/paper/vgg.md)
+  - [Resnet](cv/paper/resnet.md)
+  - [U-Net](cv/paper/unet.md)
+  - [GAN](cv/paper/gan.md)
+- [平台与工具](plateform/README.md)
+  - [个人工作站](plateform/config_dl_workstation.md)
+  - [GPU](plateform/gpu_selection.md)
+  - [NPU](plateform/npu_selection.md)
+  - [NvidiaCUDA](plateform/nvidia_cuda/README.md)
+    - [Win10](plateform/nvidia_cuda/Win10/README.md)
+    - [CentOS7](plateform/nvidia_cuda/CentOS7/README.md)
+  - [百度飞桨](plateform/paddlepaddle.md)
+  - [华为昇腾](plateform/ascend.md)
+- [AI框架](frames/README.md)
+  - [Tensorflow](frames/tesorflow/README.md)
+   - [docker方式启动tensorflow](frames/tesorflow/tesorflow_docker.md)
+  - [Pytorch](frames/pytorch/README.md)
+    - [安装PyTorch](frames/pytorch/install.md)
+    - [常见API](frames/pytorch/apis.md)
+  - [autokeras](frames/autokeras/README.md)
+  - [keras](frames/keras/README.md)
+
+
+# 课题与数据集
+- [热门课题](hot/README.md)
+  - [2018 年最流行的 AI 技术](hot/hot_2018.md)
+  - [2019 年最流行的 AI 技术](hot/hot_2019.md)
+  - [2020 年最流行的 AI 技术](hot/hot_2020.md)
+- [数据集](datasets/README.md)
+  - [机器学习数据集大全](datasets/机器学习数据集大全.md)
+
+# 项目
+
+- [AI与数据项目](project/README.md)
+  - [推荐系统](project/recommendation_sys/README.md)
+    - [音乐推荐](project/recommendation_sys/music_recommendation/environments.md)
+  - [人脸识别](project/face_detection/README.md)
+- [八斗学院项目](project/八斗学院.md)
 
 # 计算机视觉
 
@@ -21,7 +65,7 @@
   - [机器视觉应用场景](cv/mv/机器视觉应用场景.md)
   - [机器视觉产业链](cv/mv/机器视觉产业链.md)
   - [计算偏移旋转矩阵](cv/mv/计算偏移旋转矩阵.md)
-
+# OpenCV
 - [OpenCV](cv/opencv/README.md)
   - [OpenCV-Python 教程简介](cv/opencv/opencv4.0.0_py/4.0.0/1.1-tutorial_py_intro.md)
   - [在 Ubuntu 系统中安装 OpenCV—Python](cv/opencv/opencv4.0.0_py/4.0.0/1.2-tutorial_py_setup_in_ubuntu.md)
@@ -89,51 +133,6 @@
 #### 其他
   - [人脸目标检测](cv/opencv/opencv4.0.0_py/4.0.0/10.1-tutorial_py_face_detection.md)
   - [OpenCV-Python 绑定](cv/opencv/opencv4.0.0_py/4.0.0/11.1-tutorial_py_OpenCV-Python.md)
-- [Paper](cv/paper/README.md)
-  - [CV论文研读](cv/paper/cv_paper_path.md)
-  - [感受野](cv/paper/感受野.md)
-  - [CNN](cv/paper/cnn.md)
-  - [Yolo系列](cv/paper/yolo.md)
-  - [SSD](cv/paper/ssd.md)
-  - [VGG](cv/paper/vgg.md)
-  - [Resnet](cv/paper/resnet.md)
-  - [U-Net](cv/paper/unet.md)
-  - [GAN](cv/paper/gan.md)
-
-# 平台与安装
-
-- [AI框架](frames/README.md)
-  - [Tensorflow](frames/tesorflow/README.md)
-   - [docker方式启动tensorflow](frames/tesorflow/tesorflow_docker.md)
-  - [Pytorch](frames/pytorch/README.md)
-    - [安装PyTorch](frames/pytorch/install.md)
-    - [常见API](frames/pytorch/apis.md)
-  - [autokeras](frames/autokeras/README.md)
-  - [keras](frames/keras/README.md)
-  - [nvidia_cuda](frames/nvidia_cuda/README.md)
-
-- [平台与工具](plateform/README.md)
-  - [个人工作站](plateform/config_dl_workstation.md)
-  - [GPU](plateform/gpu_selection.md)
-  - [NPU](plateform/npu_selection.md)
-  - [百度飞桨](plateform/paddlepaddle.md)
-  - [华为昇腾](plateform/ascend.md)
-
-# 课题与数据集
-- [热门课题](hot/README.md)
-  - [2018 年最流行的 AI 技术](hot/hot_2018.md)
-  - [2019 年最流行的 AI 技术](hot/hot_2019.md)
-  - [2020 年最流行的 AI 技术](hot/hot_2020.md)
-- [数据集](datasets/README.md)
-  - [机器学习数据集大全](datasets/机器学习数据集大全.md)
-
-# 项目
-
-- [AI与数据项目](project/README.md)
-  - [推荐系统](project/recommendation_sys/README.md)
-    - [音乐推荐](project/recommendation_sys/music_recommendation/environments.md)
-  - [人脸识别](project/face_detection/README.md)
-- [八斗学院项目](project/八斗学院.md)
 
 # 机器人
 - [机器人](robot/README.md)
