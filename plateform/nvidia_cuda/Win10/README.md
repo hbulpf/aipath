@@ -1,5 +1,7 @@
 # 安装 CUDA
 
+B站视频教程参考: https://www.bilibili.com/video/BV1ng411M7qV
+
 ## 安装Nvidia显卡驱动
 
 安装Nvidia显卡驱动前可以先检查Nvidia显卡驱动是否已安装。搜索 Nvidia控制面板 或 Nvidia Control Panel可以看到当前已经安装的显卡驱动及版本
