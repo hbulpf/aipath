@@ -175,7 +175,7 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\libnvvp
 
 ![image-20220419195235094](README.assets/image-20220419195235094.png)
 
-## 安装PyTorch
+# 安装PyTorch
 
 PyTorch官网安装: https://pytorch.org/get-started/locally/
 
