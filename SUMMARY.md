@@ -8,16 +8,6 @@
   - [跟李沐深度学习](dl/跟李沐深度学习/README.md)
     - [PyTorch](dl/跟李沐深度学习/PyTorch.md)
   - [卡尔曼滤波](dl/KalmanFilter.md)
-- [Paper](cv/paper/README.md)
-  - [CV论文研读](cv/paper/cv_paper_path.md)
-  - [感受野](cv/paper/感受野.md)
-  - [CNN](cv/paper/cnn.md)
-  - [Yolo系列](cv/paper/yolo.md)
-  - [SSD](cv/paper/ssd.md)
-  - [VGG](cv/paper/vgg.md)
-  - [Resnet](cv/paper/resnet.md)
-  - [U-Net](cv/paper/unet.md)
-  - [GAN](cv/paper/gan.md)
 - [平台与工具](plateform/README.md)
   - [个人工作站](plateform/config_dl_workstation.md)
   - [GPU](plateform/gpu_selection.md)
@@ -36,28 +26,21 @@
   - [autokeras](frames/autokeras/README.md)
   - [keras](frames/keras/README.md)
 
-
-# 课题与数据集
-- [热门课题](hot/README.md)
-  - [2018 年最流行的 AI 技术](hot/hot_2018.md)
-  - [2019 年最流行的 AI 技术](hot/hot_2019.md)
-  - [2020 年最流行的 AI 技术](hot/hot_2020.md)
-- [数据集](datasets/README.md)
-  - [机器学习数据集大全](datasets/机器学习数据集大全.md)
-
-# 项目
-
-- [AI与数据项目](project/README.md)
-  - [推荐系统](project/recommendation_sys/README.md)
-    - [音乐推荐](project/recommendation_sys/music_recommendation/environments.md)
-  - [人脸识别](project/face_detection/README.md)
-- [八斗学院项目](project/八斗学院.md)
-
 # 计算机视觉
 
-- [计算机视觉介绍](cv/README.md)
+- [计算机视觉](cv/README.md)
   - [图像处理100问](cv/图像处理100问.md)
   - [图像标注](cv/图像标注.md)
+
+- [CV论文](cv/paper/README.md)
+  - [感受野](cv/paper/感受野.md)
+  - [CNN](cv/paper/cnn.md)
+  - [Yolo系列](cv/paper/yolo.md)
+  - [SSD](cv/paper/ssd.md)
+  - [VGG](cv/paper/vgg.md)
+  - [Resnet](cv/paper/resnet.md)
+  - [U-Net](cv/paper/unet.md)
+  - [GAN](cv/paper/gan.md)
 
 - [机器视觉](cv/README.md)
   - [Halcon](cv/mv/halcon.md)
@@ -65,6 +48,7 @@
   - [机器视觉应用场景](cv/mv/机器视觉应用场景.md)
   - [机器视觉产业链](cv/mv/机器视觉产业链.md)
   - [计算偏移旋转矩阵](cv/mv/计算偏移旋转矩阵.md)
+
 # OpenCV
 - [OpenCV](cv/opencv/README.md)
   - [OpenCV-Python 教程简介](cv/opencv/opencv4.0.0_py/4.0.0/1.1-tutorial_py_intro.md)
@@ -133,6 +117,22 @@
 #### 其他
   - [人脸目标检测](cv/opencv/opencv4.0.0_py/4.0.0/10.1-tutorial_py_face_detection.md)
   - [OpenCV-Python 绑定](cv/opencv/opencv4.0.0_py/4.0.0/11.1-tutorial_py_OpenCV-Python.md)
+
+# 课题与数据集
+- [热门课题](hot/README.md)
+  - [2018 年最流行的 AI 技术](hot/hot_2018.md)
+  - [2019 年最流行的 AI 技术](hot/hot_2019.md)
+  - [2020 年最流行的 AI 技术](hot/hot_2020.md)
+- [数据集](datasets/README.md)
+  - [机器学习数据集大全](datasets/机器学习数据集大全.md)
+
+# 项目
+
+- [AI与数据项目](project/README.md)
+  - [推荐系统](project/recommendation_sys/README.md)
+    - [音乐推荐](project/recommendation_sys/music_recommendation/environments.md)
+  - [人脸识别](project/face_detection/README.md)
+- [八斗学院项目](project/八斗学院.md)
 
 # 机器人
 - [机器人](robot/README.md)
