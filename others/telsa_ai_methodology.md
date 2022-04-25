@@ -62,7 +62,7 @@
 
 HydraNet 的想法可以追溯到 2018 年，这在人工智能社区中已经存在很久了。尽管如此，我仍然觉得这个主意不错，而且在许多情况下会非常有用。Andrej 解释说，HydraNet 允许神经网络 **共享一个共同的架构**，将任务解耦，你可以 **为中间的特征缓存**，从而节约计算。
 
-![img](https://static001.geekbang.org/infoq/13/132c56aeb65beccc4066b84257fe409e.png)
+![img](telsa_ai_methodology.assets/132c56aeb65beccc4066b84257fe409e.png)
 
 ### 模拟作为解决数据不足的一种方法
 
