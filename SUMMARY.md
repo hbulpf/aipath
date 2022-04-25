@@ -140,9 +140,10 @@
 # 其他
 
 - [成长路线](others/ai_path.md)
-- [基础问题](others/basic_questions.md)
 - [资源](others/ai_resource.md)
 - [书籍](others/ai_books.md)
+- [基础问题](others/basic_questions.md)
+  - [特斯拉AI团队的方法论](others/telsa_ai_methodology.md)
 
 # NLP
 - [NLP](nlp/README.md)
