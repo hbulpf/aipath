@@ -15,14 +15,16 @@
     - [安装PyTorch](frames/pytorch/install.md)
     - [常见API](frames/pytorch/apis.md)
   - [keras](frames/keras/README.md)
-    - [autokeras](frames/autokeras/README.md)
-  - [百度飞桨](frames/paddlepaddle.md)
-  - [华为昇腾](frames/ascend.md)
-  - [个人工作站](frames/config_dl_workstation.md)
+    - [autokeras](frames/keras/autokeras/README.md)
+  - [百度飞桨](frames/paddle/README.md)
+  - [华为昇腾](frames/ascend/README.md)
+    - [MindSpore](frames/ascend/mindspore.md)
+  - [配置工作站](frames/config_dl_workstation.md)
   - [GPU](frames/gpu_selection.md)
       - [Win10装CUDA](frames/nvidia_cuda/Win10/README.md)
       - [CentOS7装CUDA](frames/nvidia_cuda/CentOS7/README.md)
   - [NPU](frames/npu_selection.md)
+
 # 计算机视觉
 
 - [计算机视觉](cv/README.md)
