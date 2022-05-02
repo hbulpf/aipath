@@ -14,7 +14,7 @@
   - [Pytorch](frames/pytorch/README.md)
     - [安装PyTorch](frames/pytorch/install.md)
     - [常见API](frames/pytorch/apis.md)
-  - [keras](frames/keras/README.md)
+  - [Keras](frames/keras/README.md)
     - [autokeras](frames/keras/autokeras/README.md)
   - [百度飞桨](frames/paddle/README.md)
   - [华为昇腾](frames/ascend/README.md)
