@@ -1283,3 +1283,5 @@ os.environ.setdefault(“CUDA_VISIBLE_DEVICES”, “2, 3”)（推荐）
 ## 参考
 
 1. [Pytorch常用API汇总](https://blog.csdn.net/qq_49134563/article/details/108200828)
+2. [Pytorch中文API](https://pytorch-cn.readthedocs.io/zh/latest/)
+3. [PyTorch 中文教程 & 文档](https://pytorch.apachecn.org/)
