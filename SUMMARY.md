@@ -28,11 +28,13 @@
 # 计算机视觉
 
 - [计算机视觉](cv/README.md)
+  - [mAP](cv/necessary/mAP.md)
+  - [感受野](cv/necessary/感受野.md)
   - [图像处理100问](cv/图像处理100问.md)
   - [图像标注](cv/图像标注.md)
+  
 
 - [CV论文](cv/paper/README.md)
-  - [感受野](cv/paper/感受野.md)
   - [CNN](cv/paper/cnn.md)
   - [Yolo系列](cv/paper/yolo.md)
   - [SSD](cv/paper/ssd.md)
