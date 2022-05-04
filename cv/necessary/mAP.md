@@ -181,16 +181,123 @@ B模型在`IoU_threshold=0.7`时，`mAP`同样为0.4。
 
 COCO在VOC标准的基础上，取`IoU_threshold=0.5，0.55， 0.6，… , 0.95`时各个mAP的均值。
 
+在coco官网上，对map有以下几个评价指标：
+
+![图片](mAP.assets/640.png)
+
+第一个map为Iou的阈值从固定的0.5调整为在 0.5 - 0.95 的区间上每隔0.5计算一次AP的值，取所有结果的平均值作为最终的结果。
+
+第二个map为不同尺寸的物体的mAP。包括小物体、中等物体、大物体，后面描述了物体对应的像素值的大小。
+
+第三为平均召回率，和AP相似，但这个不太常用。
+
 下图给出了当前mAP最佳结果。
 
 ![img](mAP.assets/v2-5a6da05f5664e2345fcc27375416ccaf_1440w.jpg)
 
 摘自文章[Bottom-up Object Detection by Grouping Extreme and Center Points](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1901.08043)
 
+## map的实现
+
+map的实现网上有很多实现方式，这里使用简单的方法：
+
+```
+# 按照置信度降序排序
+sorted_ind = np.argsort(-confidence)
+BB = BB[sorted_ind, :]   # 预测框坐标
+image_ids = [image_ids[x] for x in sorted_ind] # 各个预测框的对应图片id
+
+# 便利预测框，并统计TPs和FPs
+nd = len(image_ids)
+tp = np.zeros(nd)
+fp = np.zeros(nd)
+for d in range(nd):
+    R = class_recs[image_ids[d]]
+    bb = BB[d, :].astype(float)
+    ovmax = -np.inf
+    BBGT = R['bbox'].astype(float)  # ground truth
+
+    if BBGT.size > 0:
+        # 计算IoU
+        # intersection
+        ixmin = np.maximum(BBGT[:, 0], bb[0])
+        iymin = np.maximum(BBGT[:, 1], bb[1])
+        ixmax = np.minimum(BBGT[:, 2], bb[2])
+        iymax = np.minimum(BBGT[:, 3], bb[3])
+        iw = np.maximum(ixmax - ixmin + 1., 0.)
+        ih = np.maximum(iymax - iymin + 1., 0.)
+        inters = iw * ih
+
+        # union
+        uni = ((bb[2] - bb[0] + 1.) * (bb[3] - bb[1] + 1.) +
+               (BBGT[:, 2] - BBGT[:, 0] + 1.) *
+               (BBGT[:, 3] - BBGT[:, 1] + 1.) - inters)
+
+        overlaps = inters / uni
+        ovmax = np.max(overlaps)
+        jmax = np.argmax(overlaps)
+    # 取最大的IoU
+    if ovmax > ovthresh:  # 是否大于阈值
+        if not R['difficult'][jmax]:  # 非difficult物体
+            if not R['det'][jmax]:    # 未被检测
+                tp[d] = 1.
+                R['det'][jmax] = 1    # 标记已被检测
+            else:
+                fp[d] = 1.
+    else:
+        fp[d] = 1.
+
+# 计算precision recall
+fp = np.cumsum(fp)
+tp = np.cumsum(tp)
+rec = tp / float(npos)
+# avoid divide by zero in case the first detection matches a difficult
+# ground truth
+prec = tp / np.maximum(tp + fp, np.finfo(np.float64).eps)
+```
+
+最终得到一系列的precision和recall值，并且这些值是按照置信度降低排列统计的，可以认为是取不同的置信度阈值（或者rank值）得到的。然后据此可以计算AP：
+
+```
+def voc_ap(rec, prec, use_07_metric=False):
+    """Compute VOC AP given precision and recall. If use_07_metric is true, uses
+    the VOC 07 11-point method (default:False).
+    """
+    if use_07_metric:  # 使用07年方法
+        # 11 个点
+        ap = 0.
+        for t in np.arange(0., 1.1, 0.1):
+            if np.sum(rec >= t) == 0:
+                p = 0
+            else:
+                p = np.max(prec[rec >= t])  # 插值
+            ap = ap + p / 11.
+    else:  # 新方式，计算所有点
+        # correct AP calculation
+        # first append sentinel values at the end
+        mrec = np.concatenate(([0.], rec, [1.]))
+        mpre = np.concatenate(([0.], prec, [0.]))
+
+        # compute the precision 曲线值（也用了插值）
+        for i in range(mpre.size - 1, 0, -1):
+            mpre[i - 1] = np.maximum(mpre[i - 1], mpre[i])
+
+        # to calculate area under PR curve, look for points
+        # where X axis (recall) changes value
+        i = np.where(mrec[1:] != mrec[:-1])[0]
+
+        # and sum (\Delta recall) * prec
+        ap = np.sum((mrec[i + 1] - mrec[i]) * mpre[i + 1])
+    return ap
+```
+
 ## mAP的不足
+
+根据 mAP 的高低，我们只能较为概括地知道网络整体性能的好坏，但比较难分析问题具体在哪。举个例子：如果网络输出的框很贴合，选择合适的 Confidence 阈值时，检出和召回也较均衡，但是目标的类别判断错误较多。由于首先根据类别结果分类处理，只要类别错了，定位、检出和召回都很好，mAP 指标也不会高。但从结果观察，并不能很明确知道，问题出在类别判断上还是定位不准确上面。
 
 mAP虽然综合考虑了P_threshold和IoU_threshold各个取值时的平均模型准确度，使得模型优劣的评判标准不随P_threshold和IoU_threshold取值变化而变化，但在工程应用中，物体是否被正确检测到，还是需要具体的P_threshold和IoU_threshold，工程上更关心在固定的P_threshold和IoU_threshold下的准确率。这就需要我们自己实现与具体应用相符的评判标准。
 
 ## 参考
 
 1. [详解object detection中的mAP](https://zhuanlan.zhihu.com/p/56961620)
+2. [【小白入坑篇】目标检测的评价指标map](https://mp.weixin.qq.com/s/q308cHT0XliCK3NtIRjyqA)
