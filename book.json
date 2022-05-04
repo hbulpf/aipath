@@ -28,7 +28,8 @@
         "github",
         "github-buttons",
         "favicon",
-        "-lunr"
+        "-lunr",
+        "mathjax"
     ],
     "pluginsConfig": {
         "github": {
