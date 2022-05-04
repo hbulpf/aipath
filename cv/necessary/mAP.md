@@ -165,7 +165,7 @@ AP = (0.14-0) * 1 + (0.29-0.14) * 1 + (0.43-0.29) * 0.5 + (0.57-0.43) * 0.5 + (0
 
 VOC数据集中的mAP计算的是`IoU_threshold=0.5`时各个类别AP的均值。
 
-2. COCO数据集中的mAP**
+**2. COCO数据集中的mAP**
 
 检测是否正确有两个超参数，`P_threshold`和`IoU_threshold`。AP是固定了`IoU_threshold`，再综合考虑各个`P_threshold`下的模型平均准确度。
 
