@@ -125,6 +125,7 @@
   - [2019 年最流行的 AI 技术](hot/hot_2019.md)
   - [2020 年最流行的 AI 技术](hot/hot_2020.md)
 - [数据集](datasets/README.md)
+  - [COCO](datasets/coco.md)
   - [机器学习数据集大全](datasets/机器学习数据集大全.md)
 
 # 项目
