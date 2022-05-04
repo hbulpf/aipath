@@ -2,7 +2,7 @@
 
 mAP是mean of Average Precision的缩写，意思是平均精确度（average precision）的平均（mean），是object detection中模型性能的衡量标准。object detection中，因为有物体定位框，分类中的accuracy并不适用，因此才提出了object detection独有的mAP指标，但这也导致mAP没有分类中的accuracy那么直观。但也没有那么复杂，本文将详细解释mAP的计算方法。首先，简单回顾几个基础概念。
 
-## **查准率（Precision）和查全率（recall）**
+## 查准率（Precision）和查全率（recall）
 
 查准率（Precision）是指在所有预测为正例中真正例的比率，也即预测的准确性。
 
@@ -10,21 +10,21 @@ mAP是mean of Average Precision的缩写，意思是平均精确度（average pr
 
 一个样本模型预测按正确与否分类如下：
 
-真正例： ![[公式]](mAP.assets/equation.svg+xml)
+真正例： TP=TruePositive
 
-真反例： ![[公式]](mAP.assets/equation-165166200669069.svg+xml)
+真反例： TN=TrueNegative
 
-假正例：![[公式]](mAP.assets/equation-165166200669070.svg+xml)
+假正例： FP=FalsePositive
 
-假反例：![[公式]](mAP.assets/equation-165166200669071.svg+xml)
+假反例： FN=FalseNegative
 
 则，查准率和查全率计算公式：
 
-查准率： ![[公式]](mAP.assets/frac%7BTP%7D%7BTP%252BFP%7D.svg+xml)
+查准率： <img src="mAP.assets/image-20220504191032112.png" alt="image-20220504191032112" style="zoom:50%;" />
 
-查全率：![[公式]](mAP.assets/frac%7BTP%7D%7BTP%252BFN%7D.svg+xml)
+查全率：<img src="mAP.assets/image-20220504191106442.png" alt="image-20220504191106442" style="zoom:50%;" />
 
-## **交并比IoU(Intersection over union)**
+## 交并比IoU(Intersection over union)
 
 交并比IoU衡量的是两个区域的重叠程度，是两个区域重叠部分面积占二者总面积（重叠部分只计算一次）的比例。如下图，两个矩形框的IoU是交叉面积（中间图片红色部分）与合并面积（右图红色部分）面积之比。
 
@@ -36,7 +36,7 @@ mAP是mean of Average Precision的缩写，意思是平均精确度（average pr
 
 ![img](mAP.assets/v2-284022eaa7bbb8dd7b4f8488e0495fcd_1440w.jpg)IoA计算重叠度
 
-## **单类别AP(Average Precision)的计算**
+## 单类别AP(Average Precision)的计算
 
 物体检测中的每一个预测结果包含两部分，预测框（bounding box）和置信概率（Pc）。bounding box通常以矩形预测框的左上角和右下角的坐标表示，即x_min, y_min, x_max, y_max，如下图。置信概率Pc有两层意思，一是所预测bounding box的类别，二是这个类别的置信概率，如下图中的P_dog=0.88，代表预测绿色框为dog，并且置信概率为88%。
 
@@ -131,7 +131,7 @@ AP(Average Precision)的计算基本等同于计算PR曲线下的面积，但略
 
 对于AP(Average Precision)的计算有两种方法：
 
-**1. VOC2010之前的方法**
+1. VOC2010之前的方法
 
 AP =（平滑后PR曲线上，Recall分别等于0，0.1，0.2，… , 1.0等11处Precision的平均值）。
 
@@ -143,7 +143,7 @@ AP =（平滑后PR曲线上，Recall分别等于0，0.1，0.2，… , 1.0等11�
 AP = (1 + 1 + 1 + 0.5 + 0.5 + 0.5 + 0.5 + 0.5 + 0 + 0 + 0) / 11 = 0.5
 ```
 
-**2. VOC2010及以后的方法**
+2. VOC2010及以后的方法
 
 AP=平滑后PR曲线下包围的面积
 
@@ -157,7 +157,7 @@ AP = (0.14-0) * 1 + (0.29-0.14) * 1 + (0.43-0.29) * 0.5 + (0.57-0.43) * 0.5 + (0
 
 需要注意的是上述AP的计算并没有显式设定`P_threshold`，而是通过从上到下依次指定每一个rank为正反分界线来变相的反映`P_threshold`不同取值。
 
-## **mAP的计算**
+## mAP的计算
 
 上述计算的AP只是针对dog这个类别，物体检测通常有多个类别，模型性能肯定是多个类别准度的综合度量。
 
@@ -165,7 +165,7 @@ AP = (0.14-0) * 1 + (0.29-0.14) * 1 + (0.43-0.29) * 0.5 + (0.57-0.43) * 0.5 + (0
 
 VOC数据集中的mAP计算的是`IoU_threshold=0.5`时各个类别AP的均值。
 
-**2. COCO数据集中的mAP**
+2. COCO数据集中的mAP**
 
 检测是否正确有两个超参数，`P_threshold`和`IoU_threshold`。AP是固定了`IoU_threshold`，再综合考虑各个`P_threshold`下的模型平均准确度。
 
@@ -187,10 +187,10 @@ COCO在VOC标准的基础上，取`IoU_threshold=0.5，0.55， 0.6，… , 0.95`
 
 摘自文章[Bottom-up Object Detection by Grouping Extreme and Center Points](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1901.08043)
 
-## **mAP的不足**
+## mAP的不足
 
 mAP虽然综合考虑了P_threshold和IoU_threshold各个取值时的平均模型准确度，使得模型优劣的评判标准不随P_threshold和IoU_threshold取值变化而变化，但在工程应用中，物体是否被正确检测到，还是需要具体的P_threshold和IoU_threshold，工程上更关心在固定的P_threshold和IoU_threshold下的准确率。这就需要我们自己实现与具体应用相符的评判标准。
 
+## 参考
 
-$$ \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,. $$
-$$\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.$$
+1. [详解object detection中的mAP](https://zhuanlan.zhihu.com/p/56961620)
