@@ -27,12 +27,11 @@
 
 # 计算机视觉
 
-- [计算机视觉](cv/README.md)
+- [CV基础](cv/README.md)
   - [mAP](cv/necessary/mAP.md)
   - [感受野](cv/necessary/感受野.md)
   - [图像处理100问](cv/图像处理100问.md)
-  - [图像标注](cv/图像标注.md)
-  
+
 
 - [CV论文](cv/paper/README.md)
   - [CNN](cv/paper/cnn.md)
@@ -50,7 +49,12 @@
   - [机器视觉产业链](cv/mv/机器视觉产业链.md)
   - [计算偏移旋转矩阵](cv/mv/计算偏移旋转矩阵.md)
 
-# OpenCV
+- [CV工具](cv/README.md)
+  - [图像标注](cv/pics_label.md)
+  - [FiftyOne](cv/FiftyOne.md)
+
+
+#### OpenCV
 - [OpenCV](cv/opencv/README.md)
   - [OpenCV-Python 教程简介](cv/opencv/opencv4.0.0_py/4.0.0/1.1-tutorial_py_intro.md)
   - [在 Ubuntu 系统中安装 OpenCV—Python](cv/opencv/opencv4.0.0_py/4.0.0/1.2-tutorial_py_setup_in_ubuntu.md)
