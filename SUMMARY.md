@@ -135,7 +135,7 @@
     - [音乐推荐](project/recommendation_sys/music_recommendation/environments.md)
   - [人脸识别](project/face_detection/README.md)
 - [八斗学院项目](project/八斗学院.md)
-- 
+- [AI边缘项目开发](project/ai_edge_dev.md)
 
 # 机器人
 - [机器人](robot/README.md)
