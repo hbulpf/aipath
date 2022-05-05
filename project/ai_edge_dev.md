@@ -26,7 +26,7 @@
 最终参考论文**《Deep Convolutional Network for Handwritten Chinese Character Recognition》**，选用了一个基于VGG和Alexet的M5网络（包含3个conv3卷积层和2个全连接层），并使用Tensorflow构建了一个3755类的图像分类器，完成了任务。
 
 
-![图片](ai_edge_dev.assets/640.png)
+![图片](ai_edge_dev.assets/6401.png)
 
 
 
