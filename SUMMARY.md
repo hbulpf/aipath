@@ -49,9 +49,10 @@
   - [机器视觉产业链](cv/mv/机器视觉产业链.md)
   - [计算偏移旋转矩阵](cv/mv/计算偏移旋转矩阵.md)
 
-- [CV工具](cv/README.md)
-  - [图像标注](cv/pics_label.md)
-  - [FiftyOne](cv/FiftyOne.md)
+- [CV工具](cv/tools/README.md)
+  - [图像标注](cv/tools/pics_label.md)
+  - [FiftyOne](cv/tools/fifty_one.md)
+  - [map精细化工具](cv/tools/map_details_tools.md)
 
 
 #### OpenCV
