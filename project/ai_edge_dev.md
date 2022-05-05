@@ -772,3 +772,6 @@ DeepStream还内置了**人员检测、车辆检测、车辆分类、人脸检�
 具体可以参考官方网站：https://developer.nvidia.com/deepstream-sdk。
 
 官方论坛：https://www.nvidia.cn/forums/，Github上也有许多丰富的样例工程，CSDN上也有很多人撰写的教程及说明。
+
+## 参考
+1. [一文看懂AI项目流程及边缘设备开发](https://mp.weixin.qq.com/s/I8Ia7_DKR7OlhZ7z8VVsfg)
