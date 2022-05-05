@@ -30,8 +30,7 @@
 - [CV基础](cv/README.md)
   - [mAP](cv/necessary/mAP.md)
   - [感受野](cv/necessary/感受野.md)
-  - [图像处理100问](cv/图像处理100问.md)
-
+  - [图像处理100问](cv/necessary/question_100.md)
 
 - [CV论文](cv/paper/README.md)
   - [CNN](cv/paper/cnn.md)
