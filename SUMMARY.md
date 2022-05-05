@@ -34,7 +34,8 @@
 
 - [CV论文](cv/paper/README.md)
   - [CNN](cv/paper/cnn.md)
-  - [Yolo系列](cv/paper/yolo.md)
+  - [Yolo系列](cv/paper/yolo/README.md)
+    - [Yolov5](cv/paper/yolo/yolov5.md)
   - [SSD](cv/paper/ssd.md)
   - [VGG](cv/paper/vgg.md)
   - [Resnet](cv/paper/resnet.md)

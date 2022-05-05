@@ -13,7 +13,7 @@ Yolov1-Yolov5
   * 优点：速度快，适合做实时检测任务
   * 缺点：通常效果不会太好
 
-![image-20220317102215029](yolo/image-20220317102215029.png)
+![image-20220317102215029](README.assets/image-20220317102215029.png)
 
 ## 指标分析
 
@@ -23,7 +23,7 @@ mAP(准确度): 综合衡量检测效果;但看精度和recall不行？
 
 IOU(交并比):
 
-![image-20220317155904824](yolo/image-20220317155904824.png)
+![image-20220317155904824](README.assets/image-20220317155904824.png)
 
 
 
@@ -45,30 +45,30 @@ TP+FN 就是真正的所有正例总和。
 
 基于置信度阈值计算，mAP实际上就是 P-R曲线所围成的面积。mAP值越高越好，mAP=1是最好的。
 
-![image-20220317163845678](yolo/image-20220317163845678.png)
+![image-20220317163845678](README.assets/image-20220317163845678.png)
 
 ## YOLOv1
 
 * 把检测问题转换为回归问题，一个CNN搞定。
 * 主要对视频进行实时检测，应用领域很广!
 
-![image-20220317164341721](yolo/image-20220317164341721.png)
+![image-20220317164341721](README.assets/image-20220317164341721.png)
 
 ### 核心思想
 
-![image-20220317170500452](yolo/image-20220317170500452.png)
+![image-20220317170500452](README.assets/image-20220317170500452.png)
 
 ### 网络架构
 
-![image-20220317171832434](yolo/image-20220317171832434.png)
+![image-20220317171832434](README.assets/image-20220317171832434.png)
 
 ### 具体含义
 
-![image-20220317172057185](yolo/image-20220317172057185.png)
+![image-20220317172057185](README.assets/image-20220317172057185.png)
 
 ### 损失函数
 
-![image-20220317172126671](yolo/image-20220317172126671.png)
+![image-20220317172126671](README.assets/image-20220317172126671.png)
 
 ### NMS(非极大值抑制)
 
@@ -83,7 +83,7 @@ TP+FN 就是真正的所有正例总和。
 
 > 更快! 更强！
 
-![image-20220317174627188](yolo/image-20220317174627188.png)
+![image-20220317174627188](README.assets/image-20220317174627188.png)
 
 ### 改进点
 
@@ -100,7 +100,7 @@ Batch Normalization
 * 可能导致模型水土不服，V2训练时额外进行了10次448\*448的微调
 * 使用高分辨率分类器后，mAP提升约4%
 
-![image-20220317181720030](yolo/image-20220317181720030.png)
+![image-20220317181720030](README.assets/image-20220317181720030.png)
 
 网络结构的改进
 
@@ -114,7 +114,7 @@ Batch Normalization
 
 * K-means聚类中的距离:
 
-  ![image-20220317202903186](yolo/image-20220317202903186.png)
+  ![image-20220317202903186](README.assets/image-20220317202903186.png)
 
 Anchor Box
 
@@ -122,11 +122,11 @@ Anchor Box
 
 * 跟faster-rcnn系列不同的是先验框并不是直接安装长宽固定比给定
 
-  ![image-20220317203412675](yolo/image-20220317203412675.png)
+  ![image-20220317203412675](README.assets/image-20220317203412675.png)
 
 Directed Location Prediction
 
-* V1版本中bbox: 中心为(xp,yp)，宽和高为(wp,hp),则![image-20220317203628341](yolo/image-20220317203628341.png)
+* V1版本中bbox: 中心为(xp,yp)，宽和高为(wp,hp),则![image-20220317203628341](README.assets/image-20220317203628341.png)
 
   tx=1,则将bbox在x轴向右移动wp;tx=-1,则向左移动wp。
 
@@ -134,19 +134,19 @@ Directed Location Prediction
 
 * V2版本中没有直接使用偏移量，而是选择相对grid cell的偏移量
 
-  ![image-20220317205037646](yolo/image-20220317205037646.png)
+  ![image-20220317205037646](README.assets/image-20220317205037646.png)
 
 * Fine-Grained Features
 
-  ![image-20220317212626393](yolo/image-20220317212626393.png)
+  ![image-20220317212626393](README.assets/image-20220317212626393.png)
 
 * 图片多尺度 Multi-Scale
 
-  ![image-20220317213325023](yolo/image-20220317213325023.png)
+  ![image-20220317213325023](README.assets/image-20220317213325023.png)
 
 ## YOLOv3
 
-![image-20220317213604982](yolo/image-20220317213604982.png)
+![image-20220317213604982](README.assets/image-20220317213604982.png)
 
 ### 改进点
 
@@ -157,7 +157,7 @@ Directed Location Prediction
 
 多scale
 
-![image-20220318005512785](yolo/image-20220318005512785.png)
+![image-20220318005512785](README.assets/image-20220318005512785.png)
 
 ## 参考
 
