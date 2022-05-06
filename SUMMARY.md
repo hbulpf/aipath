@@ -53,6 +53,7 @@
   - [图像标注](cv/tools/pics_label.md)
   - [FiftyOne](cv/tools/fifty_one.md)
   - [map精细化工具](cv/tools/map_details_tools.md)
+  - [paperswithcode](cv/tools/paperswithcode.md)
 
 - [OpenCV](cv/opencv/README.md)
   - [OpenCV-Python 教程简介](cv/opencv/opencv4.0.0_py/4.0.0/1.1-tutorial_py_intro.md)

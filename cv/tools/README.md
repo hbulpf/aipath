@@ -10,3 +10,8 @@
 ### 数据挑选工具
 
 1. [fiftyone](https://voxel51.com/docs/fiftyone/index.html)
+
+
+### 论文工具
+
+1. [paperswithcode](https://paperswithcode.com/)
