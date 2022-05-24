@@ -42,15 +42,17 @@ Building Block结构图如下图所示，主分支有两层卷积网络结构：
 
 #### Bottleneck
 
-Bottleneck结构图如上图所示，在输入相同的情况下Bottleneck结构相对Building Block结构的参数数量更少，更适合层数较深的网络，ResNet50使用的残差结构就是Bottleneck。该结构的主分支有三层卷积结构，分别为1×11×1的卷积层、3×33×3卷积层和1×11×1的卷积层，其中1×11×1的卷积层分别起升维和降维的作用。
+![image-20220525004007858](resnet.assets/image-20220525004007858.png)
 
-- 主分支第一层网络以输入channel为256为例，首先通过数量为64，大小为1×11×1的卷积核进行降维，然后通过Batch Normalization层，最后通过Relu激活函数层，其输出channel为64；
-- 主分支第二层网络通过数量为64，大小为3×33×3的卷积核提取特征，然后通过Batch Normalization层，最后通过Relu激活函数层，其输出channel为64；
-- 主分支第三层通过数量为256，大小1×11×1的卷积核进行升维，然后通过Batch Normalization层，其输出channel为256。
+Bottleneck结构图如上图所示，在输入相同的情况下Bottleneck结构相对Building Block结构的参数数量更少，更适合层数较深的网络，ResNet50使用的残差结构就是Bottleneck。该结构的主分支有三层卷积结构，分别为1×1的卷积层、3×3卷积层和1×1的卷积层，其中1×1的卷积层分别起升维和降维的作用。
+
+- 主分支第一层网络以输入channel为256为例，首先通过数量为64，大小为1×1的卷积核进行降维，然后通过Batch Normalization层，最后通过Relu激活函数层，其输出channel为64；
+- 主分支第二层网络通过数量为64，大小为3×3的卷积核提取特征，然后通过Batch Normalization层，最后通过Relu激活函数层，其输出channel为64；
+- 主分支第三层通过数量为256，大小1×1的卷积核进行升维，然后通过Batch Normalization层，其输出channel为256。
 
 最后将主分支输出的特征矩阵与shortcuts输出的特征矩阵相加，通过Relu激活函数即为Bottleneck最后的输出。
 
-主分支与shortcuts输出的特征矩阵相加时，需要保证主分支与shortcuts输出的特征矩阵shape相同。如果主分支与shortcuts输出的特征矩阵shape不相同，如输出channel是输入channel的一倍时，shortcuts上需要使用数量与输出channel相等，大小为1×11×1的卷积核进行卷积操作；若输出的图像较输入图像缩小一倍，则要设置shortcuts中卷积操作中的stride为2，主分支第二层卷积操作的stride也需设置为2。
+主分支与shortcuts输出的特征矩阵相加时，需要保证主分支与shortcuts输出的特征矩阵shape相同。如果主分支与shortcuts输出的特征矩阵shape不相同，如输出channel是输入channel的一倍时，shortcuts上需要使用数量与输出channel相等，大小为1×1的卷积核进行卷积操作；若输出的图像较输入图像缩小一倍，则要设置shortcuts中卷积操作中的stride为2，主分支第二层卷积操作的stride也需设置为2。
 
 ### 构建ResNet50网络
 
@@ -61,16 +63,13 @@ ResNet网络层结构如下图所示，以输入彩色图像224×224为例，首
 ResNet50网络共有5个卷积结构，一个平均池化层，一个全连接层，以CIFAR-10数据集为例：
 
 - conv1：输入图片大小为32×32，输入channel为3。首先经过一个卷积核数量为64，卷积核大小为7×7，stride为2的卷积层；然后通过一个Batch Normalization层；最后通过Reul激活函数。该层输出feature map大小为16×16，输出channel为64。
-
 - conv2_x：输入feature map大小为16×16，输出channel为64。首先经过一个卷积核大小为3×3，stride为2的最大下采样池化操作；然后堆叠3个[1×1，64；3×3，64；1×1，256][1×1，64；3×3，64；1×1，256]结构的Bottleneck。该层输出feature map大小为8×88×8，输出channel为256。
-
 - conv3_x：输入feature map大小为8×8，输入channel为256。该层堆叠4个[1×1，128；3×3，128；1×1，512]结构的Bottleneck。该层输出feature map大小为4×44×4，输出channel为512。
-
 - conv4_x：输入feature map大小为4×4，输入channel为512。该层堆叠6个[1×1，256；3×3，256；1×1，1024]结构的Bottleneck。该层输出feature map大小为2×2，输出channel为1024。
-
 - conv5_x：输入feature map大小为2×2，输入channel为1024。该层堆叠6个[1×1，512；3×3，512；1×1，2048]结构的Bottleneck。该层输出feature map大小为1×1，输出channel为2048。
-
 - average pool & fc：输入channel为2048，输出channel为分类的类别数。
+
+![image-20220525003625359](resnet.assets/image-20220525003625359.png)
 
 ## MindSpore实现
 
