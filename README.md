@@ -21,7 +21,7 @@
 
 - [AI项目](project/README.md)
 - [八斗学院项目](project/八斗学院.md)
-- [AI边缘项目开发](project/ai_edge_dev.md)
+- [AI边缘项目开发](project/edge/ai_edge_dev.md)
 
 ## 其他
 

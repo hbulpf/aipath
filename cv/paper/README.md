@@ -6,6 +6,8 @@
 * 勤动手
 * 成体系: 构建知识体系，熟悉技术发展
 
+---
+
 ![image-20220319010317472](cv_paper_path/image-20220319010317472.png)
 
 ## CV 综述
@@ -109,13 +111,12 @@
 
 ### PyTorch
 
-**1. 课程所有代码汇总github地址：**
+1. 课程所有代码汇总github地址：https://github.com/JansonYuan/Pytorch-Camp
+2. 作业讲解代码地址: https://github.com/greebear/pytorch-learning
 
-https://github.com/JansonYuan/Pytorch-Camp
+## 经典论文
 
-**4. 作业讲解代码地址：**
-
-https://github.com/greebear/pytorch-learning
+[经典论文](https://gitcode.net/AiShow/aipapers)
 
 ## 参考
 
