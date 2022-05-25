@@ -405,3 +405,4 @@ visualize_model('best.ckpt', ds_val)
 
 1. [Deep Residual Learning for Image Recognition. Kaiming He,etc](https://arxiv.org/pdf/1512.03385.pdf)
 2. [MindSpore: ResNet50网络进行图像分类](https://mindspore.cn/tutorials/application/zh-CN/r1.7/cv/resnet50.html)
+3. [动手学深度学习:残差网络（ResNet）](https://zh.d2l.ai/chapter_convolutional-modern/resnet.html)
