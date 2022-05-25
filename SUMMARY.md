@@ -8,6 +8,8 @@
   - [跟李沐深度学习](dl/跟李沐深度学习/README.md)
     - [PyTorch](dl/跟李沐深度学习/PyTorch.md)
   - [卡尔曼滤波](dl/KalmanFilter.md)
+  - [正则化](dl/regularization.md)
+  - [激活函数与优化器](dl/active_function_optimization.md)
 - [框架与平台](frames/README.md)
   - [Tensorflow](frames/tesorflow/README.md)
     - [docker方式启动tensorflow](frames/tesorflow/tesorflow_docker.md)
