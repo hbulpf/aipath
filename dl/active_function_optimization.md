@@ -2,7 +2,7 @@
 
 深度学习的基本原理是基于人工神经网络，输入信号经过非线性的active function，传入到下一层神经元；再经过下一层神经元的activate，继续往下传递，如此循环往复，直到输出层。正是因为这些active functions的堆砌，深度学习才被赋予了解决非线性问题的能力。当然，仅仅靠active functions还不足于使得深度学习具有"超能力"，训练过程中的优化器对于组织神经网络中的各个神经元起到了至关重要的角色。本文简单汇总一些常用的active functions和optimizers，不求最全，但是尽量保证简单易懂。
 
-### 激活函数
+## 激活函数
 
 当然，在介绍这些active functions之前，先简单汇总下active functions应该具备的性质。
 
@@ -12,7 +12,7 @@
 - f(x)≈xf(x)≈x：当激活函数满足这个性质的时候，如果参数的初始化是random的很小的值，那么神经网络的训练将会很高效；如果不满足这个性质，那么就需要很用心的去设置初始值。
 - 输出值的范围：当激活函数输出值是有限的时候，基于梯度的优化方法会更加稳定，因为特征的表示受有限权值的影响更显著；当激活函数的输出是无限的时候，模型的训练会更加高效，不过在这种情况小，一般需要更小的learning rate.
 
-#### 1. sigmoid
+### 1. sigmoid
 
 sigmoid函数是深度学习中最基本，也是最为常见的一种激活函数。sigmoid函数公式如下：
 
@@ -30,7 +30,7 @@ sigmoid函数的导函数形式为：
 - 输出不具有zero-centered性质
 - 幂运算相对比较耗时
 
-#### 2. tanh
+### 2. tanh
 
 tanh读作hyperbolic tangent，相对于sigmoid函数的缺点，它具有zero-centered形式的输出，因此被认为tanh一般总是好于sigmoid，因为函数值介于[-1,1]之间，激活函数的平均值接近于0，这样可以使得下一层的神经元学习的更好。其公式表示如下：
 
@@ -50,7 +50,7 @@ f(x)=ex−e−xex+e−xf(x)=ex−e−xex+e−x
 
 实际上tanh是sigmoid平移后的结果。因为tanh总是优于sigmoid，所以sigmoid目前基本不用，但有一个例外的场景，那就是sigmoid更适合于做二分类系统的输出层。因为sigmoid的输出值介于[0,1]之间，可以很容易的去表征概率。
 
-#### 3. ReLU
+### 3. ReLU
 
 tanh和sigmoid函数的共同缺点就是当输入*特别小或者特别大时，容易引起梯度弥散或梯度爆炸。而ReLU（Rectified Linear Units）可以在一定程度上缓解梯度弥散和梯度爆炸的问题，使得深度神经网络的训练可以更快速地达到收敛。因此目前神经网络中的隐含层中最为常用的默认激活函数就是ReLU了。其函数形式表示如下：*
 
@@ -90,7 +90,7 @@ dying ReLU problem详细细节可以参考这里：《[What is the "dying ReLU" 
 
 即使ReLU存在上述问题，但是ReLU目前是应用最为广泛和实用的激活函数。
 
-#### 4. Leaky ReLU
+### 4. Leaky ReLU
 
 Leaky ReLU就是针对dying ReLU problem而进行改进的，相对于ReLU而言，函数前半段不再为0，而是一段线性函数。用公式表达如下：
 
@@ -112,7 +112,7 @@ f(x)=x,ifx≥0f(x)=x,ifx≥0
 
 除了具备ReLU的所有优点以外，Leaky ReLU不存在dying ReLU problem。从理论上讲，Leaky ReLU应该完全优于ReLU的性能，但是实际应用中并没有表现可以证明Leaky ReLU绝对优于ReLU。
 
-#### 5. ELU
+## 5. ELU
 
 同Leaky ReLU一样，ELU（Exponential Linear Unit）也是针对dying ReLU problem提出的。具体公式如下：
 
@@ -142,7 +142,7 @@ ELU也可以有效地解决dying ReLU problem，而且是近似zero-centered，�
 
 ## 优化器
 
-#### 1. batch GD & SGD & Mini-batch GD
+### 1. batch GD & SGD & Mini-batch GD
 
 三种梯度下降算法可以参考之前博文《[[Machine Learning\] 梯度下降法的三种形式BGD、SGD以及MBGD](http://www.cnblogs.com/maybe2030/p/5089753.html)》
 
@@ -160,7 +160,7 @@ ELU也可以有效地解决dying ReLU problem，而且是近似zero-centered，�
 
 目前对于优化器的研究基本围绕上述三个问题进行展开。
 
-#### 2. Momentum
+### 2. Momentum
 
 SGD算法的更新公式如下：
 
@@ -214,7 +214,7 @@ Momentum背后的物理含义可以简单的这样理解：
 
 当我们将一个小球从山上滚下来时，没有阻力的话，它的动量会越来越大，但是如果遇到了阻力，速度就会变小。 加入这一项，可以使得梯度方向不变的维度上速度变快，梯度方向有所改变的维度上的更新速度变慢，这样就可以加快收敛并减小震荡。
 
-#### 3. RMSprop
+### 3. RMSprop
 
 RMSprop是Geoff Hinton提出的一种自适应学习率方法，全称为Root Mean Square Prop，它的基本思想和Momentum类似，同样引入了额外的超参数ββ（一般取值0.999），其更新公式如下：
 
@@ -262,7 +262,7 @@ RMSprop示意图如下：
 
 具体关于RMSprop更详细的讲解可以参考这篇博文《[机器学习中使用的神经网络第六讲笔记](https://blog.csdn.net/majordong100/article/details/51428642)》
 
-#### 4. Adam
+### 4. Adam
 
 研究者们其实提出了很多的优化算法，可以解决一些特定的优化问题，但是很难扩展到多种神经网络。而Momentum，RMSprop是很长时间来最经得住考研的优化算法，适合用于不同的深度学习结构。所以有人就有想法，何不将这俩的方法结合到一起呢？Adam算法，全称Adaptive Moment Estimation，就随即问世了。由于Adam是Momentum+RMSprop，所以需要引入两个超参数，我们表示为β1=0.9β1=0.9，β2=0.999β2=0.999。
 
