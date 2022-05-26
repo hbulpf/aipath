@@ -51,6 +51,7 @@
   - [机器视觉应用场景](cv/mv/机器视觉应用场景.md)
   - [机器视觉产业链](cv/mv/机器视觉产业链.md)
   - [计算偏移旋转矩阵](cv/mv/计算偏移旋转矩阵.md)
+  - [相机标定](cv/mv/camera_calibration.md)
 
 - [CV工具](cv/tools/README.md)
   - [图像标注](cv/tools/pics_label.md)
