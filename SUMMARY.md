@@ -59,6 +59,8 @@
   - [map精细化工具](cv/tools/map_details_tools.md)
   - [paperswithcode](cv/tools/paperswithcode.md)
 
+- [面试](cv/interview/README.md)
+
 - [OpenCV](cv/opencv/README.md)
   - [OpenCV-Python 教程简介](cv/opencv/opencv4.0.0_py/4.0.0/1.1-tutorial_py_intro.md)
   - [在 Ubuntu 系统中安装 OpenCV—Python](cv/opencv/opencv4.0.0_py/4.0.0/1.2-tutorial_py_setup_in_ubuntu.md)
