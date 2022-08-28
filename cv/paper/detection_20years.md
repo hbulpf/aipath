@@ -71,7 +71,7 @@
 ### **2.2.1 RCNN**
 
 ```text
-> 论文链接：https://openaccess.thecvf.com/content\_cvpr\_2014/papers/Girshick\_Rich\_Feature\_Hierarchies\_2014\_CVPR\_paper.pdf
+> 论文链接：https://openaccess.thecvf.com/contentcvpr2014/papers/GirshickRichFeatureHierarchies2014CVPRpaper.pdf
 > 代码链接：https://github.com/rbgirshick/rcnn
 ```
 
@@ -88,7 +88,7 @@
 ### **2.2.2 SPPNet**
 
 ```text
-> 论文链接：https://link.springer.com/content/pdf/10.1007/978-3-319-10578-9\_23.pdf
+> 论文链接：https://link.springer.com/content/pdf/10.1007/978-3-319-10578-923.pdf
 > 代码链接：https://github.com/yueruchen/sppnet-pytorch
 ```
 
@@ -105,7 +105,7 @@
 ### **2.2.3 Fast RCNN**
 
 ```text
-> 论文链接：https://openaccess.thecvf.com/content\_iccv\_2015/papers/Girshick\_Fast\_R-CNN\_ICCV\_2015\_paper.pdf
+> 论文链接：https://openaccess.thecvf.com/contenticcv2015/papers/GirshickFastR-CNNICCV2015paper.pdf
 > 代码链接：https://github.com/rbgirshick/fast-rcnn
 ```
 
@@ -137,7 +137,7 @@
 ### **2.2.5 FPN**
 
 ```text
-> 论文链接：http://openaccess.thecvf.com/content\_cvpr\_2017/papers/Lin\_Feature\_Pyramid\_Networks\_CVPR\_2017\_paper.pdf 
+> 论文链接：http://openaccess.thecvf.com/contentcvpr2017/papers/LinFeaturePyramidNetworksCVPR2017paper.pdf 
 > 代码链接：https://github.com/jwyang/fpn.pytorch
 ```
 
@@ -150,7 +150,7 @@
 ### **2.2.6 Cascade RCNN**
 
 ```text
-> 论文链接：https://openaccess.thecvf.com/content\_cvpr\_2018/papers/Cai\_Cascade\_R-CNN\_Delving\_CVPR\_2018\_paper.pdf
+> 论文链接：https://openaccess.thecvf.com/contentcvpr2018/papers/CaiCascadeR-CNNDelvingCVPR2018paper.pdf
 > 代码链接：https://github.com/zhaoweicai/cascade-rcnn
 ```
 
@@ -167,7 +167,7 @@
 ### **2.3.1 YOLO v1**
 
 ```text
-> 论文链接：https://www.cv-foundation.org/openaccess/content\_cvpr\_2016/papers/Redmon\_You\_Only\_Look\_CVPR\_2016\_paper.pdf
+> 论文链接：https://www.cv-foundation.org/openaccess/contentcvpr2016/papers/RedmonYouOnlyLookCVPR2016paper.pdf
 > 代码链接：https://github.com/abeardear/pytorch-YOLO-v1
 ```
 
@@ -195,7 +195,7 @@
 ### **2.3.3 YOLO v2**
 
 ```text
-> 论文链接：https://openaccess.thecvf.com/content\_cvpr\_2017/papers/Redmon\_YOLO9000\_Better\_Faster\_CVPR\_2017\_paper.pdf
+> 论文链接：https://openaccess.thecvf.com/contentcvpr2017/papers/RedmonYOLO9000BetterFasterCVPR2017paper.pdf
 > 代码链接：https://github.com/longcw/yolo2\-pytorch
 ```
 
@@ -212,7 +212,7 @@
 ### **2.3.4 RetinaNet**
 
 ```text
-> 论文链接：https://openaccess.thecvf.com/content\_ICCV\_2017/papers/Lin\_Focal\_Loss\_for\_ICCV\_2017\_paper.pdf
+> 论文链接：https://openaccess.thecvf.com/contentICCV2017/papers/LinFocalLossforICCV2017paper.pdf
 > 代码链接：https://github.com/yhenon/pytorch-retinanet
 ```
 
@@ -282,7 +282,7 @@
 ### **2.4.1 CornerNet**
 
 ```text
-> 论文链接：http://openaccess.thecvf.com/content\_ECCV\_2018/papers/Hei\_Law\_CornerNet\_Detecting\_Objects\_ECCV\_2018\_paper.pdf
+> 论文链接：http://openaccess.thecvf.com/contentECCV2018/papers/HeiLawCornerNetDetectingObjectsECCV2018paper.pdf
 > 代码链接：https://github.com/princeton-vl/CornerNet
 ```
 
@@ -299,7 +299,7 @@
 ### **2.4.2 CenterNet**
 
 ```text
-> 论文链接：https://openaccess.thecvf.com/content\_ICCV\_2019/papers/Duan\_CenterNet\_Keypoint\_Triplets\_for\_Object\_Detection\_ICCV\_2019\_paper.pdf
+> 论文链接：https://openaccess.thecvf.com/contentICCV2019/papers/DuanCenterNetKeypointTripletsforObjectDetectionICCV2019paper.pdf
 > 代码链接：https://github.com/Duankaiwen/CenterNet
 ```
 
@@ -316,7 +316,7 @@
 ### **2.4.3 FSAF**
 
 ```text
-> 论文链接：http://openaccess.thecvf.com/content\_CVPR\_2019/papers/Zhu\_Feature\_Selective\_Anchor-Free\_Module\_for\_Single-Shot\_Object\_Detection\_CVPR\_2019\_paper.pdf
+> 论文链接：http://openaccess.thecvf.com/contentCVPR2019/papers/ZhuFeatureSelectiveAnchor-FreeModuleforSingle-ShotObjectDetectionCVPR2019paper.pdf
 > 代码链接：https://github.com/hdjang/Feature-Selective-Anchor-Free-Module-for-Single-Shot-Object-Detection
 ```
 
@@ -331,7 +331,7 @@
 ### **2.4.4 FCOS**
 
 ```text
-> 论文链接：https://openaccess.thecvf.com/content\_ICCV\_2019/papers/Tian\_FCOS\_Fully\_Convolutional\_One-Stage\_Object\_Detection\_ICCV\_2019\_paper.pdf
+> 论文链接：https://openaccess.thecvf.com/contentICCV2019/papers/TianFCOSFullyConvolutionalOne-StageObjectDetectionICCV2019paper.pdf
 > 代码链接：https://github.com/tianzhi0549/FCOS
 ```
 
