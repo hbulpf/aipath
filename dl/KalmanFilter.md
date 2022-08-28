@@ -100,4 +100,4 @@ cv2.destroyAllWindows()
 
 建立鼠标运动的模型，至少有两个状态变量：鼠标位置x,y，也可以是四个状态变量：位置x,y和速度vx，vy。两个测量变量：鼠标位置x,y。
 
-![](pics/20180704150350815.png)
+![](KalmanFilter.assets/20180704150350815.png)

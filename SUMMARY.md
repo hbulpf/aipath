@@ -9,7 +9,9 @@
     - [PyTorch](dl/跟李沐深度学习/PyTorch.md)
   - [卡尔曼滤波](dl/KalmanFilter.md)
   - [正则化](dl/regularization.md)
-  - [激活函数与优化器](dl/active_function_optimization.md)
+  - [激活函数](dl/active_function.md)
+  - [优化器](dl/ptimization.md)
+  - [损失函数](dl/loss_function.md)
 - [框架与平台](frames/README.md)
   - [Tensorflow](frames/tesorflow/README.md)
     - [docker方式启动tensorflow](frames/tesorflow/tesorflow_docker.md)
@@ -30,10 +32,11 @@
 # 计算机视觉
 
 - [CV基础](cv/README.md)
-  - [mAP](cv/necessary/mAP.md)
-  - [感受野](cv/necessary/感受野.md)
-  - [上下采样](cv/necessary/up_down_sampling.md)
-  - [图像处理100问](cv/necessary/question_100.md)
+  - [mAP](cv/basic/mAP.md)
+  - [感受野](cv/basic/感受野.md)
+  - [上下采样](cv/basic/up_down_sampling.md)
+  - [NMS](cv/basic/NMS.md)
+  - [图像处理100问](cv/basic/question_100.md)
 
 - [CV论文](cv/paper/README.md)
   - [CNN](cv/paper/cnn.md)

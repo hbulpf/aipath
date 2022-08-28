@@ -53,5 +53,5 @@ TP+FN 就是真正的所有正例总和。
 
 ## 参考
 
-1. [B站 YOLO目标检测实战教程](https://www.bilibili.com/video/BV1ha411r7cK)
+1. 学习资源: [B站 YOLO目标检测实战教程](https://www.bilibili.com/video/BV1ha411r7cK)
 
