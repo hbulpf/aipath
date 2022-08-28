@@ -2,11 +2,13 @@
 
 > 本文来源于毕业于韩国首尔国立大学电气与计算机工程专业的 Lee hoseong。项目地址是： https://github.com/hoya012/deep_learning_object_detection
 
-> 目标检测作为计算机视觉中的一个重要分支，近些年来随着神经网络理论研究的深入和硬件 GPU 算力的大幅度提升，一举成为全球人工智能研究的热点，落地项目也最先开始。
+目标检测作为计算机视觉中的一个重要分支，近些年来随着神经网络理论研究的深入和硬件 GPU 算力的大幅度提升，一举成为全球人工智能研究的热点，落地项目也最先开始。
 
 纵观 2013 年到 2020 年，从最早的 R-CNN、OverFeat 到后来的 SSD、YOLO v3 再到去年的 M2Det，新模型层出不穷，性能也越来越好！本文将完整地总结 52 个目标检测模型极其性能对比，包括完备的文献 paper 列表。
 
+![v2-e0a477f5a1fb362f72123676ef403894_720w](README.assets/v2-e0a477f5a1fb362f72123676ef403894_720w.jpg)
 ![deep_learning_object_detection_history](detection_models.assets/deep_learning_object_detection_history.PNG)
+
 
 该技术路线纵贯的时间线是 2013 年到 2020 年初，上图总结了这期间目标检测所有具有代表性的模型。图中标红的部分是相对来说比较重要，需要重点掌握的模型。
 
@@ -614,9 +616,9 @@
 
 ## 数据集论文篇
 
-同时作者也列出了以上模型通常使用的公开数据集：VOC、ILSVRC、COCO，如下表所示：
+同时也列出了以上模型通常使用的公开数据集：VOC、ILSVRC、COCO，如下表所示：
 
-![111.jpg](https://ucc.alicdn.com/pic/developer-ecology/f51e2f11c8d74cb4acbd98f47693d9fe.jpg)
+![](detection_models.assets/f51e2f11c8d74cb4acbd98f47693d9fe-166167792448868.jpg)
 
 
 用于目标检测的数据集相关论文如下：

@@ -1,4 +1,4 @@
-# CV论文研读
+CV论文研读
 
 学习方法
 
@@ -48,7 +48,7 @@
 
 ### Part2 目标检测
 
-![img](detection_20years.assets/v2-e0a477f5a1fb362f72123676ef403894_720w.jpg)
+![v2-e0a477f5a1fb362f72123676ef403894_720w](README.assets/v2-e0a477f5a1fb362f72123676ef403894_720w.jpg)
 
 ![deep_learning_object_detection_history](README.assets/deep_learning_object_detection_history.PNG)
 
@@ -126,5 +126,3 @@
 ## 参考
 
 1. [深度之眼的课程大纲](cv_paper_path/20220318233909.jpg)
-
-![deep_learning_object_detection_dataset](README.assets/deep_learning_object_detection_dataset.PNG)
