@@ -47,6 +47,11 @@
 14. RDFNet -- 综合网络三部曲，后篇(RGB-D)
 
 ### Part2 目标检测
+
+![img](detection_20years.assets/v2-e0a477f5a1fb362f72123676ef403894_720w.jpg)
+
+![deep_learning_object_detection_history](README.assets/deep_learning_object_detection_history.PNG)
+
 1. 目标检测综述 
 2. Faster RCNN -- 第一个端到端网络
 3. YOLO -- 检测网络模型
@@ -122,3 +127,4 @@
 
 1. [深度之眼的课程大纲](cv_paper_path/20220318233909.jpg)
 
+![deep_learning_object_detection_dataset](README.assets/deep_learning_object_detection_dataset.PNG)

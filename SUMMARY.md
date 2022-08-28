@@ -40,7 +40,8 @@
 
 - [CV论文](cv/paper/README.md)
   - [CNN](cv/paper/cnn.md)
-  - [目标检测20年](cv/paper/detection_20years.md)
+  - [目标检测综述](cv/paper/detection_20years.md)
+  - [目标检测模型](cv/paper/detection_models.md)
   - [Yolo系列](cv/paper/yolo/README.md)
     - [Yolov1](cv/paper/yolo/yolov1.md)
     - [Yolov2](cv/paper/yolo/yolov2.md)
