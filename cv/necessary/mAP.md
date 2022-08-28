@@ -55,7 +55,7 @@ mAP是mean of Average Precision的缩写，意思是平均精确度（average pr
 
 AP是计算单类别的模型平均准确度。
 
-假如目标类别为Dog，有5张照片，共包含7只Dog，也即GT（GroundTruth）数量为7，经模型预测，得到了Dog的10个预测结果，选定IoU_threshold=0.5，然后按confidence从高到低排序，如下图。其中，BB表示BoundingBox序号，GT=1表示有GT与所预测的BoundingBox的IoU>=IoU_threshold，BoundingBox序号相同代表所对应的GT是同一个。
+假如目标类别为Dog，有5张照片，共包含7只Dog，也即GT（GroundTruth）数量为7，经模型预测，得到了Dog的10个预测结果，选定IoU_threshold=0.5，然后按confidence从高到低排序，如下图。其中，BB表示BoundingBox序号，GT=1表示有GT与所预测的BoundingBox的 IoU>=IoU_threshold，BoundingBox序号相同代表所对应的GT是同一个。
 
 ```text
 Rank | BB  | confidence | GT
@@ -121,9 +121,7 @@ Precision=2/4=0.5，Recall=TP/GT=2/7=0.29
 
 AP(Average Precision)的计算基本等同于计算PR曲线下的面积，但略有不同。需要先将PR曲线平滑化。
 
-方法是，查全率r对应的查准率p，取查全率大于等于r时最大的查准率p。即，
-
-![[公式]](mAP.assets/tilde%7Br%7D)%7D.svg+xml)
+方法是，查全率r对应的查准率p，取查全率大于等于r时最大的查准率p。
 
 平滑后的曲线如下图中的绿色曲线：
 
@@ -133,41 +131,39 @@ AP(Average Precision)的计算基本等同于计算PR曲线下的面积，但略
 
 1. VOC2010之前的方法
 
-AP =（平滑后PR曲线上，Recall分别等于0，0.1，0.2，… , 1.0等11处Precision的平均值）。
+    AP =（平滑后PR曲线上，Recall分别等于0，0.1，0.2，… , 1.0等11处Precision的平均值）。
 
-![[公式]](mAP.assets/right)%7D.svg+xml)
+    这里则有：
 
-这里则有：
-
-```text
-AP = (1 + 1 + 1 + 0.5 + 0.5 + 0.5 + 0.5 + 0.5 + 0 + 0 + 0) / 11 = 0.5
-```
+    ```text
+    AP = (1 + 1 + 1 + 0.5 + 0.5 + 0.5 + 0.5 + 0.5 + 0 + 0 + 0) / 11 = 0.5
+    ```
 
 2. VOC2010及以后的方法
 
-AP=平滑后PR曲线下包围的面积
+    AP=平滑后PR曲线下包围的面积
 
-这里则有：
+    这里则有：
 
-```text
-AP = (0.14-0) * 1 + (0.29-0.14) * 1 + (0.43-0.29) * 0.5 + (0.57-0.43) * 0.5 + (0.71-0.57) * 0.5 + (1-0.71) * 0 = 0.5
-```
+    ```text
+    AP = (0.14-0) * 1 + (0.29-0.14) * 1 + (0.43-0.29) * 0.5 + (0.57-0.43) * 0.5 + (0.71-0.57) * 0.5 + (1-0.71) * 0 = 0.5
+    ```
 
-这里两种方案得出的AP值相同，但通常是不同的。
+    这里两种方案得出的AP值相同，但通常是不同的。
 
-需要注意的是上述AP的计算并没有显式设定`P_threshold`，而是通过从上到下依次指定每一个rank为正反分界线来变相的反映`P_threshold`不同取值。
+    需要注意的是上述AP的计算并没有显式设定`P_threshold`，而是通过从上到下依次指定每一个rank为正反分界线来变相的反映`P_threshold`不同取值。
 
 ## mAP的计算
 
 上述计算的AP只是针对dog这个类别，物体检测通常有多个类别，模型性能肯定是多个类别准度的综合度量。
 
-**1. VOC数据集中的mAP**
+1. VOC数据集中的mAP
 
-VOC数据集中的mAP计算的是`IoU_threshold=0.5`时各个类别AP的均值。
+    VOC数据集中的mAP计算的是`IoU_threshold=0.5`时各个类别AP的均值。
 
-**2. COCO数据集中的mAP**
+2. COCO数据集中的mAP
 
-检测是否正确有两个超参数，`P_threshold`和`IoU_threshold`。AP是固定了`IoU_threshold`，再综合考虑各个`P_threshold`下的模型平均准确度。
+    检测是否正确有两个超参数，`P_threshold`和`IoU_threshold`。AP是固定了`IoU_threshold`，再综合考虑各个`P_threshold`下的模型平均准确度。
 
 VOC认为`IoU_threshold`固定一个单值0.5即可，COCO则认为固定了`IoU_threshold`的取值，无法衡量`IoU_threshold`对模型性能的影响。
 
@@ -185,7 +181,9 @@ COCO在VOC标准的基础上，取`IoU_threshold=0.5，0.55， 0.6，… , 0.95`
 
 ![图片](mAP.assets/640.png)
 
-第一个map为Iou的阈值从固定的0.5调整为在 0.5 - 0.95 的区间上每隔0.5计算一次AP的值，取所有结果的平均值作为最终的结果。
+[来源: CoCo官网](https://cocodataset.org/#detection-eval)
+
+第一个map为Iou的阈值从固定的0.5调整为在 0.5 - 0.95 的区间上每隔0.05计算一次AP的值，取所有结果的平均值作为最终的结果。
 
 第二个map为不同尺寸的物体的mAP。包括小物体、中等物体、大物体，后面描述了物体对应的像素值的大小。
 
@@ -195,7 +193,7 @@ COCO在VOC标准的基础上，取`IoU_threshold=0.5，0.55， 0.6，… , 0.95`
 
 ![img](mAP.assets/v2-5a6da05f5664e2345fcc27375416ccaf_1440w.jpg)
 
-摘自文章[Bottom-up Object Detection by Grouping Extreme and Center Points](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1901.08043)
+[来源: Bottom-up Object Detection by Grouping Extreme and Center Points](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/1901.08043)
 
 ## map的实现
 
@@ -295,7 +293,7 @@ def voc_ap(rec, prec, use_07_metric=False):
 
 根据 mAP 的高低，我们只能较为概括地知道网络整体性能的好坏，但比较难分析问题具体在哪。举个例子：如果网络输出的框很贴合，选择合适的 Confidence 阈值时，检出和召回也较均衡，但是目标的类别判断错误较多。由于首先根据类别结果分类处理，只要类别错了，定位、检出和召回都很好，mAP 指标也不会高。但从结果观察，并不能很明确知道，问题出在类别判断上还是定位不准确上面。
 
-mAP虽然综合考虑了P_threshold和IoU_threshold各个取值时的平均模型准确度，使得模型优劣的评判标准不随P_threshold和IoU_threshold取值变化而变化，但在工程应用中，物体是否被正确检测到，还是需要具体的P_threshold和IoU_threshold，工程上更关心在固定的P_threshold和IoU_threshold下的准确率。这就需要我们自己实现与具体应用相符的评判标准。
+mAP虽然综合考虑了P_threshold和IoU_threshold各个取值时的平均模型准确度，使得模型优劣的评判标准不随P_threshold和IoU_threshold取值变化而变化，但在工程应用中，物体是否被正确检测到，还是需要具体的P_threshold和IoU_threshold，**工程上更关心在固定的P_threshold和IoU_threshold下的准确率**。这就需要我们自己实现与具体应用相符的评判标准。
 
 ## 参考
 
