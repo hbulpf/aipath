@@ -47,6 +47,8 @@ TP+FN 就是真正的所有正例总和。
 
 ![image-20220317163845678](README.assets/image-20220317163845678.png)
 
+详细参考[map](https://sfyh.hnbdata.cn/aipath/cv/necessary/mAP.html)
+
 ## YOLOv1
 
 * 把检测问题转换为回归问题，一个CNN搞定。
