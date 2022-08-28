@@ -923,7 +923,6 @@ CNN中深层的特征具有更丰富的语义信息，但对密集物体的检�
 
 ### **References**
 
-```text
 [1] Rapid object detection using a boosted cascade of simple features
 
 [2] Histograms of oriented gradients for human detection
@@ -1019,4 +1018,3 @@ CNN中深层的特征具有更丰富的语义信息，但对密集物体的检�
 [47] Random access memories: A new paradigm for target detection in high resolution aerial remote sensing images
 
 [48] Fully convolutional network with task partitioning for inshore ship detection in optical remote sensing images
-```
