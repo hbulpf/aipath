@@ -242,13 +242,13 @@
 ### **2.3.6 YOLO v4**
 
 
-> 论文链接：https://arxiv.org/pdf/2004.10934
+> 论文链接：https://arxiv.org/pdf/2004.10934  
 > 代码链接：https://github.com/Tianxiaomo/pytorch-YOLOv4
 
 
 ![img](detection_20years.assets/v2-c36a3262c0582a7805b1e448ba15f711_720w.jpg)
 
-**【简介】** 相比于YOLO v4，**YOLO v4[15]** 在输入端，引入了Mosaic数据增强、cmBN、SAT自对抗训练；在特征提取网络上，YOLO v4将各种新的方式结合起来，包括CSPDarknet53，Mish激活函数，Dropblock；在检测头中，引入了SPP模块，借鉴了FPN+PAN结构；在预测阶段，采用了CIOU作为网络的边界框损失函数，同时将NMS换成了DIOU_NMS等等。总体来说，YOLO v4具有极大的工程意义，将近年来深度学习领域最新研究的tricks都引入到了YOLO v4做验证测试，在YOLO v3的基础上更进一大步。
+**【简介】** 相比于YOLO v3，**YOLO v4[15]** 在输入端，引入了Mosaic数据增强、cmBN、SAT自对抗训练；在特征提取网络上，YOLO v4将各种新的方式结合起来，包括CSPDarknet53，Mish激活函数，Dropblock；在检测头中，引入了SPP模块，借鉴了FPN+PAN结构；在预测阶段，采用了CIOU作为网络的边界框损失函数，同时将NMS换成了DIOU_NMS等等。总体来说，YOLO v4具有极大的工程意义，将近年来深度学习领域最新研究的tricks都引入到了YOLO v4做验证测试，在YOLO v3的基础上更进一大步。
 
 **【性能】** YOLO v4在COCO数据集上达到了43.5%AP(65.7% AP50)，在Tesla V100显卡上实现了65 fps的实时性能，下图2-3展示了在COCO检测数据集上YOLO v4和其它SOTA检测算法的性能对比。
 
