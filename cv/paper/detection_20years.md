@@ -1,5 +1,5 @@
 # 综述：目标检测二十年（2001-2021）
-> 论文来源: [Object Detection in 20 Years: A Survey](https://arxiv.org/pdf/1905.05055.pdf) 
+> 论文来源: [Object Detection in 20 Years: A Survey](https://arxiv.org/pdf/1905.05055.pdf  ) 
 
 ## **引言**
 
@@ -21,7 +21,9 @@
 
 目标检测任务是找出图像或视频中人们感兴趣的物体，并同时检测出它们的位置和大小。不同于图像分类任务，目标检测不仅要解决分类问题，还要解决定位问题，是属于Multi-Task的问题。如下图1-1所示：
 
-![img](detection_20years.assets/v2-cb6e8d5ee5b543647ade1cf49c2db578_720w.jpg)图1-1.目标检测示例
+![img](detection_20years.assets/v2-cb6e8d5ee5b543647ade1cf49c2db578_720w.jpg)
+
+图1-1.目标检测示例
 
 作为计算机视觉的基本问题之一，目标检测构成了许多其它视觉任务的基础，例如实例分割，图像标注和目标跟踪等等；从检测应用的角度看：行人检测、面部检测、文本检测、交通标注与红绿灯检测，遥感目标检测统称为目标检测的五大应用。
 
@@ -29,7 +31,9 @@
 
 目标检测的发展脉络可以划分为两个周期：传统目标检测算法时期(1998年-2014年)和基于深度学习的目标检测算法时期(2014年-至今)。而基于深度学习的目标检测算法又发展成了两条技术路线：**Anchor based**方法(一阶段，二阶段)和**Anchor free**方法。下图2-1展示了从2001年至2021年目标检测领域中，目标检测发展路线图。
 
-![img](detection_20years.assets/v2-e0a477f5a1fb362f72123676ef403894_720w.jpg)图2-1.Object Detection Milestones
+![img](detection_20years.assets/v2-e0a477f5a1fb362f72123676ef403894_720w.jpg)
+
+图2-1.Object Detection Milestones
 
 ### **2.1 传统目标检测算法**
 
@@ -70,7 +74,7 @@
 ### **2.2.1 RCNN**
 
 
-> 论文链接：https://openaccess.thecvf.com/contentcvpr2014/papers/GirshickRichFeatureHierarchies2014CVPRpaper.pdf
+> 论文链接：https://openaccess.thecvf.com/contentcvpr2014/papers/GirshickRichFeatureHierarchies2014CVPRpaper.pdf    
 > 代码链接：https://github.com/rbgirshick/rcnn
 
 
@@ -87,7 +91,7 @@
 ### **2.2.2 SPPNet**
 
 
-> 论文链接：https://link.springer.com/content/pdf/10.1007/978-3-319-10578-923.pdf
+> 论文链接：https://link.springer.com/content/pdf/10.1007/978-3-319-10578-923.pdf  
 > 代码链接：https://github.com/yueruchen/sppnet-pytorch
 
 
@@ -104,7 +108,7 @@
 ### **2.2.3 Fast RCNN**
 
 
-> 论文链接：https://openaccess.thecvf.com/contenticcv2015/papers/GirshickFastR-CNNICCV2015paper.pdf
+> 论文链接：https://openaccess.thecvf.com/contenticcv2015/papers/GirshickFastR-CNNICCV2015paper.pdf  
 > 代码链接：https://github.com/rbgirshick/fast-rcnn
 
 
@@ -121,7 +125,7 @@
 ### **2.2.4 Faster RCNN**
 
 
-> 论文链接：https://arxiv.org/pdf/1506.01497.pdf
+> 论文链接：https://arxiv.org/pdf/1506.01497.pdf  
 > 代码链接：https://github.com/jwyang/faster-rcnn.pytorc
 
 
@@ -136,7 +140,7 @@
 ### **2.2.5 FPN**
 
 
-> 论文链接：http://openaccess.thecvf.com/contentcvpr2017/papers/LinFeaturePyramidNetworksCVPR2017paper.pdf 
+> 论文链接：http://openaccess.thecvf.com/contentcvpr2017/papers/LinFeaturePyramidNetworksCVPR2017paper.pdf   
 > 代码链接：https://github.com/jwyang/fpn.pytorch
 
 
@@ -149,7 +153,7 @@
 ### **2.2.6 Cascade RCNN**
 
 
-> 论文链接：https://openaccess.thecvf.com/contentcvpr2018/papers/CaiCascadeR-CNNDelvingCVPR2018paper.pdf
+> 论文链接：https://openaccess.thecvf.com/contentcvpr2018/papers/CaiCascadeR-CNNDelvingCVPR2018paper.pdf  
 > 代码链接：https://github.com/zhaoweicai/cascade-rcnn
 
 
@@ -166,7 +170,7 @@
 ### **2.3.1 YOLO v1**
 
 
-> 论文链接：https://www.cv-foundation.org/openaccess/contentcvpr2016/papers/RedmonYouOnlyLookCVPR2016paper.pdf
+> 论文链接：https://www.cv-foundation.org/openaccess/contentcvpr2016/papers/RedmonYouOnlyLookCVPR2016paper.pdf  
 > 代码链接：https://github.com/abeardear/pytorch-YOLO-v1
 
 
@@ -184,7 +188,6 @@
 > 论文链接：https://arxiv.org/pdf/1512.02325
 > 代码链接：https://github.com/amdegroot/ssd.pytorch
 
-
 ![img](detection_20years.assets/v2-1f6e06739e08384e4acc877bd1665040_720w.jpg)
 
 **【简介】** **SSD[11]** 算法的主要创新点是提出了Multi-reference和Multi-resolution的检测技术。SSD算法和先前的一些检测算法的区别在于：先前的一些检测算法只是在网络最深层的分支进行检测，而SSD有多个不同的检测分支，不同的检测分支可以检测多个尺度的目标，所以SSD在多尺度目标检测的精度上有了很大的提高，对小目标检测效果要好很多。
@@ -194,7 +197,7 @@
 ### **2.3.3 YOLO v2**
 
 
-> 论文链接：https://openaccess.thecvf.com/contentcvpr2017/papers/RedmonYOLO9000BetterFasterCVPR2017paper.pdf
+> 论文链接：https://openaccess.thecvf.com/contentcvpr2017/papers/RedmonYOLO9000BetterFasterCVPR2017paper.pdf  
 > 代码链接：https://github.com/longcw/yolo2\-pytorch
 
 
@@ -211,7 +214,7 @@
 ### **2.3.4 RetinaNet**
 
 
-> 论文链接：https://openaccess.thecvf.com/contentICCV2017/papers/LinFocalLossforICCV2017paper.pdf
+> 论文链接：https://openaccess.thecvf.com/contentICCV2017/papers/LinFocalLossforICCV2017paper.pdf  
 > 代码链接：https://github.com/yhenon/pytorch-retinanet
 
 
@@ -224,7 +227,7 @@
 ### **2.3.5 YOLO v3**
 
 
-> 论文链接：https://arxiv.org/pdf/1804.02767.pdf
+> 论文链接：https://arxiv.org/pdf/1804.02767.pdf  
 > 代码链接：https://github.com/ultralytics/yolov3
 
 
@@ -281,7 +284,7 @@
 ### **2.4.1 CornerNet**
 
 
-> 论文链接：http://openaccess.thecvf.com/contentECCV2018/papers/HeiLawCornerNetDetectingObjectsECCV2018paper.pdf
+> 论文链接：http://openaccess.thecvf.com/contentECCV2018/papers/HeiLawCornerNetDetectingObjectsECCV2018paper.pdf  
 > 代码链接：https://github.com/princeton-vl/CornerNet
 
 
@@ -298,7 +301,7 @@
 ### **2.4.2 CenterNet**
 
 
-> 论文链接：https://openaccess.thecvf.com/contentICCV2019/papers/DuanCenterNetKeypointTripletsforObjectDetectionICCV2019paper.pdf
+> 论文链接：https://openaccess.thecvf.com/contentICCV2019/papers/DuanCenterNetKeypointTripletsforObjectDetectionICCV2019paper.pdf  
 > 代码链接：https://github.com/Duankaiwen/CenterNet
 
 
@@ -315,7 +318,7 @@
 ### **2.4.3 FSAF**
 
 
-> 论文链接：http://openaccess.thecvf.com/contentCVPR2019/papers/ZhuFeatureSelectiveAnchor-FreeModuleforSingle-ShotObjectDetectionCVPR2019paper.pdf
+> 论文链接：http://openaccess.thecvf.com/contentCVPR2019/papers/ZhuFeatureSelectiveAnchor-FreeModuleforSingle-ShotObjectDetectionCVPR2019paper.pdf  
 > 代码链接：https://github.com/hdjang/Feature-Selective-Anchor-Free-Module-for-Single-Shot-Object-Detection
 
 
@@ -330,7 +333,7 @@
 ### **2.4.4 FCOS**
 
 
-> 论文链接：https://openaccess.thecvf.com/contentICCV2019/papers/TianFCOSFullyConvolutionalOne-StageObjectDetectionICCV2019paper.pdf
+> 论文链接：https://openaccess.thecvf.com/contentICCV2019/papers/TianFCOSFullyConvolutionalOne-StageObjectDetectionICCV2019paper.pdf  
 > 代码链接：https://github.com/tianzhi0549/FCOS
 
 
@@ -1020,4 +1023,4 @@ CNN中深层的特征具有更丰富的语义信息，但对密集物体的检�
 
 ## 来源参考
 1. https://zhuanlan.zhihu.com/p/383616728
-2. [Object Detection in 20 Years: A Survey](https://arxiv.org/pdf/1905.05055.pdf) 
+2. [Object Detection in 20 Years: A Survey](https://arxiv.org/pdf/1905.05055.pdf  ) 

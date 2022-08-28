@@ -37,7 +37,10 @@
   - [上下采样](cv/basic/up_down_sampling.md)
   - [NMS](cv/basic/NMS.md)
   - [FPN](cv/basic/FPN.md)
+  - [HOG](cv/basic/HOG.md)
+  - [池化](cv/basic/pooling.md)
   - [图像处理100问](cv/basic/question_100.md)
+  - [风格迁移](cv/basic/style_transfer.md)
 
 - [CV论文](cv/paper/README.md)
   - [CNN](cv/paper/cnn.md)
