@@ -25,6 +25,7 @@
     - [MindSpore](frames/ascend/mindspore.md)
   - [配置工作站](frames/config_dl_workstation.md)
   - [GPU](frames/gpu_selection.md)
+      - [TensorRT](frames/nvidia_cuda/tensorrt.md)
       - [Win10装CUDA](frames/nvidia_cuda/Win10/README.md)
       - [CentOS7装CUDA](frames/nvidia_cuda/CentOS7/README.md)
   - [NPU](frames/npu_selection.md)
@@ -74,6 +75,7 @@
   - [paperswithcode](cv/tools/paperswithcode.md)
 
 - [OCR](ocr/README.md)
+  - [PaddleOcr](ocr/paddleocr.md)
 
 - [面试](cv/interview/README.md)
 
