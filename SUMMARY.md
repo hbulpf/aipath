@@ -73,6 +73,8 @@
   - [map精细化工具](cv/tools/map_details_tools.md)
   - [paperswithcode](cv/tools/paperswithcode.md)
 
+- [OCR](ocr/README.md)
+
 - [面试](cv/interview/README.md)
 
 - [OpenCV](cv/opencv/README.md)
