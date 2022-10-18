@@ -40,6 +40,7 @@
   - [FPN](cv/basic/FPN.md)
   - [HOG](cv/basic/HOG.md)
   - [池化](cv/basic/pooling.md)
+  - [目标检测网络组成](cv/basic/backbone_neck_head.md)
   - [图像处理100问](cv/basic/question_100.md)
   - [风格迁移](cv/basic/style_transfer.md)
 
