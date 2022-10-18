@@ -66,9 +66,9 @@ backbone:提取基础特征网络
 ## 以YOLO v4为例
 
 以YOLO v4为例，包括
-• Backbone: CSPDarknet53
-• Neck: SPP, PAN
-• Head: YOLOv3
+* Backbone: CSPDarknet53
+* Neck: SPP, PAN
+* Head: YOLOv3
 
 ![img](backbone_neck_head.assets/v2-f1ef29643e5b9b868360a4157e2d81da_720w.jpg)
 
