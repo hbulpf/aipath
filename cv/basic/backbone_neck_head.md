@@ -13,14 +13,14 @@
 ![img](backbone_neck_head.assets/v2-b0dbf2793374cc74a9022fabcc57c198_720w.jpg)
 
 **input**: Image, patches, image pyramid,... ...
-**Backbone**: VGG-16, ResNet-50, ResNeXt-101, Darknet53, 轻量级backbone(MobileNet, ShuffleNet, EfficientNet, ... ...)
-**Neck**:
 
+**Backbone**: VGG-16, ResNet-50, ResNeXt-101, Darknet53, 轻量级backbone(MobileNet, ShuffleNet, EfficientNet, ... ...)
+
+**Neck**:
 - Additional blocks: SPP, ASPP, RFB, SAM
 - Path-aggregation blocks: FPN(Feature Pyramid Network), PANet(Path Aggregation Network), NAS-FPN, Fully-connected FPN, BiFPN, ASFF, SFAM
 
 **Head:**
-
 - dense prediction: RPN, YOLO, SSD(Single Shot MultiBox Detector), RetinaNet, FCOS(**F**ully **C**onvolutional **O**ne-**S**tage object detection),... ...
 - Sparse prediction: Faster R-CNN, R-FCN, Mask R-CNN (anchor based)
 
@@ -42,15 +42,12 @@
 
 从优化目标上来看，分类任务只做分类，而目标检测还需要做定位，因此，任务驱动不同，目标不同，因此，完全有理由相信二者的优化空间有很大的差异。所以，仅仅是微调网络是无法完成目标检测任务的，当然，这一点，我们会在后续的实践来验证的。
 
- 
 
 二、Detection head
 
 解决的办法相当简单，既然仅仅靠分类网络是不行的，那么我们就在后面加一些网络层，让这些额外加进来的网络层去弥补分类网络无法定位的先天缺陷。于是，这条脉络就非常清晰了：分类网络迁移过来，用作特征提取器（通过在目标检测数据集上进行微调，并且与后续的网络的共同训练，使得它提取出来的特征更适合目标检测任务），后续的网络负责从这些特征中，检测目标的位置和类别。那么，我们就将分类网络所在的环节称之为“Backbone”，后续连接的网络层称之为“Detection head”。
 
 随着技术的发展，除了backbone和head这两部分，更多的新奇的技术和模块被提了出来，最著名的，莫过于FPN了——《Feature Pyramid NetworksforObject Detection》提出的FPN结构，在不同的尺度（实际上就是不同大小的feature map）上去提取不同尺度的信息，并进行融合，充分利用好backbone提取的所有的特征信息，从而让网络能够更好地检测物体。有了FPN，backbone提取出的信息可以被利用的更加充分，使得detector能够很好地应对多尺度情况——图像中，目标的大小不一，大的、中等的、小的，都有，尤其是小物体，几乎成为了目标检测这一块的单独研究点。
-
- 
 
 三、Neck
 
@@ -69,9 +66,9 @@ backbone:提取基础特征网络
 ## 以YOLO v4为例
 
 以YOLO v4为例，包括
-• Backbone: CSPDarknet53
-• Neck: SPP, PAN
-• Head: YOLOv3
+* Backbone: CSPDarknet53
+* Neck: SPP, PAN
+* Head: YOLOv3
 
 ![img](backbone_neck_head.assets/v2-f1ef29643e5b9b868360a4157e2d81da_720w.jpg)
 

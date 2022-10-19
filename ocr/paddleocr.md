@@ -1,5 +1,11 @@
 # PaddleOcr
 
+[安装paddle](https://www.paddlepaddle.org.cn/)
+
+```
+python -m pip install paddlepaddle==2.3.2 -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
 
 
 # 参考
