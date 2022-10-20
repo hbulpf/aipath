@@ -65,7 +65,7 @@ learning_rate = 1e-3
 sampler = ds.SequentialSampler(num_samples=128)
 dataset = ds.Cifar10Dataset(DATA_DIR, sampler=sampler)
 ```
- 
+
 
 ### 数据类型转换
 

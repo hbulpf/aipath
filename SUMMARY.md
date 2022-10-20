@@ -22,13 +22,15 @@
     - [autokeras](frames/keras/autokeras/README.md)
   - [百度飞桨](frames/paddle/README.md)
   - [华为昇腾](frames/ascend/README.md)
+    - [昇腾全栈](frames/ascend/ascend_full_stack.md)
     - [MindSpore](frames/ascend/mindspore.md)
+    - [NPU选型](frames/ascend/npu_selection.md)
+    - [案例库](frames/ascend/cases.md)
   - [配置工作站](frames/config_dl_workstation.md)
   - [GPU](frames/gpu_selection.md)
       - [TensorRT](frames/nvidia_cuda/tensorrt.md)
       - [Win10装CUDA](frames/nvidia_cuda/Win10/README.md)
       - [CentOS7装CUDA](frames/nvidia_cuda/CentOS7/README.md)
-  - [NPU](frames/npu_selection.md)
 
 # 计算机视觉
 
