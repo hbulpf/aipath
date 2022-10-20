@@ -133,9 +133,6 @@ from npu_bridge.estimator import npu_ops
 layers = npu_ops.dropout()
 ```
 
-
-[2] 修改 gelu
-
 [2] 修改 gelu
 
 TensorFlow原始代码：
@@ -153,16 +150,13 @@ layers = gelu()
 
 迁移后的代码：
 
-迁移后的代码：
-
 ```
 from npu_bridge.estimator.npu_unary_ops import npu_unary_ops  
 
 layers = npu_unary_ops.gelu(x)
 ```
 
-
-3. 运行配置
+1. 运行配置
 
 原始TensorFlow通过RunConfig配置运行参数；
 
@@ -285,8 +279,6 @@ layers = npu_ops.dropout()
 
 [2] 修改 gelu
 
-[2] 修改 gelu
-
 TensorFlow原始代码：
 
 ```
@@ -299,9 +291,6 @@ def gelu(x):
 layers = gelu()
 ```
 
-
-迁移后的代码：
-
 迁移后的代码：
 
 ```
@@ -310,7 +299,7 @@ from npu_bridge.estimator.npu_unary_ops import npu_unary_ops
 layers = npu_unary_ops.gelu(x)
 ```
 
-3. 创建session并初始化资源
+1. 创建session并初始化资源
 
 这一步我们需要在创建 Session 前添加如下的配置，使得训练能够在NPU上执行：
 
