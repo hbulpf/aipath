@@ -25,6 +25,7 @@
     - [昇腾全栈](frames/ascend/ascend_full_stack.md)
     - [MindSpore](frames/ascend/mindspore.md)
     - [NPU选型](frames/ascend/npu_selection.md)
+    - [达芬奇架构](frames/ascend/davinci.md)
     - [案例库](frames/ascend/cases.md) 
       - [TensorFlow模型迁移](frames/ascend/model_convertion/tensorflow2npu.md) 
   - [配置工作站](frames/config_dl_workstation.md)
