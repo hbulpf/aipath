@@ -1,5 +1,11 @@
 # OCR
 
+## DEMO
+
+1. [paddleOCR的demo](https://gitee.com/industry_vision_software/paddle_ocr_demo.git)
+
+
+
 # 参考
 
 ## 在线资料
