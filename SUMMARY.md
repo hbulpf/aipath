@@ -80,7 +80,7 @@
   - [paperswithcode](cv/tools/paperswithcode.md)
 
 - [OCR](ocr/README.md)
-  - [PaddleOcr](ocr/paddleocr.md)
+  - [PaddleOcr](ocr/paddleocr/README.md)
 
 - [面试](cv/interview/README.md)
 

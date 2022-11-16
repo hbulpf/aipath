@@ -1,4 +1,7 @@
 # PaddleOcr
+在线尝试ppHub: https://www.paddlepaddle.org.cn/hub/scene/ocr
+
+## 使用
 
 [安装paddle](https://www.paddlepaddle.org.cn/)
 
