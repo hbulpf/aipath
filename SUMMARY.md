@@ -90,6 +90,10 @@
     - [PP-OCR](ocr/paddleocr/ppocr_introduction.md)
       - [快速开始](ocr/paddleocr/quickstart.md)
       - [模型库](ocr/paddleocr/models_list.md)
+      - [模型训练](ocr/paddleocr/training.md)
+          - [文本检测](ocr/paddleocr/detection.md)
+          - [文本识别](ocr/paddleocr/recognition.md)
+          - [文本方向分类器](ocr/paddleocr/angle_class.md)
 
 - [CV面试](cv/interview/README.md)
 
