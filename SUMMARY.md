@@ -47,6 +47,7 @@
   - [目标检测网络组成](cv/basic/backbone_neck_head.md)
   - [图像处理100问](cv/basic/question_100.md)
   - [风格迁移](cv/basic/style_transfer.md)
+  - [动态图训练](cv/basic/graph.md)
 
 - [CV论文](cv/paper/README.md)
   - [CNN](cv/paper/cnn.md)
