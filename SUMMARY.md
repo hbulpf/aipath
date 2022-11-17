@@ -65,6 +65,8 @@
   - [U-Net](cv/paper/unet.md)
   - [GAN](cv/paper/gan.md)
   - [MobileNet v3](cv/paper/mobilenetv3.md)
+  - [注意力机制](cv/paper/attention.md)
+  - [Transformers](cv/paper/transformers.md)
 
 - [机器视觉](cv/README.md)
   - [Halcon](cv/mv/halcon.md)
