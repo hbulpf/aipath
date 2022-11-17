@@ -83,8 +83,11 @@
   - [竞品分析](ocr/products.md)
   - [PaddleOcr](ocr/paddleocr/README.md)
     - [运行环境准备](ocr/paddleocr/environment.md)
+    - [PP-OCR](ocr/paddleocr/ppocr_introduction.md)
+      - [快速开始](ocr/paddleocr/quickstart.md)
+      - [模型库](ocr/paddleocr/models_list.md)
 
-- [面试](cv/interview/README.md)
+- [CV面试](cv/interview/README.md)
 
 - [OpenCV](cv/opencv/README.md)
   - [OpenCV-Python 教程简介](cv/opencv/opencv4.0.0_py/4.0.0/1.1-tutorial_py_intro.md)
