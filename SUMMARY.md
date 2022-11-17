@@ -94,6 +94,10 @@
           - [文本检测](ocr/paddleocr/detection.md)
           - [文本识别](ocr/paddleocr/recognition.md)
           - [文本方向分类器](ocr/paddleocr/angle_class.md)
+        - 模型压缩
+            - [模型量化](./deploy/slim/quantization/README.md)
+            - [模型裁剪](./deploy/slim/prune/README.md)
+            - [知识蒸馏](ocr/paddleocr/knowledge_distillation.md)
 
 - [CV面试](cv/interview/README.md)
 
