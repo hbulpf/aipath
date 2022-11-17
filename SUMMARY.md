@@ -82,6 +82,7 @@
 - [OCR](ocr/README.md)
   - [竞品分析](ocr/products.md)
   - [PaddleOcr](ocr/paddleocr/README.md)
+    - [运行环境准备](ocr/paddleocr/environment.md)
 
 - [面试](cv/interview/README.md)
 
