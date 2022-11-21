@@ -48,6 +48,7 @@ python -m pip install paddlepaddle==2.3.2 -i https://pypi.tuna.tsinghua.edu.cn/s
 - [运行环境准备](./environment.md)
 - [PP-OCR文本检测识别🔥](./ppocr_introduction.md)
     - [快速开始](./quickstart.md)
+    - [包使用说明](./whl.md)
     - [模型库](./models_list.md)
     - [模型训练](./training.md)
         - [文本检测](./detection.md)

@@ -89,6 +89,7 @@
     - [运行环境准备](ocr/paddleocr/environment.md)
     - [PP-OCR](ocr/paddleocr/ppocr_introduction.md)
       - [快速开始](ocr/paddleocr/quickstart.md)
+      - [包使用说明](ocr/paddleocr/whl.md)
       - [模型库](ocr/paddleocr/models_list.md)
       - [模型训练](ocr/paddleocr/training.md)
           - [文本检测](ocr/paddleocr/detection.md)
