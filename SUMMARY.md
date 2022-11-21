@@ -14,6 +14,7 @@
     - [优化器](dl/basic/optimization.md)
     - [损失函数](dl/basic/loss_function.md)
     - [模型量化](dl/basic/model_slim.md)
+    - [模型蒸馏](dl/basic/model_distillation.md)
 - [框架与平台](frames/README.md)
   - [Tensorflow](frames/tesorflow/README.md)
     - [docker方式启动tensorflow](frames/tesorflow/tesorflow_docker.md)
