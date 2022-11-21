@@ -64,10 +64,9 @@
 
 2. **昇腾计算服务层:** 主要提供昇腾算子库AOL，通过神经网络（Neural Network，NN）库、线性代数计算库（Basic Linear Algebra Subprograms，BLAS）等高性能算子加速计算；昇腾调优引擎AOE，通过算子调优OPAT、子图调优SGAT、梯度调优GDAT、模型压缩AMCT提升模型端到端运行速度。同时提供AI框架适配器Framework Adaptor用于兼容Tensorflow、Pytorch等主流AI框架。
 
-3. **昇腾计算编译层**: 通过图编译器（Graph Compiler）将用户输入中间表达（Intermediate Representation，IR）的计算图编译成昇腾硬件可执行模型；同时借助张量加速引擎TBE（Tensor Boost Engine）的自动调度机制，高效编译算子。统一的 IR 接口对接不同前端，支持 TensorFlow/Caffe/MindSpore 表达的计算图的解析/优化/编译，提供对后端计算引擎最优化部署能力
+3. **昇腾计算编译层**(ATC): 通过图编译器（Graph Compiler）将用户输入中间表达（Intermediate Representation，IR）的计算图编译成昇腾硬件可执行模型；同时借助张量加速引擎TBE（Tensor Boost Engine）的自动调度机制，高效编译算子。统一的 IR 接口对接不同前端，支持 TensorFlow/Caffe/MindSpore 表达的计算图的解析/优化/编译，提供对后端计算引擎最优化部署能力
 
    - Graph Engine：图编译和运行的控制中心
-   - Fusion Engine：管理算子融合规则
    - 算子编译和算子库
      - TBE：编译生成算子及算子开发工具
 
