@@ -1,6 +1,6 @@
-# 昇腾AI基本架构
+# 昇腾AI全栈介绍
 
-## 昇腾AI全栈架构
+## 昇腾AI基本架构
 
 ![请添加图片描述](ascend_full_stack.assets/9dc29f9e14ef4a82a33352dd35794fea-166627432036257.png)
 
@@ -21,6 +21,8 @@
 
 昇腾AI异构计算架构（Compute Architecture for Neural Networks，CANN）被抽象成五层架构，如下图所示。
 ![img](ascend_full_stack.assets/6e60709d6e9042d298021030c3a0f6aa.png)
+
+参考[cann技术堆栈](https://www.hiascend.com/software/cann)
 
 1. **昇腾计算语言接口**(ACL): 昇腾计算语言（Ascend Computing Language，AscendCL）接口是昇腾计算开放编程框架，是对低层昇腾计算服务接口的封装。它提供Device（设备）管理、Context（上下文）管理、Stream（流）管理、内存管理、模型加载与执行、算子加载与执行、媒体数据处理、Graph（图）管理等API库，供用户开发人工智能应用调用。
 
@@ -54,33 +56,32 @@
 
 #### 芯片使能层
 
+![image-20221121224031335](ascend_full_stack.assets/image-20221121224031335.png)
+
 实现解决方案对外能力开放，以及基于计算图的业务流的控制和运行。
 
-1. AscendCL 昇腾计算语言库: 开放编程框架，提供 Device/Context/Stream/ 内存等的管理、模型及算子的加载与执行、媒体数据处理、Graph 管理等 API 库，供用户开发深度神经网络应用。
+1. **昇腾计算语言**（Ascend Computing Language，AscendCL）: 接口是昇腾计算开放编程框架，对开发者屏蔽底层多种处理器差异，提供算子开发接口TBE、标准图开发接口AIR、应用开发接口，提供 Device/Context/Stream/ 内存等的管理、模型及算子的加载与执行、媒体数据处理、Graph 管理等 API 库，供用户开发深度神经网络应用，支持用户快速构建基于Ascend平台的AI应用和业务。
 
-2. 图优化和编译: 统一的 IR 接口对接不同前端，支持 TensorFlow/Caffe/MindSpore 表达的计算图的解析/优化/编译，提供对后端计算引擎最优化部署能力
+2. **昇腾计算服务层:** 主要提供昇腾算子库AOL，通过神经网络（Neural Network，NN）库、线性代数计算库（Basic Linear Algebra Subprograms，BLAS）等高性能算子加速计算；昇腾调优引擎AOE，通过算子调优OPAT、子图调优SGAT、梯度调优GDAT、模型压缩AMCT提升模型端到端运行速度。同时提供AI框架适配器Framework Adaptor用于兼容Tensorflow、Pytorch等主流AI框架。
+
+3. **昇腾计算编译层**: 通过图编译器（Graph Compiler）将用户输入中间表达（Intermediate Representation，IR）的计算图编译成昇腾硬件可执行模型；同时借助张量加速引擎TBE（Tensor Boost Engine）的自动调度机制，高效编译算子。统一的 IR 接口对接不同前端，支持 TensorFlow/Caffe/MindSpore 表达的计算图的解析/优化/编译，提供对后端计算引擎最优化部署能力
 
    - Graph Engine：图编译和运行的控制中心
-
    - Fusion Engine：管理算子融合规则
+   - 算子编译和算子库
+     - TBE：编译生成算子及算子开发工具
 
-   - AICPU Engine：AICPU 算子信息管理
+     - 算子库：神经网络加速库
 
-   - HCCL：HCCL 算子信息管理
+4. **昇腾计算执行层**: 负责模型和算子的执行，提供运行时库（Runtime）、图执行器（Graph Executor）、数字视觉预处理（Digital Vision Pre-Processing，DVPP）、人工智能预处理（Artificial Intelligence Pre-Processing，AIPP）、华为集合通信库（Huawei Collective Communication Library，HCCL）等功能单元。
 
-3. 算子编译和算子库
+   * AICPU Engine：AICPU 算子信息管理
+   * HCCL：HCCL 算子信息管理
+   * DVPP: 数字视觉预处理，实现视频编解码（VENC/VDEC）、JPEG 编解码（JPEG/E）、PNG 解码（PNGD）、VPC（预处理）
 
-   - TBE：编译生成算子及算子开发工具
-
-   - 算子库：神经网络加速库
-
-4. 数字视觉预处理: 实现视频编解码（VENC/VDEC）、JPEG 编解码（JPEG/E）、PNG 解码（PNGD）、VPC（预处理）
-
-5. 执行引擎
-
-   - Runtime：为神经网络的任务分配提供资源管理通道
-
-   - Task Scheduler：计算图 Task 序列的管理和调度、执行
+   * 执行引擎
+     * Runtime：为神经网络的任务分配提供资源管理通道
+     * Task Scheduler：计算图 Task 序列的管理和调度、执行
 
 #### 计算资源层
 
