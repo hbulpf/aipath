@@ -91,6 +91,7 @@
       - [快速开始](ocr/paddleocr/quickstart.md)
       - [包使用说明](ocr/paddleocr/whl.md)
       - [模型库](ocr/paddleocr/models_list.md)
+      - [多语言模型](ocr/paddleocr/multi_languages.md)
       - [模型训练](ocr/paddleocr/training.md)
           - [文本检测](ocr/paddleocr/detection.md)
           - [文本识别](ocr/paddleocr/recognition.md)
