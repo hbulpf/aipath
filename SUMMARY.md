@@ -52,6 +52,7 @@
     - [图像处理100问](cv/basic/question_100.md)
     - [风格迁移](cv/basic/style_transfer.md)
     - [动态图训练](cv/basic/graph.md)
+    - [yuv和rgb](cv/basic/yuv和rgb.md)
   - [CV论文](cv/paper/README.md)
     - [CNN](cv/paper/cnn.md)
     - [目标检测综述](cv/paper/detection_20years.md)
