@@ -29,7 +29,7 @@
     - [MindSpore](frames/ascend/mindspore.md)
     - [NPU选型](frames/ascend/npu_selection.md)
     - [达芬奇架构](frames/ascend/davinci.md)
-    - [ACL应用案例](frames/ascend/acl_demo.md)
+    - [ACL应用python案例](frames/ascend/acl_demo_python.md)
     - [案例库](frames/ascend/cases.md) 
       - [TensorFlow模型迁移](frames/ascend/model_convertion/tensorflow2npu.md) 
   - [配置工作站](frames/config_dl_workstation.md)
