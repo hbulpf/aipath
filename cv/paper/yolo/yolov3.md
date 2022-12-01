@@ -13,3 +13,5 @@
 多scale
 
 ![image-20220318005512785](README.assets/image-20220318005512785.png)
+
+Relu , leakRelu
