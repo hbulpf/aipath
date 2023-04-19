@@ -34,10 +34,12 @@
     - [案例库](frames/ascend/cases.md) 
       - [TensorFlow模型迁移](frames/ascend/model_convertion/tensorflow2npu.md) 
   - [配置工作站](frames/config_dl_workstation.md)
-  - [GPU](frames/gpu_selection.md)
-      - [TensorRT](frames/nvidia_cuda/tensorrt.md)
-      - [Win10装CUDA](frames/nvidia_cuda/Win10/README.md)
-      - [CentOS7装CUDA](frames/nvidia_cuda/CentOS7/README.md)
+  - [英伟达](frames/nvidia_cuda/README.md)
+    - [GPU选型](frames/nvidia_cuda/gpu_selection.md)
+    - [英伟达开发者生态](frames/nvidia_cuda/developer.md)
+    - [TensorRT](frames/nvidia_cuda/tensorrt.md)
+    - [Win10装CUDA](frames/nvidia_cuda/Win10/README.md)
+    - [CentOS7装CUDA](frames/nvidia_cuda/CentOS7/README.md)
 
 # 计算机视觉
 - [计算机视觉](cv/README.md)
