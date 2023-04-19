@@ -223,7 +223,7 @@
 - [AI边缘项目开发](project/edge/ai_edge_dev.md)
   - [无人机电力巡检](project/edge/UAV_power_inspection.md)
 - [chatGPT](project/chatgpt.md)
-- [Nemo](project/nvidia/Nemo.md)
+- [基于Nemo](project/nvidia/Nemo.md)
 
 # 机器人
 - [机器人](robot/README.md)
