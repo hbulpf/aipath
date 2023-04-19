@@ -219,6 +219,7 @@
   - [人脸识别](project/face_detection/README.md)
 - [八斗学院项目](project/八斗学院.md)
 - [AI边缘项目开发](project/edge/ai_edge_dev.md)
+  - [无人机电力巡检](project/edge/UAV_power_inspection.md)
 - [chatGPT](project/chatgpt.md)
 - [Nemo](project/nvidia/Nemo.md)
 
