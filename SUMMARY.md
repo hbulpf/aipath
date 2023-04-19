@@ -220,6 +220,7 @@
 - [八斗学院项目](project/八斗学院.md)
 - [AI边缘项目开发](project/edge/ai_edge_dev.md)
 - [chatGPT](project/chatgpt.md)
+- [Nemo](project/nvidia/Nemo.md)
 
 # 机器人
 - [机器人](robot/README.md)
