@@ -25,3 +25,6 @@ NVIDIA NeMo 是一个用于构建对话式人工智能应用的工具库，专�
 * Transducer 的模型架构
 * ContextNet 的模型架构
 * Transducer 模型的训练和评估
+
+
+## 使用NVIDIA NeMo搭建中文聊天机器人
