@@ -11,3 +11,6 @@
    3. [掘金 tensorflow教程](https://tensorflow.juejin.im/get_started/)
    4. [莫烦AI课程](https://mofanpy.com/)
 2. [YOU CAN DETECT AND TRACK ANY OBJECT WITH COMPUTER VISION](https://pysource.com/)
+3. Pytorch
+4. 学习材料
+   1. [深度学习百科及面试资源](https://paddlepedia.readthedocs.io/en/latest/index.html)
