@@ -223,7 +223,7 @@ def lp_norm(x, y, p=2, axes=None, keepdim=False, epsilon=1e-12, kernel_name="lp_
 
 - 无穷范数的计算
 
-‖�‖\infin=���(|�1|,|�2|,…,|��|)
+![image-20230627223129584](dev_DSL_op.assets/image-20230627223129584.png)
 
 ```text
 if (p == "inf") or (p == _CONST_INF):
@@ -245,7 +245,7 @@ res = tbe.sum(ele_tensor, axis=axes, keepdims=keepdim)
 
 - 1范数的计算
 
-‖�‖1=|�1|+|�2|+…+|��|
+![image-20230627223141915](dev_DSL_op.assets/image-20230627223141915.png)
 
 ```text
 res = tbe.sum(abs_x, axis=axes, keepdims=keepdim) #对所有值求和
@@ -253,7 +253,7 @@ res = tbe.sum(abs_x, axis=axes, keepdims=keepdim) #对所有值求和
 
 - 2范数的计算
 
-‖�‖2=(|�1|2+|�2|2+⋯+|��|2)12
+![image-20230627223154047](dev_DSL_op.assets/image-20230627223154047.png)
 
 ```text
 pow_x = tbe.vmul(abs_x, abs_x)   #求平方
@@ -263,7 +263,7 @@ res = tbe.vsqrt(sum_pow, priority_flag=1) #求1/2次方
 
 - p范数的计算
 
-‖�‖�=(|�1|�+|�2|�+⋯+|��|�)1�
+![image-20230627223203317](dev_DSL_op.assets/image-20230627223203317.png)
 
 ```text
 prod_x = abs_x
