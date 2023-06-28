@@ -31,6 +31,7 @@
     - [MindSpore](frames/ascend/mindspore/README.md)
     - [模型迁移适配](frames/ascend/dev/dev_DSL_op.md)
       - [TensorFlow模型迁移](frames/ascend/dev/model_convertion/tensorflow2npu.md)
+      - [PyTorch模型迁移](frames/ascend/dev/model_convertion/pytorch2npu.md)
       - [TBE算子开发](frames/ascend/dev/dev_DSL_op.md)
     - [案例库](frames/ascend/cases/README.md) 
       - [ACL应用python案例](frames/ascend/acl_demo_python.md)

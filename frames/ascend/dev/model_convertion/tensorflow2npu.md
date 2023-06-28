@@ -1,4 +1,4 @@
-# TensorFlow 模型迁移
+# TensorFlow 训练模型迁移
 
 ## 一、为什么要做模型迁移
 
