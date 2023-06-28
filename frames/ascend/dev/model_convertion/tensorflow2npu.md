@@ -84,237 +84,226 @@ Ascend910 是华为在2019年发布的人工智能（AI）专用的神经网络�
 
 ### Estimator 迁移要点
 
-① Estimator迁移
+#### Estimator迁移
 EstimatorAPI属于TensorFlow的高阶API，在2018年发布的TensorFlow1.10版本中引入，它可极大简化机器学习的编程过程。
 
-② 使用Estimator进行训练脚本开发的一般步骤
-数据预处理，创建输入函数 input_fn；
-模型构建，构建模型函数 model_fn；
-运行配置，实例化 Estimator，传入 Runconfig 类对象作为运行参数；
-执行训练，在 Estimator 上调用训练方法 Estimator.train()，利用指定输入对模型进行固定步数的训练。
-针对 Estimator 的训练脚本迁移，我们也按照以上步骤进行，以便在异腾910处理器上训练。
+#### 使用Estimator进行训练脚本开发的一般步骤
+1. 数据预处理，创建输入函数 input_fn；
+2. 模型构建，构建模型函数 model_fn；
+3. 运行配置，实例化 Estimator，传入 Runconfig 类对象作为运行参数；
+4. 执行训练，在 Estimator 上调用训练方法 Estimator.train()，利用指定输入对模型进行固定步数的训练。
+5. 针对 Estimator 的训练脚本迁移，也按照以上步骤进行，以便在异腾910处理器上训练。
 
-③ Estimator 迁移的详细步骤
-0. 导包
+#### Estimator 迁移的详细步骤
+1. 导包
+    ```
+    from npu_bridge.npu_init import *
+    ```
 
-```
-from npu_bridge.npu_init import *
-```
+2. 数据预处理
 
-1. 数据预处理
+    直接迁移，无需修改。
 
-直接迁移，无需修改。
+    如果你在创建 dataset 时，使用 dataset.batch 返回动态shape，需要设置 drop_remainder 为 True，使其固定shape。
+    ```
+    dataset = dataset.batch(batch_size,drop_remainder=True)
+    ```
 
-如果你在创建 dataset 时，使用 dataset.batch 返回动态shape，需要设置 drop_remainder 为 True，使其固定shape。
+3. 模型构建
 
-```
-dataset = dataset.batch(batch_size,drop_remainder=True)
-```
+    一般直接迁移，无需修改。
 
-2. 模型构建
+    如果原始网络中使用到了 tf.device，需要删除相关代码；
+    如果在 model 中使用了 gelu 和 dropout 接口，推荐修改为NPU提供的高性能接口。
+    [1] 修改 dropout
 
-一般直接迁移，无需修改。
+    TensorFlow原始代码：
 
-如果原始网络中使用到了 tf.device，需要删除相关代码；
-如果在 model 中使用了 gelu 和 dropout 接口，推荐修改为NPU提供的高性能接口。
-[1] 修改 dropout
+    ```
+    layers = tf.nn.dropout()
+    ```
 
-TensorFlow原始代码：
+    迁移后的代码：
 
-```
-layers = tf.nn.dropout()
-```
+    ```
+    from npu_bridge.estimator import npu_ops
 
-迁移后的代码：
+    layers = npu_ops.dropout()
+    ```
 
-```
-from npu_bridge.estimator import npu_ops
+    [2] 修改 gelu
 
-layers = npu_ops.dropout()
-```
+    TensorFlow原始代码：
 
-[2] 修改 gelu
+    ```
+    def gelu(x):  
+        cdf = 0.5 * (1.0 + tf.tanh(  
+            (np.sqrt(2 / np.pi)) * (x + 0.044715 * tf.pow(x,3))  
+        ))  
+        return x * cdf  
 
-TensorFlow原始代码：
-
-```
-def gelu(x):  
-    cdf = 0.5 * (1.0 + tf.tanh(  
-        (np.sqrt(2 / np.pi)) * (x + 0.044715 * tf.pow(x,3))  
-    ))  
-    return x * cdf  
-
-layers = gelu()
-```
+    layers = gelu()
+    ```
 
 
-迁移后的代码：
+    迁移后的代码：
 
-```
-from npu_bridge.estimator.npu_unary_ops import npu_unary_ops  
+    ```
+    from npu_bridge.estimator.npu_unary_ops import npu_unary_ops  
 
-layers = npu_unary_ops.gelu(x)
-```
+    layers = npu_unary_ops.gelu(x)
+    ```
 
-1. 运行配置
+4. 运行配置
 
-原始TensorFlow通过RunConfig配置运行参数；
+    原始TensorFlow通过RunConfig配置运行参数；
 
-这一步我们需要将 TensorFlow 的 RunConfig 迁移为 NPURunConfig。由于 NPURunConfig 类是继承 RunConfig 类，因此我们在迁移时直接更改接口即可，大多数参数可不变。
+    这一步我们需要将 TensorFlow 的 RunConfig 迁移为 NPURunConfig。由于 NPURunConfig 类是继承 RunConfig 类，因此我们在迁移时直接更改接口即可，大多数参数可不变。
 
-TensorFlow原始代码：
+    TensorFlow原始代码：
+    ```
+    config = tf.estimator.RunConfig(  
+        model_dir = FLAGS.model_dir,  
+        save_checkpoints_steps = FLAGS.save_checkpoints_steps,  
+        session_config = tf.ConfigProto(allow_soft_placement = True,log_device_placement = False)  
+    )
+    ```
 
-```
-config = tf.estimator.RunConfig(  
+    迁移后的代码：
+    ```
+    from npu_bridge.estimator.npu.npu_config import NPURunConfig  
+
+    npu_config = NPURunConfig(  
     model_dir = FLAGS.model_dir,  
-    save_checkpoints_steps = FLAGS.save_checkpoints_steps,  
-    session_config = tf.ConfigProto(allow_soft_placement = True,log_device_placement = False)  
-)
-```
+        save_checkpoints_steps = FLAGS.save_checkpoints_steps,  
+        session_config = tf.ConfigProto(allow_soft_placement = True,log_device_placement = False)  # 配置自动选择运行设备，不记录设备指派  
+    )
+    ```
 
+5. 创建 Estimator
 
-迁移后的代码：
+    利用指定输入对模型进行固定步数训练。
 
-```
-from npu_bridge.estimator.npu.npu_config import NPURunConfig  
+    将TensorFlow的Estimator迁移为NPUEstimator。
 
-npu_config = NPURunConfig(  
-model_dir = FLAGS.model_dir,  
-    save_checkpoints_steps = FLAGS.save_checkpoints_steps,  
-    session_config = tf.ConfigProto(allow_soft_placement = True,log_device_placement = False)  # 配置自动选择运行设备，不记录设备指派  
-)
-```
+    NPUEstimator 类是继承 Estimator 类，因此在迁移时如下示例所示直接更改接口即可，参数可保持不变。
 
-### 创建 Estimator
+    TensorFlow原始代码：
+    ```
+    mnist_classifier = tf.estimator.Estimator(
+        model_fn = cnn_model_fn,
+        config = config,
+        model_dir = "/tmp/mnist_convnet_model"
+    )
+    ```
 
-利用指定输入对模型进行固定步数训练。
+    迁移后的代码：
+    ```
+    from npu_bridge.estimator.npu.npu_estimator import
+    NPUEstimator
 
-将TensorFlow的Estimator迁移为NPUEstimator。
+    mist_classifier = WPUEstinator(
+        model_fn = cnn_model_fn,
+        config = npu_config,
+        model_dir = "/tmp/mnist_convnet_model"
+    )
+    ```
 
-NPUEstimator 类是继承 Estimator 类，因此在迁移时如下示例所示直接更改接口即可，参数可保持不变。
+6. 执行训练
 
-TensorFlow原始代码：
+    利用指定输入对模型进行固定步数训练。无休修改。
 
-```
-mnist_classifier = tf.estimator.Estimator(
-	model_fn = cnn_model_fn,
-	config = config,
-	model_dir = "/tmp/mnist_convnet_model"
-)
-```
+    ```
+    mnist_classifier.train(
+        input_fn=train_input_fn,
+        steps=20000,
+        hooks=[1ogging_hook]
+    )
+    ```
 
-迁移后的代码：
-
-```
-from npu_bridge.estimator.npu.npu_estimator import
-NPUEstimator
-
-mist_classifier = WPUEstinator(
-	model_fn = cnn_model_fn,
-	config = npu_config,
-	model_dir = "/tmp/mnist_convnet_model"
-)
-```
-
-5. 执行训练
-
-利用指定输入对模型进行固定步数训练。无休修改。
-
-```
-mnist_classifier.train(
-	input_fn=train_input_fn,
-	steps=20000,
-	hooks=[1ogging_hook]
-)
-```
-
-4. Session Run 迁移要点
-① Sess.run 迁移
+### Session Run 迁移要点
+#### Sess.run 迁移
 Sess.run API 属于 TensorFlow 的低阶 API，相对于 Estimator 来讲，灵活性较高，但模型的实现较为复杂。
 
-② 使用 Sess.run API 进行训练脚本开发的一般步骤
+#### 使用 Sess.run API 进行训练脚本开发的一般步骤
 数据预处理；
 模型搭建/计算Loss/梯度更新；
 创建session并初始化资源；
 执行训练
 与Estimator迁移相同，我们同样按照上述步骤进行迁移，以便在异腾AI处理器上训练。
 
-③ Sess.run 迁移的详细步骤
-0. 导包
+#### Sess.run 迁移的详细步骤
+1. 导包
+    ```
+    from npu_bridge.npu_init import *
+    ```
+2. 数据预处理
+3. 模型搭建/计算Loss/梯度更新
+    这两步与Estimator迁移相同：直接迁移，无需修改。但同样需要注意的是：
 
-```
-from npu_bridge.npu_init import *
-```
+    ① 如果在创建 dataset 时使用 dataset.batch 返回动态 shape，需要设置 drop_remainder 为 True 使其固定 shape。
 
-1. 数据预处理
+    ```
+    dataset = dataset.batch(batch_size,drop_remainder=True)
+    ```
 
-2. 模型搭建/计算Loss/梯度更新
+    ② 如果在模型搭建使用了 Gelu 和 Dropout 接口，建议修改为 NPU 提供的高性能接口。
 
-这两步与Estimator迁移相同：直接迁移，无需修改。但同样需要注意的是：
+    [1] 修改 dropout
 
-① 如果在创建 dataset 时使用 dataset.batch 返回动态 shape，需要设置 drop_remainder 为 True 使其固定 shape。
+    TensorFlow原始代码：
 
-```
-dataset = dataset.batch(batch_size,drop_remainder=True)
-```
+    ```
+    layers = tf.nn.dropout()
+    ```
 
-② 如果在模型搭建使用了 Gelu 和 Dropout 接口，建议修改为 NPU 提供的高性能接口。
+    迁移后的代码：
 
-[1] 修改 dropout
+    ```
+    from npu_bridge.estimator import npu_ops
 
-TensorFlow原始代码：
-
-```
-layers = tf.nn.dropout()
-```
-
-迁移后的代码：
-
-```
-from npu_bridge.estimator import npu_ops
-
-layers = npu_ops.dropout()
-```
+    layers = npu_ops.dropout()
+    ```
 
 
-[2] 修改 gelu
+    [2] 修改 gelu
 
-TensorFlow原始代码：
+    TensorFlow原始代码：
 
-```
-def gelu(x):  
-    cdf = 0.5 * (1.0 + tf.tanh(  
-        (np.sqrt(2 / np.pi)) * (x + 0.044715 * tf.pow(x,3))  
-    ))  
-    return x * cdf  
+    ```
+    def gelu(x):  
+        cdf = 0.5 * (1.0 + tf.tanh(  
+            (np.sqrt(2 / np.pi)) * (x + 0.044715 * tf.pow(x,3))  
+        ))  
+        return x * cdf  
 
-layers = gelu()
-```
+    layers = gelu()
+    ```
 
-迁移后的代码：
+    迁移后的代码：
 
-```
-from npu_bridge.estimator.npu_unary_ops import npu_unary_ops  
+    ```
+    from npu_bridge.estimator.npu_unary_ops import npu_unary_ops  
 
-layers = npu_unary_ops.gelu(x)
-```
+    layers = npu_unary_ops.gelu(x)
+    ```
 
-1. 创建session并初始化资源
+4. 创建session并初始化资源
 
-这一步我们需要在创建 Session 前添加如下的配置，使得训练能够在NPU上执行：
+    这一步我们需要在创建 Session 前添加如下的配置，使得训练能够在NPU上执行：
 
-```
-from tensorflow.core.protobuf.rewriter_config_pb2 import RewriterConfig
+    ```
+    from tensorflow.core.protobuf.rewriter_config_pb2 import RewriterConfig
 
-config = tf.ConfigProto()
-custom_op = config.graph_options.rewrite_options.custom_optimizers.add()
-custom_op.name = "Npuoptimizer"
-config.graph_options.rewrite_options.remapping = RewriterConfig.OFF #必须显式关闭remap
+    config = tf.ConfigProto()
+    custom_op = config.graph_options.rewrite_options.custom_optimizers.add()
+    custom_op.name = "Npuoptimizer"
+    config.graph_options.rewrite_options.remapping = RewriterConfig.OFF #必须显式关闭remap
 
-sess = tf.Session(config = config) #创建session
-```
+    sess = tf.Session(config = config) #创建session
+    ```
 
-tf.Session 原生功能在CANN平台上全部支持。
+    tf.Session 原生功能在CANN平台上全部支持。
 
 ## 参考
 
