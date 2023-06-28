@@ -29,13 +29,13 @@ PyTorch是业界流行的深度学习框架，用于开发深度学习训练脚�
 
 在训练脚本中导入脚本转换库，然后拉起脚本执行训练。训练脚本在运行的同时，会自动将脚本中的CUDA接口替换为昇腾AI处理器支持的NPU接口。整体过程为边训练边转换。代码实现方式如下：
 
-#### 1.配置环境变量
+1.配置环境变量
 
 ```shell
 export PYTHONPATH={CANN软件目录}/ascend-toolkit/latest/tools/ms_fmk_transplt/torch_npu_bridge:$PYTHONPATH
 ```
 
-#### 2.在训练脚本中引入以下头文件。
+2.在训练脚本中引入以下头文件。
 
 ```python
 import torch
